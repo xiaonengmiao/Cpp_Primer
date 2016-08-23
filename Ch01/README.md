@@ -45,3 +45,16 @@ std::cout << /*  "*/" /*  "/*"  */;
 ```
 > After you've predicted what will happen, test your answers by compiling a aprogram with each of these statements. Correct any errors you encounter.
 
+##Exercise 1.9
+
+> Write a program that uses a while to sum the numbers from 50 to 100.
+
+##Exercise 1.10
+
+> In addition to the ++ operator that adds 1 to its operand, there is a decrement operator (--) that substracts 1. Use the decrement operator to write a while that prints the numbers from ten down to zero.
+
+##Exercise 1.11
+
+> Write a program that prompts the user for two integers. Print each number in the range specified by those two integers.
+
+

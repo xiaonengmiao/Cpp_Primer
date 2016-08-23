@@ -29,3 +29,19 @@ std::cout << "The sum of " << v1;
 ```
 > If the program is legal, what does it do? If the program is not legal, why not? How would you fix it?
 
+##Exercise 1.7
+
+> Compile a program that has incorrectly nested comments.
+
+##Exercise 1.8
+
+> Indicate which, if any, of the following output statements are legal:
+
+```cpp
+std::cout << "/*";
+std::cout << "*/";
+std::cout << /* "*/" */;
+std::cout << /*  "*/" /*  "/*"  */;
+```
+> After you've predicted what will happen, test your answers by compiling a aprogram with each of these statements. Correct any errors you encounter.
+

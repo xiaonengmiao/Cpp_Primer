@@ -10,4 +10,10 @@
 
 > Write a program used to print Hello, World on the standard output.
 
+##Exercise 1.4
 
+> Our program used the addition, +, to add two numbers. Write a program that uses the multiplication operator, *, to print each operand.
+
+##Exercise 1.5
+
+> We wrote the output in one large statement. Rewrite the program to use a separate statement to print each operand.

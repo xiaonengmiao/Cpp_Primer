@@ -1,3 +1,5 @@
+// print the product of two numbers.
+
 #include <iostream>
 
 int main()

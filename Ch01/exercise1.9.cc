@@ -1,3 +1,5 @@
+// sum the numbers from 50 to 100 using while
+
 #include <iostream>
 
 int main()

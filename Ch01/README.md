@@ -35,6 +35,8 @@ std::cout << "The sum of " << v1;
 ```
 > If the program is legal, what does it do? If the program is not legal, why not? How would you fix it?
 
+[ex1.6-codelink](exercise1.6.cc)
+
 ##Exercise 1.7
 
 > Compile a program that has incorrectly nested comments.
@@ -51,16 +53,24 @@ std::cout << /*  "*/" /*  "/*"  */;
 ```
 > After you've predicted what will happen, test your answers by compiling a aprogram with each of these statements. Correct any errors you encounter.
 
+[ex1.8-codelink](exercise1.8.cc)
+
 ##Exercise 1.9
 
 > Write a program that uses a while to sum the numbers from 50 to 100.
+
+[ex1.9-codelink](exercise1.9.cc)
 
 ##Exercise 1.10
 
 > In addition to the ++ operator that adds 1 to its operand, there is a decrement operator (--) that substracts 1. Use the decrement operator to write a while that prints the numbers from ten down to zero.
 
+[ex1.10-codelink](exercise1.10.cc)
+
 ##Exercise 1.11
 
 > Write a program that prompts the user for two integers. Print each number in the range specified by those two integers.
+
+[ex1.11-codelink](exercise1.11.cc)
 
 

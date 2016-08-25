@@ -1,3 +1,5 @@
+// indicate which of the following is legal.
+
 #include <iostream>
 
 int main()

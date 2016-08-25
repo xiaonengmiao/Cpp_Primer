@@ -1,3 +1,5 @@
+// print the numbers from ten to zero.
+
 #include <iostream>
 
 int main()

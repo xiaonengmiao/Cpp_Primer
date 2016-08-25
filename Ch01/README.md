@@ -2,6 +2,8 @@
 
 > Review the documentation for your compiler and determine what file naming convention it uses. Compile and run the main program from page 2.
 
+[ex1.1-codelink](exercise1.1.cc)
+
 ##Exercise 1.2 
 
 > Change the program to return -1. A return value of -1 is often treated as an indicator that the program failed. Recompile and rerun your program to see how your system treats a failure indicator from main.
@@ -10,9 +12,13 @@
 
 > Write a program used to print Hello, World on the standard output.
 
+[ex1.3-codelink](exercise1.3.cc)
+
 ##Exercise 1.4
 
 > Our program used the addition, +, to add two numbers. Write a program that uses the multiplication operator, *, to print each operand.
+
+[ex1.4-codelink](exercise1.4.cc)
 
 ##Exercise 1.5
 

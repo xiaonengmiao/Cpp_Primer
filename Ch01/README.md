@@ -73,4 +73,84 @@ std::cout << /*  "*/" /*  "/*"  */;
 
 [ex1.11-codelink](exercise1.11.cc)
 
+##Exercise 1.12
+
+> What does the following for loop do? What is the final value of sum?
+
+```cpp
+int sum = 0;
+for (int 1 = -100; i <= 100; ++i)
+    sum += 1;
+```
+the loop sums the numbers from -100 to 100.
+
+##Exercise 1.13
+
+> Rewrite the exercises from § 1.4.1 (p. 13) using for loops.
+
+Ex1.9:
+
+```cpp
+#include <iostream>
+
+int main()
+{
+    int sum = 0;
+    for (int i = 50; i <= 100; ++i) sum += i;
+    std::cout << "Sum is" << sum << std::endl;
+
+    return 0;
+}
+```
+
+Ex1.10:
+
+```cpp
+#include <iostream>
+
+int main()
+{
+    sum = 0;
+    for (int i = 10; i >= 0; --i) sum += i;
+    std::cout << "Sum is" << sum << std::endl;
+
+    return 0;
+}
+```
+
+Ex1.11:
+
+```cpp
+#include <iostream>
+
+int main()
+{
+    std::cout << "Please input two integers:\n";
+    int a = 0, b = 0;
+    std::cin >> a >> b;
+    
+    if (a > b)
+    {
+        int tmp = a;
+	a = b;
+	b = tmp;
+    }
+    
+    for (int i = a; i != b; ++i) std::cout << i << std::endl;
+
+    return 0;
+}
+```
+
+##Exercise 1.14
+
+> Compare and contrast the loops that used a for with those using a while. Are there advantages or disadvantages to using either form.
+
+use either one u like!!!
+
+##Exercise 1.15
+
+> Write programs that contain the common errors discussed in the box on page 16. Familiarize yourself with the messages the compiler generates.
+
+you can try it yourself.
 

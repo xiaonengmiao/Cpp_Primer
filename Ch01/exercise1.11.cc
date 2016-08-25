@@ -1,3 +1,5 @@
+// print each number in the range specified by two integer.
+
 #include <iostream>
 
 int main() 

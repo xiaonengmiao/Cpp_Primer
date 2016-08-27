@@ -204,9 +204,13 @@ if there are no duplicated values, it will print lines shows each number.
 
 > Write a program that reads two Sales_item objects that have the same ISBN and produces their sum.
 
+[ex1.22-codelink](exercise1.22.cc)
+
 ##Exercise 1.23
 
 > Write a program that reads several transactions and counts how many transactions occurs for each ISBN.
+
+[ex1.23-codelink](exercise1.23.cc)
 
 ##Exercise 1.24
 
@@ -215,3 +219,4 @@ if there are no duplicated values, it will print lines shows each number.
 ##Exercise 1.25
 
 > Using the Sales_item.h header from the Web site, compile and execute the bookstore program presented in this section.
+

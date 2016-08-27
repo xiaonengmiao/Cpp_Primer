@@ -192,9 +192,13 @@ if there are no duplicated values, it will print lines shows each number.
 
 > [http://www.informit.com/title/0321714113](http://www.informit.com/title/0321714113) contains a copy of Sales_item.h in the Chapter 1 code directory. Copy that file to your working directory. Use it to write a program that reads a set of book sales trasactions, writing each trasaction to the standard output.
 
+[ex1.20-codelink](exercise1.20.cc)
+
 ##Exercise 1.21
 
 > Write a program that reads two Sales_item objects that have the same ISBN and produces their sum.
+
+[ex1.21-codelink](exercise1.21.cc)
 
 ##Exercise 1.22
 

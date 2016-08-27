@@ -186,6 +186,28 @@ if there are no duplicated values, it will print lines shows each number.
 
 > Revise the program you wrote for the exercises in § 1.4.1 (p. 13) that printed a range of numbers so that it handles input in which the first number is smaller than the second.
 
+[ex1.19-codelink](exercise1.19.cc)
+
 ##Exercise 1.20
 
-> 
+> [http://www.informit.com/title/0321714113](http://www.informit.com/title/0321714113) contains a copy of Sales_item.h in the Chapter 1 code directory. Copy that file to your working directory. Use it to write a program that reads a set of book sales trasactions, writing each trasaction to the standard output.
+
+##Exercise 1.21
+
+> Write a program that reads two Sales_item objects that have the same ISBN and produces their sum.
+
+##Exercise 1.22
+
+> Write a program that reads two Sales_item objects that have the same ISBN and produces their sum.
+
+##Exercise 1.23
+
+> Write a program that reads several transactions and counts how many transactions occurs for each ISBN.
+
+##Exercise 1.24
+
+> Test the previous program by giving multiple transactions representing multiple ISBNs. The records for each ISBN should be grouped together.
+
+##Exercise 1.25
+
+> Using the Sales_item.h header from the Web site, compile and execute the bookstore program presented in this section.

@@ -10,5 +10,6 @@ int main()
     std::cout << i << std::endl;
     std::cout << p1 << std::endl;
     std::cout << *p1 << std::endl;
+
     return 0;
 }

@@ -54,6 +54,14 @@ Output:
 - (c) 3.14, 3.14f, 3.14L
 - (d) 10, 10u, 10., 10e-2
 
+(a) character literal, wide character literal, string literal, string wide character literal.
+
+(b) decimal, unsigned decimal, long decimal, unsigned long decimal, octal, hexadecimal.
+
+(c) double, float, long double.
+
+(d) decimal, unsigned decimal, double, double.
+
 ##Exercise 2.6
 
 > What, if any, are the differences between the following definitions:

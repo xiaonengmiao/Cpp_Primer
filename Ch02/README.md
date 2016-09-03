@@ -2,9 +2,19 @@
 
 > What are the differences between int, long, long long, and short? Between an unsigned and a signed type? Between a float and a double?
 
+`int` is at least 16 bits, `long` at least 32 bits, while `long long` at least 64 bits.
+
+A `signed` type can represent negative or positive number (including zero), while an `unsigned` type can only represent values greater than or equal to zero.
+
+`float` is represented in one word (32 bits), `double` in two words (64 bits).
+
 ##Exercise 2.2
 
 > To calculate a mortgage payment, what types would you use for the rate, principal, and payment? Explain why you selected each type.
+
+use `double` or `float`.
+
+since rate most like 3.2%, principal like 1000.00, and parment like 3500.00.
 
 ##Exercise 2.3
 

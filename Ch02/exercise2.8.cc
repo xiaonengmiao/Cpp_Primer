@@ -1,3 +1,5 @@
+// print 2M followed by a newline, and print a tab, then an M, followed by a newline.
+
 #include <iostream>
 
 int main()

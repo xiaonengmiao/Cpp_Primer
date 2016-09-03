@@ -82,9 +82,19 @@ the third one is wrong(since octal cannot contain 9), while the last one is octa
 - (c) 1024f
 - (d) 3.14L
 
+(a) Who goes with Fergus?(newline), string.
+
+(b) 31.4, long double.
+
+(c) error: invalid digit 'f' in decimal constant.
+
+(d) 3.14, long double.
+
 ##Exercise 2.8
 
 > Using escape sequence, write a program to print 2M followed by a newline. Modify the program to print 2, then a tab, then an M, followed by a newline.
+
+[ex2.8-codelink](exercise2.8.cc)
 
 ##Exercise 2.9
 

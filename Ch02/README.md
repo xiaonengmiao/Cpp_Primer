@@ -70,6 +70,10 @@ int month = 9, day = 7;
 int month = 09, day = 07;
 ```
 
+the first two are decimals.
+
+the third one is wrong(since octal cannot contain 9), while the last one is octal.
+
 ##Exercise 2.7
 
 > What values do these literals represent? What types does each have?

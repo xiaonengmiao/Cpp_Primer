@@ -4,9 +4,9 @@ int main()
 {
     int input_value;
     std::cin >> input_value;
-    double salary = 9999.99, wage = 9999.99;
-    int i = {3};
-    int j = 3;
+    double salary, wage = 9999.99;
+    int j = {3};
+    int i = 3.14;
     
     return 0;
 

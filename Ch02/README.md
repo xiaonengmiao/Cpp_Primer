@@ -104,6 +104,15 @@ the third one is wrong(since octal cannot contain 9), while the last one is octa
 - (c) double salary = wage = 9999.99;
 - (d) int i = 3.14
 
+(a) error: expected '(' for function-style cast or type construction.
+
+(b) error: type 'double' cannot be narrowed to 'int' in initializer list.
+
+(c) error: use of undeclared identifier 'wage'.
+
+(d) warning: implicit conversion from 'double' to 'int' changes value from 3.14 to
+      3.
+
 ##Exercise 2.10
 
 > What are the initial values, if any, of each of the following variables?

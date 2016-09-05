@@ -106,12 +106,32 @@ the third one is wrong(since octal cannot contain 9), while the last one is octa
 
 (a) error: expected '(' for function-style cast or type construction.
 
+```cpp
+int input_value;
+std::cin >> input_value;
+```
+
 (b) error: type 'double' cannot be narrowed to 'int' in initializer list.
+
+```cpp
+double i = { 3.14 };
+```
 
 (c) error: use of undeclared identifier 'wage'.
 
+```cpp
+double wage = 9999.99;
+double salary = 9999.99;
+```
+
 (d) warning: implicit conversion from 'double' to 'int' changes value from 3.14 to
       3.
+
+the value will be truncated.
+
+```cpp
+double i = 3.14;
+```
 
 ##Exercise 2.10
 
@@ -126,6 +146,9 @@ int main()
   std::string local_str;
 }
 ```
+
+`global_str` is empty string. `global_int` is zero. `local_int` is an undefined value. `local_str` is uninitialized, but it has a value defined by the class.
+
 ##Exercise 2.11
 
 > Explain whether each of the following is a declaration or a definition:

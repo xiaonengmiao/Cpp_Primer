@@ -157,6 +157,12 @@ int main()
 - (b) int iy;
 - (c) extern int iz;
 
+(a) definition.
+
+(b) definition.
+
+(c) declaration.
+
 ##Exercise 2.12
 
 > Which, if any, of the following names are invalid?

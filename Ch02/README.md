@@ -54,13 +54,12 @@ Output:
 - (c) 3.14, 3.14f, 3.14L
 - (d) 10, 10u, 10., 10e-2
 
+```
 (a) character literal, wide character literal, string literal, string wide character literal.
-
 (b) decimal, unsigned decimal, long decimal, unsigned long decimal, octal, hexadecimal.
-
 (c) double, float, long double.
-
 (d) decimal, unsigned decimal, double, double.
+```
 
 ##Exercise 2.6
 
@@ -82,13 +81,12 @@ the third one is wrong(since octal cannot contain 9), while the last one is octa
 - (c) 1024f
 - (d) 3.14L
 
+```
 (a) Who goes with Fergus?(newline), string.
-
 (b) 31.4, long double.
-
 (c) error: invalid digit 'f' in decimal constant.
-
 (d) 3.14, long double.
+```
 
 ##Exercise 2.8
 
@@ -210,6 +208,13 @@ legal, output:
 - (b) int &rval1 = 1.01;
 - (c) int &rval2 = ival;
 - (d) int &rval3;
+
+```
+(a) valid.
+(b) invalid. initializer must be an object.
+(c) valid.
+(d) invalid. a reference must be initialized.
+```
 
 ##Exercise 2.16
 

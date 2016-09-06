@@ -186,6 +186,8 @@ int main()
 }
 ```
 
+`j` = 100, since there is a local `i` = 100.
+
 ##Exercise 2.14
 
 > Is the following program legal? If so, what values are printed?

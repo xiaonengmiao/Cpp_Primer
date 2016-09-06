@@ -1,4 +1,7 @@
+// see what will be printed.
+
 #include <iostream>
+
 int main()
 {
    int i, &ri = i;

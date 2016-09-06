@@ -227,6 +227,13 @@ int i = 0, &r1 = i; double d = 0, &r2 = d;
 - (c) i = r2;
 - (d) r1 = d;
 
+```
+(a) valid. make d equal 3.14159.
+(b) valid. int i will convert to double type.
+(c) valid. double d will be truncated to int type.
+(d) valid. convertion will happen.
+```
+
 ##Exercise 2.17
 
 > What does the following code print?
@@ -235,6 +242,8 @@ int i, &ri = i;
 i = 5; ri = 10;
 std::cout << i << " " << ri << std::endl;
 ```
+
+
 
 ##Exercise 2.18
 

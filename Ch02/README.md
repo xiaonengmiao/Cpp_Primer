@@ -148,7 +148,7 @@ int main()
 }
 ```
 
-`global_str` is empty string. `global_int` is zero. `local_int` is an undefined value. `local_str` is uninitialized, but it has a value defined by the class.
+`global_str` is a global variable(outside of any function body), so it is empty string. `global_int` is also a global variable, so it is zero. `local_int` is a local value which is uninitialized, so it is an undefined value. `local_str` is uninitialized, but it has a value defined by the class.
 
 ##Exercise 2.11
 

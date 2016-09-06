@@ -172,6 +172,8 @@ int main()
 - (d) int 1_or_2 = 1;
 - (e) double Double = 3.14;
 
+invalid: (a), (c), (d).
+
 ##Exercise 2.13
 
 > What is the value of j in the following program? 

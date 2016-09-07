@@ -310,14 +310,18 @@ if (*p) // whether the value pointed by p is zero?
 
 > Given a pointer p, can you determine whether p points to a valid object? If so, how? If not, why not?
 
+No.
+
 ##Exercise 2.24
 
-> Why is the initialization of p legal but that of Ip illegal?
+> Why is the initialization of p legal but that of lp illegal?
 ```cpp
 int i = 42;
 void *p = &i;
 long *lp = &i;
 ```
+
+`void *` type can point to any type, so the second is legal. Implicit conversions like `long *lp = &i` are not allowed in C++.
 
 ##Exercise 2.25
 

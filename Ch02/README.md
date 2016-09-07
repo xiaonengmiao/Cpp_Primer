@@ -273,15 +273,25 @@ int i = 42;
 int *p1 = &i; *p1 = *p1 * *p1;
 ```
 
+`p1` point to `i`, and the value of `i` is changed to 1764.
+
 ##Exercise 2.21
 
 > Explain each of the following definitions. Indicate whether any are illegal and, if so, why.
+
 ```cpp
 int i = 0;
 ```
+
 - (a) double* dp = &i;
 - (b) int *ip = i;
 - (c) int *p = &i;
+
+```
+(a) illegal, cannot initialize a variable of type 'double *' with type 'int *'.
+(b) illegal, cannot initialize a variabel of type 'int *' with type 'int'.
+(c) legal.
+```
 
 ##Exercise 2.22
 
@@ -289,6 +299,11 @@ int i = 0;
 ```cpp
 if (p) // ...
 if (*p) // ...
+```
+
+```
+if (p) // whether p is nullptr?
+if (*p) // whether the value pointed by p is zero?
 ```
 
 ##Exercise 2.23

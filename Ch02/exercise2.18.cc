@@ -1,4 +1,7 @@
+// change the value of a pointer and change the value to which the pointer points
+
 #include <iostream>
+
 int main()
 {
     int *pi = 0;

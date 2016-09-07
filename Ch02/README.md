@@ -251,6 +251,8 @@ std::cout << i << " " << ri << std::endl;
 
 > Write code to change the value of a pointer. Write code to change the value to which the pointer points.
 
+[ex2.18-codelink](exercise2.18.cc)
+
 ##Exercise 2.19
 
 > Explain the key differences between pointers and references.

@@ -155,11 +155,11 @@ int main()
 - (b) int iy;
 - (c) extern int iz;
 
+```
 (a) definition.
-
 (b) definition.
-
 (c) declaration.
+```
 
 ##Exercise 2.12
 
@@ -256,6 +256,14 @@ std::cout << i << " " << ri << std::endl;
 ##Exercise 2.19
 
 > Explain the key differences between pointers and references.
+
+```
+differences:
+1. a reference is not an object, while a pointer is an object.
+2. once we have defined a reference, there is no way to make that reference refer to a different object.
+3. a reference must be initialized.
+4. a reference always give the object to which it was initially bound.
+```
 
 ##Exercise 2.20
 

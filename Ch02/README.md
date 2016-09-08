@@ -450,8 +450,11 @@ g=42; // ERROR, g is a const int& that is bound to ci.
 > Determine the types deduced in each of the following definitions. Once you’ve figured out the types, write a program to see whether you were correct.
 ```cpp
 const int i = 42;
-auto j = i; const auto &k = i; auto *p = &i; const auto j2 = i, &k2 = i;
+auto j = i; const auto &k = i; auto *p = &i; 
+const auto j2 = i, &k2 = i;
 ```
+
+`j` is an int. `k` is const int&. `p` is const int*. `j2` is const int. `k2` const int&.
 
 ##Exercise 2.36
 

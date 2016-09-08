@@ -383,6 +383,15 @@ const int *p;           // legal. a pointer to const int.
 
 > Using the variables in the previous exercise, which of the following assignments are legal? Explain why.
 
+```cpp
+(a) i = ic; // legal
+(b) p1 = p3; // illegal, p3 has a low-level const.
+(c) p1 = &ic; // illegal, ic is a const int.
+(d) p3 = &ic; // illegal, p3 is a const pointer.
+(e) p2 = p1; // illegal, p2 is a const pointer.
+(f) ic = *p3; // legal.
+```
+
 ##Exercise 2.30
 
 > For each of the following declarations indicate whether the object being declared has top-level or low-level const.

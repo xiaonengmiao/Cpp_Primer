@@ -401,15 +401,30 @@ int *p1 = &v1, &r1 = v1;
 const int *p2 = &v2, *const p3 = &i, &r2 = v2;
 ```
 
+`v2` is top-level const. `p2` is low-level const. `p3` is both top-level and low-level const. `r2` is low-level const.
+
 ##Exercise 2.31
 
 > Given the declarations in the previous exercise determine whether the following assignments are legal. Explain how the top-level or low-level const applies in each case.
+
+```cpp
+r1 = v2; // legal, top-level const in v2 is ignored.
+p1 = p2; // illegal, p2 has a low-level const but p1 doesn't.
+p2 = p1; // legal, we can convert a nonconst to const.
+p1 = p3; // illegal, p3 has a low-level const but p1 doesn't.
+p2 = p3; // legal, p2 has the same low-level const qualification as p3.
+```
 
 ##Exercise 2.32
 
 > Is the following code legal or not? If not, how might you make it legal?
 ```cpp
 int null = 0, *p = null;
+```
+
+illegal.
+```cpp
+int null = 0, *p = nullstr;
 ```
 
 ##Exercise 2.33

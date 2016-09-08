@@ -330,6 +330,12 @@ long *lp = &i;
 - (b) int i, *ip = 0;
 - (c) int* ip, ip2;
 
+```
+(a) ip is a pointer to int, i is an int, r is a reference to int i.
+(b) i is an int, ip is a null pointer.
+(c) ip is an int pointer, ip2 is an int.
+```
+
 ##Exercise 2.26
 
 > Which of the following are legal? For those that are illegal, explain why.

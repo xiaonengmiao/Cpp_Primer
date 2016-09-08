@@ -443,6 +443,8 @@ g=42; // ERROR, g is a const int& that is bound to ci.
 
 > Write a program containing the variables and assignments from the previous exercise. Print the variables before and after the assignments to check whether your predictions in the previous exercise were correct. If not, study the examples until you can convince yourself you know ￼￼what led you to the wrong conclusion.
 
+[ex2.34-codelink](exercise2.34.cc)
+
 ##Exercise 2.35
 
 > Determine the types deduced in each of the following definitions. Once you’ve figured out the types, write a program to see whether you were correct.

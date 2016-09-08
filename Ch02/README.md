@@ -219,9 +219,11 @@ legal, output:
 ##Exercise 2.16
 
 > Which, if any, of the following assignments are invalid? If they are valid, explain what they do.
+
 ```cpp
 int i = 0, &r1 = i; double d = 0, &r2 = d;
 ```
+
 - (a) r2 = 3.14159;
 - (b) r2 = r1;
 - (c) i = r2;
@@ -237,6 +239,7 @@ int i = 0, &r1 = i; double d = 0, &r2 = d;
 ##Exercise 2.17
 
 > What does the following code print?
+
 ```cpp
 int i, &ri = i;
 i = 5; ri = 10;
@@ -268,6 +271,7 @@ differences:
 ##Exercise 2.20
 
 > What does the following program do?
+
 ```cpp
 int i = 42;
 int *p1 = &i; *p1 = *p1 * *p1;
@@ -296,6 +300,7 @@ int i = 0;
 ##Exercise 2.22
 
 > Assuming p is a pointer to int, explain the following code:
+
 ```cpp
 if (p) // ...
 if (*p) // ...
@@ -315,6 +320,7 @@ No.
 ##Exercise 2.24
 
 > Why is the initialization of p legal but that of lp illegal?
+
 ```cpp
 int i = 42;
 void *p = &i;
@@ -326,6 +332,7 @@ long *lp = &i;
 ##Exercise 2.25
 
 > Determine the types and values of each of the following variables.
+
 - (a) int* ip, i, &r = i;
 - (b) int i, *ip = 0;
 - (c) int* ip, ip2;
@@ -339,16 +346,18 @@ long *lp = &i;
 ##Exercise 2.26
 
 > Which of the following are legal? For those that are illegal, explain why.
+
 ```cpp
-const int buf;      // illegal, but is uninitialized const.
+const int buf;      // illegal, buf is defined to const but uninitialized.
 int cnt = 0;        // legal.
 const int sz = cnt; // legal.
-++cnt; ++sz;        // illegal, attempt to write to const object(sz).
+++cnt; ++sz;        // illegal, attempt to write to sz which is a const variable.
 ```
 
 ##Exercise 2.27
 
 > Which of the following initializations are legal? Explain why.
+
 ```cpp
 int i = -1, &r = 0;         // illegal, r must refer to an object.
 int *const p2 = &i2;        // legal.

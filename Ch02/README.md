@@ -461,6 +461,7 @@ const auto j2 = i, &k2 = i;
 ##Exercise 2.36
 
 > In the following code, determine the type of each variable and the value each variable has when the code finishes:
+
 ```cpp
 int a = 3, b = 4;
 decltype(a) c = a;
@@ -468,6 +469,8 @@ decltype((b)) d = a;
 ++c;
 ++d;
 ```
+
+`c` is int. `d` is int& to a. all are `4`.
 
 ##Exercise 2.37
 
@@ -478,9 +481,23 @@ decltype(a) c = a;
 decltype(a = b) d = a;
 ```
 
+`c` is int. `d` is int&. `a` = `c` = `d` = 3. `b` = 4.
+
 ##Exercise 2.38
 
 > Describe the differences in type deduction between decltype and auto. Give an example of an expression where auto and decltype will deduce the same type and an example where they will deduce differing types.
+
+```cpp
+int i = 0, &j = i;
+// deduce the same type
+auto k = i;
+decltype(i) k = i;
+// deduce different types
+auto a = r;
+decltype(r) b = r;
+```
+
+so the difference mainly is the way they handle top-level const and reference.
 
 ##Exercise 2.39
 
@@ -492,6 +509,8 @@ int main()
     return 0;
 }
 ```
+
+error: expected ';' after struct definition.
 
 ##Exercise 2.40
 

@@ -516,9 +516,21 @@ error: expected ';' after struct definition.
 
 > Write your own version of the Sales_data class.
 
+```cpp
+struct Sales_data {
+  std::string bookNo;
+  std::string bookName;
+  unsigned units_sold = 0;
+  double revenue = 0.0;
+  double price = 0.0;
+};
+```
+
 ##Exercise 2.41
 
 > Use your Sales_data class to rewrite the exercises in § 1.5.1(p. 22), § 1.5.2(p. 24), and § 1.6(p. 25). For now, you should define your Sales_data class in the same file as your main function.
+
+
 
 ##Exercise 2.42
 

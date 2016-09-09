@@ -530,7 +530,9 @@ struct Sales_data {
 
 > Use your Sales_data class to rewrite the exercises in § 1.5.1(p. 22), § 1.5.2(p. 24), and § 1.6(p. 25). For now, you should define your Sales_data class in the same file as your main function.
 
-
+[ex2.41_1-codelink](exercise2.41_1.cc)
+[ex2.41_2-codelink](exercise2.41_2.cc)
+[ex2.41_3-codelink](exercise2.41_3.cc)
 
 ##Exercise 2.42
 

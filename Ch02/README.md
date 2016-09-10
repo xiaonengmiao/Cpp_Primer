@@ -537,3 +537,9 @@ struct Sales_data {
 ##Exercise 2.42
 
 > Write your own version of the Sales_data.h header and use it to rewrite the exercise from § 2.6.2(p. 76)
+
+[ex2.42_1-codelink](exercise2.42_1.cc)
+[ex2.42_2-codelink](exercise2.42_2.cc)
+[ex2.42_3-codelink](exercise2.42_3.cc)
+
+

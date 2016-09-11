@@ -1,8 +1,10 @@
 #include <iostream>
+
 // using declarations for names from the standard library
 using std::cin;
 using std::cout; using std::endl;
 using std::string;
+
 int main()
 {
     string word;

@@ -9,9 +9,15 @@
 
 > Write a program to read the standard input a line at a time. Motify your program to read a word at time.
 
+[ex3.2-codelink](exercise3.2.cc)
+
 ##Exercise3.3
 
 > Explain how whitespace characters are handled in the string input operator and in the getline function.
+
+- code like `is >> s` is separated by whitespaces while reading.
+
+- code like `getline(is, s)` is separated by newline `\n` while reading.
 
 ##Exercise3.4
 

@@ -28,3 +28,5 @@
 ##Exercise3.5
 
 > Write a program to read strings from the standard input, concatenating what is read into one large string. Next, change the program separate adjacent input strings by a space.
+
+[ex3.5-codelink](exercise3.5.cc)

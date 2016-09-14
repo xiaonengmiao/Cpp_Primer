@@ -30,3 +30,37 @@
 > Write a program to read strings from the standard input, concatenating what is read into one large string. Next, change the program separate adjacent input strings by a space.
 
 [ex3.5-codelink](exercise3.5.cc)
+
+##Exercise3.6
+
+> Use a range for to change all the charaters in a string to X.
+
+##Exercise3.7
+
+> What would happen if you define the loop control variable in the previous exercise as type char? Predict the results and then change your program to use a char to see if you were right.
+
+##Exercise3.8
+
+> Rewrite the program in the first exercise, first using a while and again using a traditional for loop. Which of the three approaches do you prefer and why?
+
+##Exercise3.9
+
+> What does the following program do? Is it valid? If not, why not?
+
+```cpp
+string s;
+cout << s[0] << endl;
+```
+
+##Exercise3.10
+
+> Write a program that reads a string of charaters including punctunation and writes what was read but with the punctuation removed.
+
+##Exercise3.11
+
+> Is the following range for legal? If so, what is the type of c?
+
+```cpp
+const string s = "Keep out!";
+for (auto &c : s) {/* ... */}
+```

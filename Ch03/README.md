@@ -41,6 +41,10 @@
 
 > What would happen if you define the loop control variable in the previous exercise as type char? Predict the results and then change your program to use a char to see if you were right.
 
+
+
+[ex3.7-codelink](exercise3.7.cc)
+
 ##Exercise3.8
 
 > Rewrite the program in the first exercise, first using a while and again using a traditional for loop. Which of the three approaches do you prefer and why?

@@ -35,6 +35,8 @@
 
 > Use a range for to change all the charaters in a string to X.
 
+[ex3.6-codelink](exercise3.6.cc)
+
 ##Exercise3.7
 
 > What would happen if you define the loop control variable in the previous exercise as type char? Predict the results and then change your program to use a char to see if you were right.

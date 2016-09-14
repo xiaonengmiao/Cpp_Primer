@@ -1,15 +1,19 @@
 #include <iostream>
+#include <string>
 // using declarations for names from the standard library
 using namespace std;
 
 int main()
 {
-    string line("Hello World!!!");
+    string line;
     // string line is "Hello World"
-    for (char c : line) {
+    while(getline(cin, line)) {
+      cout << endl;
+      for (char &c : line) {
         if (!ispunct(c)) {
             cout << c;
-        }
+	}
+      }
     }
     cout << endl;
     // cout << line << endl;

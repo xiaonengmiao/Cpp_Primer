@@ -49,6 +49,10 @@ the string won't change. we must use reference to change the value of the charac
 
 > Rewrite the program in the first exercise, first using a while and again using a traditional for loop. Which of the three approaches do you prefer and why?
 
+[ex3.8-codelink](exercise3.8.cc)
+
+i like range for. no reason.
+
 ##Exercise3.9
 
 > What does the following program do? Is it valid? If not, why not?
@@ -58,9 +62,13 @@ string s;
 cout << s[0] << endl;
 ```
 
+print a empty line. it is valid.
+
 ##Exercise3.10
 
 > Write a program that reads a string of charaters including punctunation and writes what was read but with the punctuation removed.
+
+[ex3.10-codelink](exercise3.10)
 
 ##Exercise3.11
 
@@ -70,3 +78,4 @@ cout << s[0] << endl;
 const string s = "Keep out!";
 for (auto &c : s) {/* ... */}
 ```
+

@@ -1,3 +1,5 @@
+// change all the characters in a string to X
+
 #include <iostream>
 // using declarations for names from the standard library
 using namespace std;

@@ -79,3 +79,4 @@ const string s = "Keep out!";
 for (auto &c : s) {/* ... */}
 ```
 
+if you don't attempt to change the characters of the string `s`, it is legal.

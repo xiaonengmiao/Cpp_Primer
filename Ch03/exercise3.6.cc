@@ -8,7 +8,7 @@ int main()
 {
     string line("Hello World!!!");
     // string line is "Hello World"
-    for (char &c : line) {
+    for (auto &c : line) {
         c = 'X';
     }
     cout << line << endl;

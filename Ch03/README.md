@@ -41,7 +41,7 @@
 
 > What would happen if you define the loop control variable in the previous exercise as type char? Predict the results and then change your program to use a char to see if you were right.
 
-
+the string won't change. we must use reference to change the value of the character in a string.in this case, `char` `c` is copy of each character of string, thus the assignment actually do nothing.
 
 [ex3.7-codelink](exercise3.7.cc)
 

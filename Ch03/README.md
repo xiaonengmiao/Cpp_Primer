@@ -80,3 +80,27 @@ for (auto &c : s) {/* ... */}
 ```
 
 if you don't attempt to change the characters of the string `s`, it is legal.
+
+##Exercise3.12
+
+> Which, if any, of the following vector definitions are in error? For those that are legal, explain what the definition does. For those that are not legal, explain why they are illegal.
+
+```cpp
+(a) vector<vector<int>> ivec;
+(b) vector<string> svec = ivec;
+(c) vector<string> svec(10, "null");
+```
+
+##Exercise3.13
+
+> How many elements are there in each of the following vectors? What are the values of the elements?
+
+```cpp
+(a) vector<int> v1;
+(b) vector<int> v2(10);
+(c) vector<int> v3(10, 42);
+(d) vector<int> v4{10};
+(e) vector<int> v5{10, 42};
+(f) vector<string> v6{10};
+(g) vector<string> v7{10, "hi"};
+```

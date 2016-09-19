@@ -104,3 +104,23 @@ if you don't attempt to change the characters of the string `s`, it is legal.
 (f) vector<string> v6{10};
 (g) vector<string> v7{10, "hi"};
 ```
+
+##Exercise3.14
+
+> Write a program to read a sequence of ints from cin and store those values in a vector.
+
+##Exercise3.15
+
+> Repeat the previous program but read strings this time.
+
+##Exercise3.16
+
+> Write a program to print the size and contents of the vectors from exercise3.13. Check whether your answers to that exercise were correct. If not, restudy §3.3.1 (p.97) until you understand why you were wrong.
+
+##Exercise3.17
+
+> Read a sequence of words from cin and store the values a vector. After you've read all the words, process the vector and change each word to uppercase. Print the transformed elements, eight words to a line.
+
+##Exercise3.18
+
+

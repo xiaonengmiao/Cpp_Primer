@@ -86,9 +86,9 @@ if you don't attempt to change the characters of the string `s`, it is legal.
 > Which, if any, of the following vector definitions are in error? For those that are legal, explain what the definition does. For those that are not legal, explain why they are illegal.
 
 ```cpp
-(a) vector<vector<int>> ivec;
-(b) vector<string> svec = ivec;
-(c) vector<string> svec(10, "null");
+(a) vector<vector<int>> ivec;          // legal, define an empty vector
+(b) vector<string> svec = ivec;        // illegal, type defferent
+(c) vector<string> svec(10, "null");   // legal, vector of strings
 ```
 
 ##Exercise3.13
@@ -96,13 +96,13 @@ if you don't attempt to change the characters of the string `s`, it is legal.
 > How many elements are there in each of the following vectors? What are the values of the elements?
 
 ```cpp
-(a) vector<int> v1;
-(b) vector<int> v2(10);
-(c) vector<int> v3(10, 42);
-(d) vector<int> v4{10};
-(e) vector<int> v5{10, 42};
-(f) vector<string> v6{10};
-(g) vector<string> v7{10, "hi"};
+(a) vector<int> v1;               // size:0, no value
+(b) vector<int> v2(10);           // size:10, value:0
+(c) vector<int> v3(10, 42);       // size:10, value:42
+(d) vector<int> v4{10};           // size:1, value:10
+(e) vector<int> v5{10, 42};       // size:2, value:10, 42
+(f) vector<string> v6{10};        // size:10, value:""
+(g) vector<string> v7{10, "hi"};  // size:10, value:"hi"
 ```
 
 ##Exercise3.14

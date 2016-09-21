@@ -1,3 +1,5 @@
+// read from cin and store
+
 #include <iostream>
 #include <vector>
 // using declarations for names from the standard library
@@ -7,10 +9,8 @@ int main()
 {
     vector<int> s;
     int number;
-    int i = 0;
     // s is empty vector
-    while (cin >> number && i < 3) {
-        ++i;
+    while (cin >> number) {
         s.push_back(number);
     }
     for (auto c : s) {

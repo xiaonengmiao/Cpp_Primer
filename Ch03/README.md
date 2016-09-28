@@ -121,10 +121,24 @@ if you don't attempt to change the characters of the string `s`, it is legal.
 
 > Write a program to print the size and contents of the vectors from exercise3.13. Check whether your answers to that exercise were correct. If not, restudy §3.3.1 (p.97) until you understand why you were wrong.
 
+
+
 ##Exercise3.17
 
 > Read a sequence of words from cin and store the values a vector. After you've read all the words, process the vector and change each word to uppercase. Print the transformed elements, eight words to a line.
 
-##Exercise3.18
+##Exercise3.18 
 
+> Is the following program legal? If not, how might you fix it?
 
+```cpp
+vector<int> ivec;
+```
+
+##Exercise3.19
+
+> List three ways to define a `vector` and give it ten elements, each with the value 42, indicate whether there is a prefered way to do so and why.
+
+##Exercise3.20
+
+> Read a set of integers into a vector. Print the sum of each pair of adjacent elements. Change your program so that it prints the sum of the first and last elements, followed by the second and second-to-last, and so on.

@@ -115,6 +115,8 @@ if you don't attempt to change the characters of the string `s`, it is legal.
 
 > Repeat the previous program but read strings this time.
 
+[ex3.15-codelink](exercise3.15)
+
 ##Exercise3.16
 
 > Write a program to print the size and contents of the vectors from exercise3.13. Check whether your answers to that exercise were correct. If not, restudy §3.3.1 (p.97) until you understand why you were wrong.

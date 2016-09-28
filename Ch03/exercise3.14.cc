@@ -13,9 +13,6 @@ int main()
     while (cin >> number) {
         s.push_back(number);
     }
-    for (auto c : s) {
-        cout << c << " ";
-    }
-    cout << endl;
+
     return 0;
 }

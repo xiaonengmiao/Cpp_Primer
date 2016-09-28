@@ -109,6 +109,8 @@ if you don't attempt to change the characters of the string `s`, it is legal.
 
 > Write a program to read a sequence of ints from cin and store those values in a vector.
 
+[ex3.14-codelink](exercise3.14)
+
 ##Exercise3.15
 
 > Repeat the previous program but read strings this time.

@@ -46,14 +46,16 @@ int main()
   vector<string> v6{10};
   cout << "\"v6\":{\"size\":\"" << v6.size() << "\",\"value\":[";
   for (auto i : v6)
-    cout << i << ",";
+    if (i.empty()) cout << "(null)" << ",";
+    else cout << i << ",";
   if (!v6.empty()) cout << "\b";
   cout << "]}" << endl;
 
   vector<string> v7{10, "hi"};
   cout << "\"v7\":{\"size\":\"" << v7.size() << "\",\"value\":[";
   for (auto i : v7)
-    cout << i << ",";
+    if (i.empty()) cout << "(null)" << ",";
+    else cout << i << ",";
   if (!v7.empty()) cout << "\b";
   cout << "]}" << endl;
 

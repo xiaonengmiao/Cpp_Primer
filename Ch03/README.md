@@ -68,7 +68,7 @@ print a empty line. it is valid.
 
 > Write a program that reads a string of charaters including punctunation and writes what was read but with the punctuation removed.
 
-[ex3.10-codelink](exercise3.10)
+[ex3.10-codelink](exercise3.10.cc)
 
 ##Exercise3.11
 
@@ -109,23 +109,25 @@ if you don't attempt to change the characters of the string `s`, it is legal.
 
 > Write a program to read a sequence of ints from cin and store those values in a vector.
 
-[ex3.14-codelink](exercise3.14)
+[ex3.14-codelink](exercise3.14.cc)
 
 ##Exercise3.15
 
 > Repeat the previous program but read strings this time.
 
-[ex3.15-codelink](exercise3.15)
+[ex3.15-codelink](exercise3.15.cc)
 
 ##Exercise3.16
 
 > Write a program to print the size and contents of the vectors from exercise3.13. Check whether your answers to that exercise were correct. If not, restudy §3.3.1 (p.97) until you understand why you were wrong.
 
-
+[ex3.16-codelink](exercise3,16.cc)
 
 ##Exercise3.17
 
 > Read a sequence of words from cin and store the values a vector. After you've read all the words, process the vector and change each word to uppercase. Print the transformed elements, eight words to a line.
+
+[ex3.17-codelink](exercise3,17.cc)
 
 ##Exercise3.18 
 
@@ -134,6 +136,8 @@ if you don't attempt to change the characters of the string `s`, it is legal.
 ```cpp
 vector<int> ivec;
 ```
+
+
 
 ##Exercise3.19
 

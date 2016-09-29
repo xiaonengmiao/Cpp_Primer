@@ -1,6 +1,9 @@
+// read a sequence of words from cin and store in a vector
+
 #include <iostream>
 #include <vector>
-#include "cctype"
+#include <string>
+
 // using declarations for names from the standard library
 using namespace std;
 
@@ -8,12 +11,9 @@ int main()
 {
     vector<string> s;
     string c;
-    //int i = 0;
     int j = 0;
-    // s is empty vector
     while (cin >> c && !isspace(c[0])) {
         s.push_back(c);
-    //    ++i;
     }
     for (auto &d : s) {
         for (auto &e : d) {
@@ -22,10 +22,10 @@ int main()
     }
     for (auto f : s) {
         ++j;
-        if (j/8 == 1) {
+        if (j%8 == 0) {
             cout << endl;
         }
-        cout << f;
+        cout << f << " ";
     }
     cout << endl;
     return 0;

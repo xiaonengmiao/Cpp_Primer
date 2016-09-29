@@ -143,6 +143,19 @@ vector<int> ivec;
 
 > List three ways to define a `vector` and give it ten elements, each with the value 42, indicate whether there is a prefered way to do so and why.
 
+```cpp
+vector<int> v(10, 42);
+vector<int> v{42,42,42,42,42,42,42,42,42,42};
+vector<int> v;
+for (int i = 0; i != 10; ++i)
+{
+  v.push_back(42);
+}
+```
+the first one is better.
+
 ##Exercise3.20
 
 > Read a set of integers into a vector. Print the sum of each pair of adjacent elements. Change your program so that it prints the sum of the first and last elements, followed by the second and second-to-last, and so on.
+
+[ex3.20-codelink](exercise3.20.cc)

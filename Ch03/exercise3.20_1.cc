@@ -1,0 +1,33 @@
+// read a set of integers into a vector
+
+#include <iostream>
+#include <string>
+#include <vector>
+
+using namespace::std;
+
+int main()
+{
+  vector<int> ivec;
+  for (int i; cin >> i; ivec.push_back(i));
+
+  if (ivec.empty())
+  {
+    cout << "input at least one integer." << endl;
+    return -1;
+  }
+
+  if (ivec.size() == 1)
+  {
+    cout << "only one integer " << ivec[0] << ", it does not have any adjacent elements." << endl;
+    return -1;
+  }
+
+  for (decltype(ivec.size()) i = 0; i != ivec.size()-1; ++i)
+  {
+    cout << ivec[i] + ivec[i+1] << " ";
+  }
+  cout << endl;
+  
+  return 0;
+}

@@ -137,8 +137,6 @@ if you don't attempt to change the characters of the string `s`, it is legal.
 vector<int> ivec;
 ```
 
-
-
 ##Exercise3.19
 
 > List three ways to define a `vector` and give it ten elements, each with the value 42, indicate whether there is a prefered way to do so and why.
@@ -196,6 +194,9 @@ the first one is better.
 
 > In the binary search program on page 112, why did we write `mid=beg + (end - beg) / 2`; instead of `mid= (beg+end) / 2`;?
 
+honestly speaking, i don't know. i saw another answer said it's meaningless, while as a mathmeticain, i think it's not.
+
+##Exercise3.27
 
 
 

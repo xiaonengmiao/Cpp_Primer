@@ -172,12 +172,30 @@ the first one is better.
 
 > Recise the loop that printed the first paragraph in `text` to instead change the elements in `text` that correspond to the first paragraph to all uppercase. After you've uploaded `text`, print its contents.
 
+[ex3.22-codelink](exercise3.22.cc)
+
 ##Exercise3.23
 
 > Write a program to creat a `vector` with ten `int` elements. Using an iterator, assign each element a value that is twise its current value. Test your program by printing the `vector`.
 
+[ex3.23-codelink](exercise3.23.cc)
+
 ##Exercise3.24
 
+> Redo the last exercise from § 3.3.3 (p. 105) using iterators.
+
+[ex3.24-codelink](exercise3.24.cc)
+
 ##Exercise3.25
+
+> Rewrite the grade clustering program from § 3.3.3 (p. 104) using iterators instead of subscripts.
+
+[ex3.25-codelink](exercise3.25.cc)
+
+##Exercise3.26
+
+> In the binary search program on page 112, why did we write `mid=beg + (end - beg) / 2`; instead of `mid= (beg+end) / 2`;?
+
+
 
 

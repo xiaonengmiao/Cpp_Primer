@@ -1,5 +1,6 @@
+// give each element the same value as its position
+
 #include <iostream>
-#include <cctype>
 #include <vector>
 #include <string>
 
@@ -10,7 +11,7 @@ int main()
 {
     int arr[10];
     // define an array of ten ints
-    for (auto i = 0; i != 10; ++i) {
+    for (int i = 0; i != 10; ++i) {
         arr[i] = i;
     }
 

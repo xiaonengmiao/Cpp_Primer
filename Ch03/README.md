@@ -225,4 +225,35 @@ int main() {
 
 > List some of the drawbacks of using an array instead of a `vector`.
 
+```cpp
+1. Size can not be changed
+2. error prone.
+```
+
+##Exercise3.30
+
+> Identify the indexing errors in the following code:
+
+```cpp
+constexpr size_t_array_size = 10;
+int ia[array_size];
+for (size_t ix = 1; ix <= array_size; ++ix)
+      ia[ix] = ix;
+```
+
+when `ix` equal 10, the `ia[ix]` is undefined.
+
+##Exercise3.31
+
+> Write a program to define an array of ten `ints`. Give each element the same value as its position in the array.
+
+[ex3.31-codelink](exercise3.31.cc)
+
+##Exercise3.32
+
+> Copy the array you defined in the previous exercise into another array. Rewrite your program to use `vectors`.
+
+##Exercise3.33
+
+> What would happen if we did not initalize the `scores` array in the program on page 116?
 

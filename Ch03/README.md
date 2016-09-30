@@ -160,3 +160,21 @@ the first one is better.
 
 [ex3.20_1-codelink](exercise3.20_1.cc)
 [ex3.20_2-codelink](exercise3.20_2.cc)
+
+##Exercise3.21
+
+> Redo the first exercise from § 3.3.3 (p. 105) using iterators.
+
+##Exercise3.22
+
+> Recise the loop that printed the first paragraph in `text` to instead change the elements in `text` that correspond to the first paragraph to all uppercase. After you've uploaded `text`, print its contents.
+
+##Exercise3.23
+
+> Write a program to creat a `vector` with ten `int` elements. Using an iterator, assign each element a value that is twise its current value. Test your program by printing the `vector`.
+
+##Exercise3.24
+
+##Exercise3.25
+
+

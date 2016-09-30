@@ -198,5 +198,23 @@ honestly speaking, i don't know. i saw another answer said it's meaningless, whi
 
 ##Exercise3.27
 
+> Assuming `txt_size` is a function that takes no arguments and returns an `int` value, which of the following definitions are illegal? Explain why.
+
+##Exercise3.28
+
+> What are the values in the following arrays?
+
+```cpp
+string sa[10];
+int ia[10];
+int main() {
+    string sa2[10];
+    int ia2[10];
+}
+```
+
+##Exercise3.29
+
+> List some of the drawbacks of using an array instead of a `vector`.
 
 

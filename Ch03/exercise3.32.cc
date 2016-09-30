@@ -1,5 +1,6 @@
+// rewrite using vector
+
 #include <iostream>
-#include <cctype>
 #include <vector>
 #include <string>
 

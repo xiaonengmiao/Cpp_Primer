@@ -166,6 +166,8 @@ the first one is better.
 
 > Redo the first exercise from § 3.3.3 (p. 105) using iterators.
 
+[ex3.21-codelink](exercise3.21.cc)
+
 ##Exercise3.22
 
 > Recise the loop that printed the first paragraph in `text` to instead change the elements in `text` that correspond to the first paragraph to all uppercase. After you've uploaded `text`, print its contents.

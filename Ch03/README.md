@@ -259,3 +259,9 @@ when `ix` equal 10, the `ia[ix]` is undefined.
 
 the values of `scores` will be undefined.
 
+##Exercise3.34
+
+> Given that `p1` and `p2` point to elements in the same array, what does the following code do? Are there values of `p1` and `p2` that make this code illegal?
+
+* after this statement, `p1` and `p2` points to the same address.
+* NO

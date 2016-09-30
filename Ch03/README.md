@@ -159,6 +159,7 @@ the first one is better.
 > Read a set of integers into a vector. Print the sum of each pair of adjacent elements. Change your program so that it prints the sum of the first and last elements, followed by the second and second-to-last, and so on.
 
 [ex3.20_1-codelink](exercise3.20_1.cc)
+
 [ex3.20_2-codelink](exercise3.20_2.cc)
 
 ##Exercise3.21

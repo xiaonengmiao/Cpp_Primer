@@ -1,9 +1,11 @@
+// change the elements to all uppercase and print it
+
 #include <iostream>
 #include <vector>
 #include <string>
-#include <cctype>
-using std::vector; using std::string; using std::cout; using std::cin; 
-using std::endl;
+#include <iterator>
+
+using namespace::std;
 
 int main ()
 {
@@ -13,9 +15,10 @@ int main ()
         text.push_back(line);
     }
 
+    // iterate thought text
     for (auto it = text.begin(); it != text.end() && !it->empty(); ++it) {
         for (auto &c : *it) {
-            c = toupper(c);
+            if (isalpha(c)) c = toupper(c);
         }
         cout << *it << " ";
     }

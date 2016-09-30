@@ -200,16 +200,24 @@ honestly speaking, i don't know. i saw another answer said it's meaningless, whi
 
 > Assuming `txt_size` is a function that takes no arguments and returns an `int` value, which of the following definitions are illegal? Explain why.
 
+```cpp
+unsigned buf_size = 1024;
+(a) int ia[buf_size];                 // illegal, the dimension value must be a constant expression
+(b) int ia[4 * 7 - 14];               // legal
+(c) int ia[txt_size()];               // illegal, the dimension value must be a constant expression
+(d) char st[11] = "fundamental";      // illegal, the string literal's size is 12
+```
+
 ##Exercise3.28
 
 > What are the values in the following arrays?
 
 ```cpp
-string sa[10];
-int ia[10];
-int main() {
-    string sa2[10];
-    int ia2[10];
+string sa[10];          // all elements are empty strings
+int ia[10];             // all elements are 0
+int main() {     
+    string sa2[10];     // all elements are empty strings
+    int ia2[10];        // all elements are undifined
 }
 ```
 

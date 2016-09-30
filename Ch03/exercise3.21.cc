@@ -7,7 +7,7 @@ using namespace std;
 
 void CheckPrint(const vector<int> &vec)
 {
-  cout << "size: " << vec.size() << " constent: [";
+  cout << "size:" << vec.size() << " constent:[";
   for (auto it = vec.begin(); it != vec.end(); ++it)
     cout << *it << (it != vec.end()-1 ? ",":"");
   cout << "]\n" << endl;
@@ -15,7 +15,7 @@ void CheckPrint(const vector<int> &vec)
 
 void CheckPrint(const vector<string> &vec)
 {
-  cout << "size: " << vec.size() << " constent: [";
+  cout << "size:" << vec.size() << " constent:[";
   for (auto it = vec.begin(); it != vec.end(); ++it)
     cout << *it << (it != vec.end()-1 ? ",":"");
   cout << "]\n" << endl;

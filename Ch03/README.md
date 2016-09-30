@@ -257,3 +257,5 @@ when `ix` equal 10, the `ia[ix]` is undefined.
 
 > What would happen if we did not initalize the `scores` array in the program on page 116?
 
+the values of `scores` will be undefined.
+

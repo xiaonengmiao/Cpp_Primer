@@ -1,3 +1,5 @@
+// using pointers to reset elements in an array
+
 #include <iostream>
 
 using std::endl;

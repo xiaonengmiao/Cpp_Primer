@@ -281,3 +281,26 @@ the values of `scores` will be undefined.
 [ex3.36-codelink](exercise3.36.cc)
 
 ##Exercise3.37
+
+> What does the following program do?
+
+```cpp
+const char ca[] = {'h', 'e', 'l', 'o'};
+const char *cp = ca;
+while (*cp) {
+    cout << *cp << endl;
+    ++cp;
+}
+```
+
+##Exercise3.38
+
+> In this section, we noted that it was not only illegal but meaningless to try to add two pointers. Why would adding two pointers be meaningless?
+
+##Exercise3.39
+
+> Write a program to compare two `strings`. Now write a program to compare the values of two C-style character strings.
+
+##Exercise3.40
+
+> Write a program to define two character arrays initialized from string literals. Now define a third character array to hold the concatenation of the two arrays. Use `strcpy` and `strcat` to copy the two arrays into the third.

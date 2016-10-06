@@ -265,3 +265,13 @@ the values of `scores` will be undefined.
 
 * after this statement, `p1` and `p2` points to the same address.
 * NO
+
+##Exercise3.35
+
+> Using pointers, write a program to set the elements in an array to zero.
+
+##Exercise3.36
+
+> Write a program to compare two arrays for equality. Write a similar program to compare two vectors.
+
+##Exercise3.37

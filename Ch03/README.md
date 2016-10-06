@@ -253,6 +253,8 @@ when `ix` equal 10, the `ia[ix]` is undefined.
 
 > Copy the array you defined in the previous exercise into another array. Rewrite your program to use `vectors`.
 
+[ex3.32-codelink](exercise3.32.cc)
+
 ##Exercise3.33
 
 > What would happen if we did not initalize the `scores` array in the program on page 116?

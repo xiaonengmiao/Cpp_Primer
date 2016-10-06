@@ -272,8 +272,12 @@ the values of `scores` will be undefined.
 
 > Using pointers, write a program to set the elements in an array to zero.
 
+[ex3.35-codelink](exercise3.35.cc)
+
 ##Exercise3.36
 
 > Write a program to compare two arrays for equality. Write a similar program to compare two vectors.
+
+[ex3.36-codelink](exercise3.36.cc)
 
 ##Exercise3.37

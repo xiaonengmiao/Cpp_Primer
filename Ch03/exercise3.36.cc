@@ -1,9 +1,11 @@
+// compare two arrays for equality
+
 #include <iostream>
 #include <vector>
 #include <iterator>
-using std::endl; using std::cout;
-using std::begin; using std::end;
-using std::vector;
+
+using namespace::std;
+
 bool compare(int *ae1, int *ab1, int *ae2, int *ab2)
 {
     if ((ab1-ae1) != (ab2-ae2)) {

@@ -293,13 +293,19 @@ while (*cp) {
 }
 ```
 
+This code will print all characters in `ca`, but as no `\0` appended, the loop won't be terminated as expected and may print lots of rubbish.
+
 ##Exercise3.38
 
 > In this section, we noted that it was not only illegal but meaningless to try to add two pointers. Why would adding two pointers be meaningless?
 
+Well, what would the resulting pointer represent?
+
 ##Exercise3.39
 
 > Write a program to compare two `strings`. Now write a program to compare the values of two C-style character strings.
+
+
 
 ##Exercise3.40
 

@@ -305,8 +305,35 @@ Well, what would the resulting pointer represent?
 
 > Write a program to compare two `strings`. Now write a program to compare the values of two C-style character strings.
 
-
+[ex3.39-codelink](exercise3.39.cc)
 
 ##Exercise3.40
 
 > Write a program to define two character arrays initialized from string literals. Now define a third character array to hold the concatenation of the two arrays. Use `strcpy` and `strcat` to copy the two arrays into the third.
+
+[ex3.40-codelink](exercise3.40.cc)
+
+##Exercise3.41
+
+> Write a program to initialize a `vector` from an array of `ints`.
+
+[ex3.41-codelink](exercise3.41.cc)
+
+##Exercise3.42
+
+> Write a program to copy a `vector` of `ints` into an array of `ints`.
+
+[ex3.42-codelink](exercise3.42.cc)
+
+##Exercise3.43
+
+> Write three different versions of a program to print the elements of `ia`. One version should use a range `for` to manage the iteration, the other two should use an ordinary `for` loop in one case using subscripts and in the other using pointers. In all three programs write all the types directly. That is, do not use a type alias, `auto`, or `decltype` to simplify the code.
+
+##Exercise3.44
+
+> Rewrite the programs from the previous exercisea using a type alias for the type of the loop control variables.
+
+##Exercise3.45
+
+> Rewrite the programs again, this time using `auto`.
+

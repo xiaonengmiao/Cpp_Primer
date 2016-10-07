@@ -12,3 +12,8 @@
 (a) * vec.begin() // *(vec.begin())
 (b) * vec.begin() + 1 // (*(vec.begin())) + 1
 ```
+
+##Exercise4.3
+
+> Order of evaluation for most of the binary operators is left undefined to give the compiler opprtunities for optimization. This strategy presents a trade-off between efficient code generation and potential pitfalls in the use of the languege by the programmer. Do you consider that an acceptble trade-off? Why or why not?
+

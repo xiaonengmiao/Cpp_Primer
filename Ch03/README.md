@@ -329,11 +329,16 @@ Well, what would the resulting pointer represent?
 
 > Write three different versions of a program to print the elements of `ia`. One version should use a range `for` to manage the iteration, the other two should use an ordinary `for` loop in one case using subscripts and in the other using pointers. In all three programs write all the types directly. That is, do not use a type alias, `auto`, or `decltype` to simplify the code.
 
+[ex3.43-codelink](exercise3.43.cc)
+
 ##Exercise3.44
 
 > Rewrite the programs from the previous exercisea using a type alias for the type of the loop control variables.
+
+[ex3.44-codelink](exercise3.44.cc)
 
 ##Exercise3.45
 
 > Rewrite the programs again, this time using `auto`.
 
+[ex3.45-codelink](exercise3.45.cc)

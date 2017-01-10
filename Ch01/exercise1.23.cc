@@ -10,15 +10,16 @@ int main()
   {
     if (currItem.isbn() ==  nextItem.isbn()) 
       ++cnt;
+
     else
     {
-      std::cout << currItem << " occurs " 
+      std::cout << currItem.isbn() << " occurs " 
 	        << cnt << " times" << std::endl;
       currItem = nextItem;
       cnt = 1;
     }
   }
-  std::cout << currItem << " occurs "
+  std::cout << currItem.isbn() << " occurs "
             << cnt << " times" << std::endl;
 
   return 0;

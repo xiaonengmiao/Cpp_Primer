@@ -2,6 +2,10 @@
 
 > What is the difference between a parameter and an argument?
 
+**Parameters**: Variables declared inside a function.
+
+**Arguments**: Values supplied in a function call to initialize **Parameters**.
+
 
 ##Exercise4.2
 

@@ -6,14 +6,19 @@
 
 **Arguments**: Values supplied in a function call to initialize **Parameters**.
 
-
 ##Exercise4.2
 
-> Using Table 4.12(p. 166) parenthesize the following expressions to indicate the order in which the operands are grouped:
+> Indicate which of the following functions are in error and why. Suggest how you might correct the problem.
 
 ```cpp
-(a) * vec.begin() // *(vec.begin())
-(b) * vec.begin() + 1 // (*(vec.begin())) + 1
+(a) string f() {
+         string s;
+         // ...
+         return s;
+    }
+(b) void f2(int i) { /*...*/ }
+(c) int calc(int v1, int v2) { /*...*/ }
+(d) double square(double x) { return x * x };
 ```
 
 ##Exercise4.3

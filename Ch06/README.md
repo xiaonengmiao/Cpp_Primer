@@ -6,7 +6,7 @@
 
 **Arguments**: Values supplied in a function call to initialize **Parameters**.
 
-##Exercise4.2
+##Exercise6.2
 
 > Indicate which of the following functions are in error and why. Suggest how you might correct the problem.
 
@@ -21,13 +21,15 @@
 (d) double square(double x) { return x * x };
 ```
 
-##Exercise4.3
+##Exercise6.3
 
-> Order of evaluation for most of the binary operators is left undefined to give the compiler opprtunities for optimization. This strategy presents a trade-off between efficient code generation and potential pitfalls in the use of the languege by the programmer. Do you consider that an acceptble trade-off? Why or why not?
+> Write and test your own version of fact.
 
-No, this makes bugs tricky to handle.
 
-##Exercise4.4
+##Exercise6.4
+
+> Write a function that interacts with the user, ask for a number and generating the factorial of that number. Call this
+> function from main. 
 
 > Parenthesize the following expression to show how it is evaluated. Test your answer by compiling the expression (without parentheses) and printing its result.
 

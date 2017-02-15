@@ -11,4 +11,6 @@ int main()
     int i = 0;
     std::cin >> i;
     std::cout << fact(i) << std::endl;
+
+    return 0;
 }

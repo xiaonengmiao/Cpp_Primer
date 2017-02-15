@@ -34,16 +34,11 @@
 
 This code is the same as the precious one [ex6.4-codelink](exercise6.3.cc).
 
-##Exercise4.5
+##Exercise6.5
 
-> Determine the result of the following expressions.
+> Write a function to return the absolute value of its argument.
 
-```cpp
-(a) -30 * 3 + 21 / 5 // -90 + 4 = -86
-(b) -30 + 3 * 21 / 5 // -30 + 63/5 = -18
-(c) 30 / 3 * 21 % 5 // 10 * 21 % 5 = 210 % 5 = 0
-(d) -30 / 3 * 21 % 4 // -10 * 21 % 4 = -210 % 4 = -2
-```
+[ex6.5-codelink](exercise6.5.cc)
 
 ##Exercise4.6
 

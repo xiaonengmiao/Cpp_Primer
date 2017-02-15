@@ -32,12 +32,7 @@
 > Write a function that interacts with the user, ask for a number and generating the factorial of that number. Call this
 > function from main. 
 
-> Parenthesize the following expression to show how it is evaluated. Test your answer by compiling the expression (without parentheses) and printing its result.
-
-```cpp
-12 / 3 * 4 + 5 * 15 + 24 % 4 / 2 // ((12 / 3) * 4) + (5 * 15) + ((24 % 2) / 2)
-// print: 91
-```
+This code is the same as the precious one [ex6.4-codelink](exercise6.3.cc).
 
 ##Exercise4.5
 

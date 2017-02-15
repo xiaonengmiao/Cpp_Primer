@@ -25,6 +25,7 @@
 
 > Write and test your own version of fact.
 
+[ex6.3-codelink](exercise6.3.cc)
 
 ##Exercise6.4
 

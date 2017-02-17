@@ -40,13 +40,11 @@ This code is the same as the precious one [ex6.4-codelink](exercise6.3.cc).
 
 [ex6.5-codelink](exercise6.5.cc)
 
-##Exercise4.6
+##Exercise6.6
 
-> Write an expression to determine whether an `int` value is even or odd.
+> Explain the differences between a parameter, a local variable, and a local *static* variable. Give an example of a
+> function in which each might be useful.
 
-```cpp
-(i%2 == 0) ? 0 : 1;
-```
 
 ##Exercise4.7
 

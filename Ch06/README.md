@@ -75,3 +75,10 @@ unsigned short value = 65535; ++value; // 0
 >
 
 ##Exercise6.43
+
+##Exercise6.54
+
+> Write a decaration for a function that takes two *int* parameters and returns an *int*, and declare a *vector* whose elements have this function pointer type.
+
+##Exercise6.55
+

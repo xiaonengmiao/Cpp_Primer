@@ -17,7 +17,7 @@ struct Sales_data
     double revenue = 0.0;
 };
 
-Sales_data &combine(const Sales_data &rhs)
+Sales_data& Sales_data::combine(const Sales_data &rhs)
 {
     bookNo += rhs.bookNo;
     units_sold += rhs.units_sold;

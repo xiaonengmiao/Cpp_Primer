@@ -30,7 +30,7 @@
 ##Exercise6.4
 
 > Write a function that interacts with the user, ask for a number and generating the factorial of that number. Call this
-> function from main. 
+> function from main.
 
 This code is the same as the precious one [ex6.4-codelink](exercise6.3.cc).
 
@@ -57,21 +57,21 @@ unsigned value = 0; --value; // 4294967295
 unsigned short value = 65535; ++value; // 0
 ```
 
-#Exercise6.8
+##Exercise6.8
 
-#Exercise6.9
+##Exercise6.9
 
-#Exercise6.10
+##Exercise6.10
 
 > Using pointers, write a function to swap the values of two *ints*. Test the function by calling it and printing the
 > swapped values.
 
-#Exercise6.11
+##Exercise6.11
 
 >
 
-#Exercise6.12
+##Exercise6.12
 
 >
 
-#Exercise6.43
+##Exercise6.43

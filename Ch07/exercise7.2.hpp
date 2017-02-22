@@ -1,8 +1,8 @@
 // Add the combine and isbn members to the Sales_data class you wrote for the exercise in 2.6.2
 // (p.76)
 
-#ifndef SALES_DATA.H
-#define SALES_DATA.H
+#ifndef SALES_DATA_H
+#define SALES_DATA_H
 
 #include <iostream>
 #include <string>

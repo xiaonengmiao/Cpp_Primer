@@ -13,4 +13,17 @@
 
 [ex7.11.cpp-codelink](exercise7.11.cpp)
 
+##Exercise7.20
+
+> When are friends useful? Dismiss the pros and cons of using friends.
+
+##Exercise7.22
+
+> Update your *Sales_data* class to hide its implementation. The programs you've written to use *Sales_data* operations
+> should still continue to work. Recompile those programs with your new class definition to verify that they still work.
+
+##Exercise7.23
+
+> Update your *Person* class to hide its implementation.
+
 

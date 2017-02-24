@@ -4,9 +4,24 @@
 > The function should print what it reads to the standard output. Reset the stream so that it is valid before returning
 > the stream.
 
+```cpp
+std::istream & func(std::istream & is)
+{
+    std::string str;
+    while (is >> str)
+    {
+        std::cout << str << std::endl;
+    }
+    is.clear();
+    return is;
+}
+```
+
 ##Exercise 8.2
 
 > Test your function by calling it, passing *cin* as an argument.
+
+[ex8.2-codelink](exercise8.2.cpp)
 
 ##Exercise 8.3
 

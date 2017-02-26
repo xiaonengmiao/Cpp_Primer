@@ -31,6 +31,8 @@ std::istream & func(std::istream & is)
 while (cin >> i) /* ... */
 ```
 
+when the `cin` is in an error state, `while` will be terminated. such as `badbit`, `failbit` or `eofbit`. 
+
 ##Exercise 8.11
 
 > Add constructors to your *Sales_data* class and write a program to use each of the constructors.

@@ -99,6 +99,6 @@ set(SOURCE_FILES
     Ch07/README.md
     Ch08/exercise8.2.cpp
     Ch08/README.md
-    README.md)
+    README.md Ch08/exercise8.4.cpp)
 
 add_executable(C__ ${SOURCE_FILES})

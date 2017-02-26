@@ -87,6 +87,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/lihaohan/Dropbox/macscript/local/bin/C++/Ch06/exercise6.5.cc" "/Users/lihaohan/Dropbox/macscript/local/bin/C++/cmake-build-debug/CMakeFiles/C__.dir/Ch06/exercise6.5.cc.o"
   "/Users/lihaohan/Dropbox/macscript/local/bin/C++/Ch07/exercise7.11.cpp" "/Users/lihaohan/Dropbox/macscript/local/bin/C++/cmake-build-debug/CMakeFiles/C__.dir/Ch07/exercise7.11.cpp.o"
   "/Users/lihaohan/Dropbox/macscript/local/bin/C++/Ch08/exercise8.2.cpp" "/Users/lihaohan/Dropbox/macscript/local/bin/C++/cmake-build-debug/CMakeFiles/C__.dir/Ch08/exercise8.2.cpp.o"
+  "/Users/lihaohan/Dropbox/macscript/local/bin/C++/Ch08/exercise8.4.cpp" "/Users/lihaohan/Dropbox/macscript/local/bin/C++/cmake-build-debug/CMakeFiles/C__.dir/Ch08/exercise8.4.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

@@ -82,6 +82,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/C__.dir/Ch06/exercise6.5.cc.o"
   "CMakeFiles/C__.dir/Ch07/exercise7.11.cpp.o"
   "CMakeFiles/C__.dir/Ch08/exercise8.2.cpp.o"
+  "CMakeFiles/C__.dir/Ch08/exercise8.4.cpp.o"
   "C__.pdb"
   "C__"
 )

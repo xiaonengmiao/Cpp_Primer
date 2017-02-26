@@ -2364,6 +2364,33 @@ Ch08/exercise8.2.cpp.s:
 	$(MAKE) -f CMakeFiles/C__.dir/build.make CMakeFiles/C__.dir/Ch08/exercise8.2.cpp.s
 .PHONY : Ch08/exercise8.2.cpp.s
 
+Ch08/exercise8.4.o: Ch08/exercise8.4.cpp.o
+
+.PHONY : Ch08/exercise8.4.o
+
+# target to build an object file
+Ch08/exercise8.4.cpp.o:
+	$(MAKE) -f CMakeFiles/C__.dir/build.make CMakeFiles/C__.dir/Ch08/exercise8.4.cpp.o
+.PHONY : Ch08/exercise8.4.cpp.o
+
+Ch08/exercise8.4.i: Ch08/exercise8.4.cpp.i
+
+.PHONY : Ch08/exercise8.4.i
+
+# target to preprocess a source file
+Ch08/exercise8.4.cpp.i:
+	$(MAKE) -f CMakeFiles/C__.dir/build.make CMakeFiles/C__.dir/Ch08/exercise8.4.cpp.i
+.PHONY : Ch08/exercise8.4.cpp.i
+
+Ch08/exercise8.4.s: Ch08/exercise8.4.cpp.s
+
+.PHONY : Ch08/exercise8.4.s
+
+# target to generate assembly for a file
+Ch08/exercise8.4.cpp.s:
+	$(MAKE) -f CMakeFiles/C__.dir/build.make CMakeFiles/C__.dir/Ch08/exercise8.4.cpp.s
+.PHONY : Ch08/exercise8.4.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2622,6 +2649,9 @@ help:
 	@echo "... Ch08/exercise8.2.o"
 	@echo "... Ch08/exercise8.2.i"
 	@echo "... Ch08/exercise8.2.s"
+	@echo "... Ch08/exercise8.4.o"
+	@echo "... Ch08/exercise8.4.i"
+	@echo "... Ch08/exercise8.4.s"
 .PHONY : help
 
 

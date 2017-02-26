@@ -4,13 +4,17 @@
 
 #include <iostream>
 #include <fstream>
+#include <vector>
+#include <string>
 
-void ReadFileToVec(const string& fileName, vector<string>& vec)
+using namespace std;
+
+void ReadFileToVec(const std::string& fileName, vector<std::string>& vec)
 {
     ifstream ifs(fileName);
     if (ifs)
     {
-        string buf;
+        std::string buf;
         while (std::getline(ifs, buf))
         {
             vec.push_back(buf);
@@ -20,7 +24,7 @@ void ReadFileToVec(const string& fileName, vector<string>& vec)
 
 int main()
 {
-    vector<string> vec;
+    vector<std::string> vec;
     ReadFileToVec("../data/book.txt", vec);
     for (const auto &str : vec)
     {

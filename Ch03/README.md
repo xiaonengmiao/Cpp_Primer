@@ -1,17 +1,17 @@
-##Exercise3.1
+##Exercise 3.1
 
 > Rewrite the exercises from § 1.4.1 (p.13) and § 2.6.2 (p.76) with appropriate using declarations.
 
 [ex3.1_1-codelink](exercise3.1_1.cc)
 [ex3.1_2-codelink](exercise3.1_2.cc)
 
-##Exercise3.2
+##Exercise 3.2
 
 > Write a program to read the standard input a line at a time. Motify your program to read a word at time.
 
 [ex3.2-codelink](exercise3.2.cc)
 
-##Exercise3.3
+##Exercise 3.3
 
 > Explain how whitespace characters are handled in the string input operator and in the getline function.
 
@@ -19,25 +19,25 @@
 
 - code like `getline(is, s)` is separated by newline `\n` while reading.
 
-##Exercise3.4
+##Exercise 3.4
 
 > Write a program to read two strings and report whether the strings are equal. If not, report which of the two is larger. Now, change the program to report whether the strings have the same length, and if not, report which is longer.
 
 [ex3.4-codelink](exercise3.4.cc)
 
-##Exercise3.5
+##Exercise 3.5
 
 > Write a program to read strings from the standard input, concatenating what is read into one large string. Next, change the program separate adjacent input strings by a space.
 
 [ex3.5-codelink](exercise3.5.cc)
 
-##Exercise3.6
+##Exercise 3.6
 
 > Use a range for to change all the charaters in a string to X.
 
 [ex3.6-codelink](exercise3.6.cc)
 
-##Exercise3.7
+##Exercise 3.7
 
 > What would happen if you define the loop control variable in the previous exercise as type char? Predict the results and then change your program to use a char to see if you were right.
 
@@ -45,7 +45,7 @@ the string won't change. we must use reference to change the value of the charac
 
 [ex3.7-codelink](exercise3.7.cc)
 
-##Exercise3.8
+##Exercise 3.8
 
 > Rewrite the program in the first exercise, first using a while and again using a traditional for loop. Which of the three approaches do you prefer and why?
 
@@ -53,7 +53,7 @@ the string won't change. we must use reference to change the value of the charac
 
 i like range for. no reason.
 
-##Exercise3.9
+##Exercise 3.9
 
 > What does the following program do? Is it valid? If not, why not?
 
@@ -64,13 +64,13 @@ cout << s[0] << endl;
 
 print a empty line. it is valid.
 
-##Exercise3.10
+##Exercise 3.10
 
 > Write a program that reads a string of charaters including punctunation and writes what was read but with the punctuation removed.
 
 [ex3.10-codelink](exercise3.10.cc)
 
-##Exercise3.11
+##Exercise 3.11
 
 > Is the following range for legal? If so, what is the type of c?
 
@@ -81,7 +81,7 @@ for (auto &c : s) {/* ... */}
 
 if you don't attempt to change the characters of the string `s`, it is legal.
 
-##Exercise3.12
+##Exercise 3.12
 
 > Which, if any, of the following vector definitions are in error? For those that are legal, explain what the definition does. For those that are not legal, explain why they are illegal.
 
@@ -91,7 +91,7 @@ if you don't attempt to change the characters of the string `s`, it is legal.
 (c) vector<string> svec(10, "null");   // legal, vector of strings
 ```
 
-##Exercise3.13
+##Exercise 3.13
 
 > How many elements are there in each of the following vectors? What are the values of the elements?
 
@@ -105,31 +105,31 @@ if you don't attempt to change the characters of the string `s`, it is legal.
 (g) vector<string> v7{10, "hi"};  // size:10, value:"hi"
 ```
 
-##Exercise3.14
+##Exercise 3.14
 
 > Write a program to read a sequence of ints from cin and store those values in a vector.
 
 [ex3.14-codelink](exercise3.14.cc)
 
-##Exercise3.15
+##Exercise 3.15
 
 > Repeat the previous program but read strings this time.
 
 [ex3.15-codelink](exercise3.15.cc)
 
-##Exercise3.16
+##Exercise 3.16
 
 > Write a program to print the size and contents of the vectors from exercise3.13. Check whether your answers to that exercise were correct. If not, restudy §3.3.1 (p.97) until you understand why you were wrong.
 
 [ex3.16-codelink](exercise3.16.cc)
 
-##Exercise3.17
+##Exercise 3.17
 
 > Read a sequence of words from cin and store the values a vector. After you've read all the words, process the vector and change each word to uppercase. Print the transformed elements, eight words to a line.
 
 [ex3.17-codelink](exercise3.17.cc)
 
-##Exercise3.18 
+##Exercise 3.18 
 
 > Is the following program legal? If not, how might you fix it?
 
@@ -137,7 +137,7 @@ if you don't attempt to change the characters of the string `s`, it is legal.
 vector<int> ivec;
 ```
 
-##Exercise3.19
+##Exercise 3.19
 
 > List three ways to define a `vector` and give it ten elements, each with the value 42, indicate whether there is a prefered way to do so and why.
 
@@ -152,7 +152,7 @@ for (int i = 0; i != 10; ++i)
 ```
 the first one is better.
 
-##Exercise3.20
+##Exercise 3.20
 
 > Read a set of integers into a vector. Print the sum of each pair of adjacent elements. Change your program so that it prints the sum of the first and last elements, followed by the second and second-to-last, and so on.
 
@@ -160,43 +160,43 @@ the first one is better.
 
 [ex3.20_2-codelink](exercise3.20_2.cc)
 
-##Exercise3.21
+##Exercise 3.21
 
 > Redo the first exercise from § 3.3.3 (p. 105) using iterators.
 
 [ex3.21-codelink](exercise3.21.cc)
 
-##Exercise3.22
+##Exercise 3.22
 
 > Recise the loop that printed the first paragraph in `text` to instead change the elements in `text` that correspond to the first paragraph to all uppercase. After you've uploaded `text`, print its contents.
 
 [ex3.22-codelink](exercise3.22.cc)
 
-##Exercise3.23
+##Exercise 3.23
 
 > Write a program to creat a `vector` with ten `int` elements. Using an iterator, assign each element a value that is twise its current value. Test your program by printing the `vector`.
 
 [ex3.23-codelink](exercise3.23.cc)
 
-##Exercise3.24
+##Exercise 3.24
 
 > Redo the last exercise from § 3.3.3 (p. 105) using iterators.
 
 [ex3.24-codelink](exercise3.24.cc)
 
-##Exercise3.25
+##Exercise 3.25
 
 > Rewrite the grade clustering program from § 3.3.3 (p. 104) using iterators instead of subscripts.
 
 [ex3.25-codelink](exercise3.25.cc)
 
-##Exercise3.26
+##Exercise 3.26
 
 > In the binary search program on page 112, why did we write `mid=beg + (end - beg) / 2`; instead of `mid= (beg+end) / 2`;?
 
 honestly speaking, i don't know. i saw another answer said it's meaningless, while as a mathmeticain, i think it's not.
 
-##Exercise3.27
+##Exercise 3.27
 
 > Assuming `txt_size` is a function that takes no arguments and returns an `int` value, which of the following definitions are illegal? Explain why.
 
@@ -208,7 +208,7 @@ unsigned buf_size = 1024;
 (d) char st[11] = "fundamental";      // illegal, the string literal's size is 12
 ```
 
-##Exercise3.28
+##Exercise 3.28
 
 > What are the values in the following arrays?
 
@@ -221,7 +221,7 @@ int main() {
 }
 ```
 
-##Exercise3.29
+##Exercise 3.29
 
 > List some of the drawbacks of using an array instead of a `vector`.
 
@@ -230,7 +230,7 @@ int main() {
 2. error prone.
 ```
 
-##Exercise3.30
+##Exercise 3.30
 
 > Identify the indexing errors in the following code:
 
@@ -243,44 +243,44 @@ for (size_t ix = 1; ix <= array_size; ++ix)
 
 when `ix` equal 10, the `ia[ix]` is undefined.
 
-##Exercise3.31
+##Exercise 3.31
 
 > Write a program to define an array of ten `ints`. Give each element the same value as its position in the array.
 
 [ex3.31-codelink](exercise3.31.cc)
 
-##Exercise3.32
+##Exercise 3.32
 
 > Copy the array you defined in the previous exercise into another array. Rewrite your program to use `vectors`.
 
 [ex3.32-codelink](exercise3.32.cc)
 
-##Exercise3.33
+##Exercise 3.33
 
 > What would happen if we did not initalize the `scores` array in the program on page 116?
 
 the values of `scores` will be undefined.
 
-##Exercise3.34
+##Exercise 3.34
 
 > Given that `p1` and `p2` point to elements in the same array, what does the following code do? Are there values of `p1` and `p2` that make this code illegal?
 
 * after this statement, `p1` and `p2` points to the same address.
 * NO
 
-##Exercise3.35
+##Exercise 3.35
 
 > Using pointers, write a program to set the elements in an array to zero.
 
 [ex3.35-codelink](exercise3.35.cc)
 
-##Exercise3.36
+##Exercise 3.36
 
 > Write a program to compare two arrays for equality. Write a similar program to compare two vectors.
 
 [ex3.36-codelink](exercise3.36.cc)
 
-##Exercise3.37
+##Exercise 3.37
 
 > What does the following program do?
 
@@ -295,49 +295,49 @@ while (*cp) {
 
 This code will print all characters in `ca`, but as no `\0` appended, the loop won't be terminated as expected and may print lots of rubbish.
 
-##Exercise3.38
+##Exercise 3.38
 
 > In this section, we noted that it was not only illegal but meaningless to try to add two pointers. Why would adding two pointers be meaningless?
 
 Well, what would the resulting pointer represent?
 
-##Exercise3.39
+##Exercise 3.39
 
 > Write a program to compare two `strings`. Now write a program to compare the values of two C-style character strings.
 
 [ex3.39-codelink](exercise3.39.cc)
 
-##Exercise3.40
+##Exercise 3.40
 
 > Write a program to define two character arrays initialized from string literals. Now define a third character array to hold the concatenation of the two arrays. Use `strcpy` and `strcat` to copy the two arrays into the third.
 
 [ex3.40-codelink](exercise3.40.cc)
 
-##Exercise3.41
+##Exercise 3.41
 
 > Write a program to initialize a `vector` from an array of `ints`.
 
 [ex3.41-codelink](exercise3.41.cc)
 
-##Exercise3.42
+##Exercise 3.42
 
 > Write a program to copy a `vector` of `ints` into an array of `ints`.
 
 [ex3.42-codelink](exercise3.42.cc)
 
-##Exercise3.43
+##Exercise 3.43
 
 > Write three different versions of a program to print the elements of `ia`. One version should use a range `for` to manage the iteration, the other two should use an ordinary `for` loop in one case using subscripts and in the other using pointers. In all three programs write all the types directly. That is, do not use a type alias, `auto`, or `decltype` to simplify the code.
 
 [ex3.43-codelink](exercise3.43.cc)
 
-##Exercise3.44
+##Exercise 3.44
 
 > Rewrite the programs from the previous exercisea using a type alias for the type of the loop control variables.
 
 [ex3.44-codelink](exercise3.44.cc)
 
-##Exercise3.45
+##Exercise 3.45
 
 > Rewrite the programs again, this time using `auto`.
 

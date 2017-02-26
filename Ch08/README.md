@@ -33,13 +33,13 @@ while (cin >> i) /* ... */
 
 when the `cin` is in an error state, `while` will be terminated. such as `badbit`, `failbit` or `eofbit`. 
 
-##Exercise 8.11
+##Exercise 8.4
 
-> Add constructors to your *Sales_data* class and write a program to use each of the constructors.
+> Write a function to open a file for input and read its contents into a `vector` of `strings`, storing each line as a
+> separated element in the `vector`.
 
-[ex7.11.h-codelink](exercise7.11.h)
+[ex8.4-codelink](exercise8.4.cpp)
 
-[ex7.11.cpp-codelink](exercise7.11.cpp)
 
 ##Exercise 8.20
 

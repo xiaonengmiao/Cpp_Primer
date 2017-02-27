@@ -1,10 +1,12 @@
 ##Exercise 7.1
 
+[ex7.1-codelink](exercise7.01.cpp)
 
 ##Exercise 7.2
 
 > Add the *combine* and *isbn* members to the *Sales_data* class you wrote for the exercises in
 
+[ex7.2-codelink](exercise7.02.cpp)
 ##Exercise 7.11
 
 > Add constructors to your *Sales_data* class and write a program to use each of the constructors.

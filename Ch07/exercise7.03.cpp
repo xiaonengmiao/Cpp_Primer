@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "exercise7.02.h"
+#include "exercise7.02.hpp"
 
 using namespace std;
 

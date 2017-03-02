@@ -6,7 +6,7 @@
 
 > Add the *combine* and *isbn* members to the *Sales_data* class you wrote for the exercises in
 
-[ex7.2-codelink](exercise7.02.cpp)
+[ex7.2-codelink](exercise7.02.hpp)
 
 ## Exercise 7.3
 

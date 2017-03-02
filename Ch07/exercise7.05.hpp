@@ -1,5 +1,5 @@
-#ifndef EXERCISE7_04_H
-#define EXERCISE7_04_H
+#ifndef EXERCISE7_05_H
+#define EXERCISE7_05_H
 
 #include <iostream>
 

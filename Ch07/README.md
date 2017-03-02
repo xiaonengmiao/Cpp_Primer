@@ -45,6 +45,10 @@
 > Why does `read` defines its `Sales_data` parameter as a plain reference and `print` define its parameter as a
 > reference to const?
 
+function `read` is intended to change the parameter member `revenue`'s value, so it is a plain reference.
+
+function `print` just print out the parameter and it's not intend to change anything.
+
 ## Exercise 7.9
 
 > Add operations to read and print `Person` objects to the code you wrote for the exercises in § 7.1.2 (p.260).

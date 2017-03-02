@@ -32,9 +32,13 @@
 
 > Define your own versions of the `add`, `read`, and `print` functions.
 
+[ex7.6-codelink](exercise7.06.hpp)
+
 ## Exercise 7.7
 
 > Rewrite the transaction-processing program you wrote for the exercises in § 7.1.2 (p.260) to use these new functions.
+
+[ex7.7-codelink](exercise7.07.cpp)
 
 ## Exercise 7.8
 

@@ -61,6 +61,8 @@ function `print` just print out the parameter and it's not intend to change anyt
 if (read(read(cin, data1), data2))
 ```
 
+`if` statement read two `Sales_data` object at once.
+
 ## Exercise 7.11
 
 > Add constructors to your *Sales_data* class and write a program to use each of the constructors.

@@ -71,6 +71,32 @@ if (read(read(cin, data1), data2))
 
 [ex7.11.cpp-codelink](exercise7.11.cpp)
 
+## Exercise 7.12
+
+> Move the definition of the `Sales_data` constructor that takes an `istream` into the body of the `Sales_data` class.
+
+[ex7.12-codelink](exercise7.12.cpp)
+
+## Exercise 7.13
+
+> Rewrite the program from page 255 to use the `istream` constructor.
+
+## Exercise 7.14
+
+> Write a version of the default constructor that explicitly initializes the members to the values we have provided as in-class initializers.
+
+## Exercise 7.15
+
+Add appropriate constructors to your `Person` class.
+
+## Exercise 7.16
+
+## Exercise 7.17
+
+## Exercise 7.18
+
+## Exercise 7.19
+
 ## Exercise 7.20
 
 > When are friends useful? Dismiss the pros and cons of using friends.

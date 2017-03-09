@@ -75,11 +75,13 @@ if (read(read(cin, data1), data2))
 
 > Move the definition of the `Sales_data` constructor that takes an `istream` into the body of the `Sales_data` class.
 
-[ex7.12-codelink](exercise7.12.cpp)
+[ex7.12-codelink](exercise7.12.hpp)
 
 ## Exercise 7.13
 
 > Rewrite the program from page 255 to use the `istream` constructor.
+
+[ex7.13-codelink](exercise7.13.cpp)
 
 ## Exercise 7.14
 

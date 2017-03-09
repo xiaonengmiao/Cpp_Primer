@@ -20,8 +20,8 @@ struct Sales_data
     Sales_data& combine(const Sales_data&);
 
     std::string bookNo;
-    unsigned units_sold;
-    double revenue;
+    unsigned units_sold = 0;
+    double revenue = 0.0;
 };
 
 // member functions
@@ -35,7 +35,7 @@ Sales_data& Sales_data::combine(const Sales_data &item)
 // nonmember functions
 std::istream& read(std::istream &is, Sales_data &item)
 {
-    double price;
+    double price = 0;
     is >> item.bookNo >> item.units_sold >> price;
     item.revenue = item.units_sold * price;
     return is;

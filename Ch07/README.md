@@ -87,9 +87,15 @@ if (read(read(cin, data1), data2))
 
 > Write a version of the default constructor that explicitly initializes the members to the values we have provided as in-class initializers.
 
+```cpp
+Sales_data(): units_sold(0), revenue(0.0) { };
+```
+
 ## Exercise 7.15
 
 Add appropriate constructors to your `Person` class.
+
+[ex7.15-codelink](exercise7.15.hpp)
 
 ## Exercise 7.16
 

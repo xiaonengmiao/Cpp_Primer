@@ -156,13 +156,13 @@ Cons:
 
 ## Exercise 7.21
 
-> Update your *Sales_data* class to hide its implementation. The programs you've written to use *Sales_data* operations
+> Update your `Sales_data` class to hide its implementation. The programs you've written to use `Sales_data` operations
 > should still continue to work. Recompile those programs with your new class definition to verify that they still work.
 
 [ex7.21-codelink](exercise7.21.hpp)
 
 ## Exercise 7.22
 
-> Update your *Person* class to hide its implementation.
+> Update your `Person` class to hide its implementation.
 
 [ex7.22-codelink](exercise7.22.hpp)

@@ -102,20 +102,41 @@ Add appropriate constructors to your `Person` class.
 > What, if any, are the constraints on where and how often an access specifier may appear inside a class definition?
 > What kinds of members should be defined after a `public` specifier? What kinds should be `private`?  
 
+There are no restrictions on how often an access specifier may appear. The specifier access level remains in effect
+until the next access specifier or the end of the class body.
+
+The members which are accessible to all parts of the program should define after a public specifier.
+
+The members which are accessible to the member functions of the class but are not accessible to code that uses the
+class should define after a private specifier.
 
 ## Exercise 7.17
 
 > What, if any, are the differences between using `class` or `struct`?
 
+The only difference between using `class` and using `struct`
+ to define a class is the default access level. (`class`: private, `struct`: public)
+
 ## Exercise 7.18
 
 > What is encapsulation? Why is it useful?
+
+encapsulation is the separation of implementation from interface. It hides the implementation details of a type. (In
+C++, encapsulation is enforced by putting the implementation in the private part of a class)
+
+Important advantages:
+
+- User code cannot inadvertently corrupt the state of an encapsulation object.
+- The implementation of an encapsulated class can change over time without requiring changes in user-level code.
 
 ## Exercise 7.19
 
 > Indicate which members of your `Person` class you would declare as `public` and which you would declare as `private`.
 > Explain your choice.
 
+public: constructors, `getName()`, `getAddress()`. private: `name`, `address`.
+
+the interface should be defined as public, the data should not expose to outside of the class.
 
 ## Exercise 7.20
 

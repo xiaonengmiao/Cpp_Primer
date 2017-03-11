@@ -99,11 +99,23 @@ Add appropriate constructors to your `Person` class.
 
 ## Exercise 7.16
 
+> What, if any, are the constraints on where and how often an access specifier may appear inside a class definition?
+> What kinds of members should be defined after a `public` specifier? What kinds should be `private`?  
+
+
 ## Exercise 7.17
+
+> What, if any, are the differences between using `class` or `struct`?
 
 ## Exercise 7.18
 
+> What is encapsulation? Why is it useful?
+
 ## Exercise 7.19
+
+> Indicate which members of your `Person` class you would declare as `public` and which you would declare as `private`.
+> Explain your choice.
+
 
 ## Exercise 7.20
 

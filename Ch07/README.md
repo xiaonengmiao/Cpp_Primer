@@ -218,6 +218,8 @@ cout << "\n";
 > What would happen in the previous exercise if the return type of `move`, `set`, and `display` was `Screen` rather than
 > `Screen&`?
 
+The second call to `display` couldn't print # among the output, cause the call to set would change the temporary copy, not `myScreen`.
+
 ## Exercise 7.29
 
 > Revise your `Screen` class so that `move`, `set`, and `display` functions return `Screen` and check your prediction
@@ -227,3 +229,5 @@ cout << "\n";
 
 > It is legal but redundant to refer to members through the `this` pointer. Discuss the pros and cons of explicitly
 > using the `this` pointer to access members.
+
+

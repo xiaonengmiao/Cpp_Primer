@@ -280,6 +280,15 @@ pos Screen::size() const
 }
 ```
 
+fixed:
+
+```cpp
+Screen::pos Screen::size() const
+{
+    return height * width;
+}
+```
+
 ## Exercise 7.34
 
 > What would happen if we put the `typedef` of `pos` in the `Screen` class on page 285 as the last line in the class?

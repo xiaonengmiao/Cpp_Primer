@@ -391,10 +391,16 @@ int main() {
 > We might want to supply `cin` as a default argument to the constructor that takes as `istream&`. Write the constructor
 > declaration that uses `cin` as a default argument.
 
+```cpp
+Sales_data(std::istream &is = std::cin) { read(is, *this); }
+```
+
 ## Exercise 7.39
 
 > Would it be legal for both the constructor that takes a `string` and the one that takes an `istream&` to have default
 > arguments? If not, why not?
+
+illegal. cause the call of overloaded `Sales_data()` is **ambiguous**.
 
 ## Exercise 7.40
 
@@ -407,5 +413,42 @@ int main() {
 - (d) Vehicle
 - (e) Object
 - (f) Tree
+
+```cpp
+#include <iostream>
+#include <string>
+
+class Book
+{
+public:
+    Book(unsigned isbn, std::string const& name, std::string const& author, std::string const& pubdate)
+        :isbn_(isbn), name_(name), author_(author), pubdate_(pubdate)
+    { }
+
+    explicit Book(std::istream &in)
+    {
+        in >> isbn_ >> name_ >> author_ >> pubdate_;
+    }
+
+private:
+    unsigned isbn_;
+    std::string name_;
+    std::string author_;
+    std::string pubdate_;
+};
+```
+
+## Exercise 7.41
+
+> Rewrite your own version of the `Sales_data` class to use delegating constructors. Add a statement to the body of each
+of the constructors that prints a message whenever it is executed. Write declarations to construct a `Sales_data` object
+in every way possible. Study the output until you are certain you understand the order of execution among delegating
+constructors.
+
+## Exercise 7.42
+
+> For the class you wrote for exercise 7,40 in § 7.5.1 (p. 291), decide whether any of the constructors might use
+> delegation. If so, write the delegating constructor(s) for your class. If not, look at the list of abstractions and
+> choose one that you think would use a delegating constructor. Write the class definition for that abstraction.
 
 

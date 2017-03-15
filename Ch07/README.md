@@ -380,8 +380,8 @@ int main() {
 Sales_data first_item(cin);  // use Sales_data(std::istream &is); its value are up to your input.
 
 int main() {
-    Sales_data next;  // use Sales_data() = default; bookNo="", units_sold=0, revenue=0.0;
-    Sales_data last("9-999-99999-9");  // use Sales_data(std::string &s): bookNo(s) { }; bookNo="9-999-99999-9",
+    Sales_data next;  // use Sales_data(std::string s = ""): bookNo(s) { }; bookNo="", units_sold=0, revenue=0.0;
+    Sales_data last("9-999-99999-9");  // use Sales_data(std::string s = ""): bookNo(s) { }; bookNo="9-999-99999-9",
     units_sold=0, revenue=0.0; 
 }
 ```

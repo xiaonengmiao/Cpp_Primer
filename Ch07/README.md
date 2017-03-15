@@ -293,7 +293,12 @@ Screen::pos Screen::size() const
 
 > What would happen if we put the `typedef` of `pos` in the `Screen` class on page 285 as the last line in the class?
 
-
+There is an error in 
+```cpp
+dummy_fcn(pos height)
+           ^        
+Unknown type name 'pos'
+```
 
 ## Exercise 7.35
 
@@ -316,6 +321,23 @@ Type Exercise::setVal(Type parm) {
 }
 ```
 
+**Fixed**
+
+changed
+```cpp
+Type Exercise::setVal(Type parm) {
+    val = parm + initVal();
+    return val;
+}
+```
+to
+```cpp
+Exercise::Type Exercise::setVal(Type parm) {
+    val = parm + initVal();
+    return val;
+}
+```
+
 ## Exercise 7.36
 
 > The following initializer is in error. Identify and fix the problem.
@@ -324,6 +346,19 @@ Type Exercise::setVal(Type parm) {
 struct X {
     X (int i, int j): base(i), rem(base % j) { }
     int rem, base;
+};
+```
+
+In this case, the constructor initializer makes it appear as if `base` is initialized with `i` and then `base` is used
+to initialize `rem`. However, `base` is initialized first. The effect of this initializer is to initialize `rem` with
+the undefined value of `base`.
+
+**fixed**
+
+```cpp
+struct X {
+    X (int i, int j): base(i), rem(base % j) { }
+    int base, rem;
 };
 ```
 
@@ -338,6 +373,16 @@ Sales_data first_item(cin);
 int main() {
     Sales_data next;
     Sales_data last("9-999-99999-9");
+}
+```
+
+```cpp
+Sales_data first_item(cin);  // use Sales_data(std::istream &is); its value are up to your input.
+
+int main() {
+    Sales_data next;  // use Sales_data() = default; bookNo="", units_sold=0, revenue=0.0;
+    Sales_data last("9-999-99999-9");  // use Sales_data(std::string &s): bookNo(s) { }; bookNo="9-999-99999-9",
+    units_sold=0, revenue=0.0; 
 }
 ```
 

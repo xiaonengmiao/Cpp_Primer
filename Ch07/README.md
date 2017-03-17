@@ -484,6 +484,8 @@ private:
 > Assume we have a class named `NoDefault` that has a constructor that takes an `int`, but has no default constructor.
 > Define a class `C` that has a member of type `NoDefault`. Define the default constructor for `C`.
 
+[ex7.43-codelink](exercise7.43.cpp)
+
 ## Exercise 7.44
 
 > Is the following declaration legal? If not, why not?
@@ -491,6 +493,8 @@ private:
 ```cpp
 vector<NoDefault> vec(10);
 ```
+
+illegal, cause there are ten elements, each would be default initialized. But no default initializer for the temporary.
 
 ## Exercise 7.45
 

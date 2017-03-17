@@ -445,10 +445,64 @@ of the constructors that prints a message whenever it is executed. Write declara
 in every way possible. Study the output until you are certain you understand the order of execution among delegating
 constructors.
 
+[ex7.41.h-codelink](exercise7.41.hpp)
+
+[ex7.41_test.c-codelink](exercise7.41_test.cpp)
+
 ## Exercise 7.42
 
 > For the class you wrote for exercise 7,40 in § 7.5.1 (p. 291), decide whether any of the constructors might use
 > delegation. If so, write the delegating constructor(s) for your class. If not, look at the list of abstractions and
 > choose one that you think would use a delegating constructor. Write the class definition for that abstraction.
+
+```cpp
+#include <iostream>
+#include <string>
+
+class Book
+{
+public:
+    Book(unsigned isbn, std::string const& name, std::string const& author, std::string const& pubdate)
+        :isbn_(isbn), name_(name), author_(author), pubdate_(pubdate)
+    { }
+
+    explicit Book(std::istream &in)
+    {
+        in >> isbn_ >> name_ >> author_ >> pubdate_;
+    }
+
+private:
+    unsigned isbn_;
+    std::string name_;
+    std::string author_;
+    std::string pubdate_;
+};
+```
+
+## Exercise 7.43
+
+> Assume we have a class named `NoDefault` that has a constructor that takes an `int`, but has no default constructor.
+> Define a class `C` that has a member of type `NoDefault`. Define the default constructor for `C`.
+
+## Exercise 7.44
+
+> Is the following declaration legal? If not, why not?
+
+```cpp
+vector<NoDefault> vec(10);
+```
+
+## Exercise 7.45
+
+> What if we define the `vector` in the previous exercise to hold objects of type `C`?
+
+## Exercise 7.46
+
+> Which, if any, of the following statements are untrue? Why?
+
+- (a) A class must provide at least one constructor.
+- (b) A default constructor is a constructor with an empty parameter list.
+- (c) If there are no meaningful default values for a class, the class should not provide a default constructor.
+- (d) If a class does not define a default constructor, the compiler generates one that initializes each data member to the default value of its associated type.
 
 

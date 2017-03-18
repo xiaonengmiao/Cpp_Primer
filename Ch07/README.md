@@ -640,3 +640,66 @@ int main()
     // output: false
 }
 ```
+
+## Exercise 7.56
+
+> What is a `static` class member? What are the advantages of `static` members? How do they differ from ordinary
+> members?
+
+A `static` class member that is associated with the class, rather than with individual objects of the class type.
+
+each object can no need to store a common data. And if the data is changed, each object can use the new value.
+
+- a static data member can have incomplete type.
+- we can use a static member as a default argument.
+
+## Exercise 7.57
+
+> Write your own version of the `Account` class.
+
+[ex7.57-codelink](exercise7.57.hpp)
+
+## Exercise 7.58
+
+> Which, if any, of the following `static` data member declarations and definitions are errors? Explain why.
+
+```cpp
+// example.h
+class Example
+{
+    public:
+        static double rate = 6.5;
+        static const int vecSize = 20;
+        static vector<double> vec(vecSize);
+};
+// example.C
+#include "example.h"
+double Example::rate;
+vector<double> Example::vec;
+```
+
+```cpp
+static double rate = 6.5;
+                ^
+            rate should be a constant expression.
+
+static vector<double> vec(vecSize);
+                            ^
+            we may not specify an in-class initializer inside parentheses.
+```
+**Fixed**
+```cpp
+// example.h
+class Example {
+public:
+    static constexpr double rate = 6.5;
+    static const int vecSize = 20;
+    static vector<double> vec;
+};
+
+// example.C
+#include "example.h"
+constexpr double Example::rate;
+vector<double> Example::vec(Example::vecSize);
+```
+

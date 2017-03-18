@@ -582,3 +582,61 @@ setYourName("pezy"); // just fine.
 ```
 
 it is very natural.
+
+## Exercise 7.52
+
+> Using our first version of `Sales_data` from § 2.6.1 (p. 72), explain the following initialization. Identify and fix
+> any problems.
+
+```cpp
+Sales_data item = { "978-0590353403", 25, 15.99 };
+```
+
+**fixed**
+
+```cpp
+struct Sales_data
+{
+    std::string bookNo;
+    unsigned units_sold;
+    double revenue;
+};
+```
+
+## Exercise 7.53
+
+> Define your own version of `Debug`.
+
+[ex7.53-codelink](exercise7.53.hpp)
+
+## Exercise 7.54
+
+> Should the members of `Debug` that begin with `set_` be declared as `constexpr`? If not, why not?
+
+in C++11, `constexpr` member functions are implicitly `const`, so the "`set_xx`" functions, which will modify data members, cannot be declared as `constexpr`. In C++14, this property no longer holds, so `constexpr` is suitable.
+
+## Exercise 7.55
+
+> Is the `Data` class from § 7.5.5 (p.298) a literal class? If not, why not? If so, explain why it is literal.
+
+no.
+
+`std::string` is not a literal type, and it can be verified by following codes:
+
+```cpp
+#include <string>
+#include <iostream>
+#include <type_traits>
+
+struct Data {
+    int ival;
+    std::string s;
+};
+
+int main()
+{
+    std::cout << std::boolalpha;
+    std::cout << std::is_literal_type<Data>::value << std::endl;
+    // output: false
+}
+```

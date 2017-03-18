@@ -451,9 +451,7 @@ constructors.
 
 ## Exercise 7.42
 
-> For the class you wrote for exercise 7,40 in § 7.5.1 (p. 291), decide whether any of the constructors might use
-> delegation. If so, write the delegating constructor(s) for your class. If not, look at the list of abstractions and
-> choose one that you think would use a delegating constructor. Write the class definition for that abstraction.
+> For the class you wrote for exercise 7,40 in § 7.5.1 (p. 291), decide whether any of the constructors might use delegation. If so, write the delegating constructor(s) for your class. If not, look at the list of abstractions and choose one that you think would use a delegating constructor. Write the class definition for that abstraction.
 
 ```cpp
 #include <iostream>
@@ -500,13 +498,87 @@ illegal, cause there are ten elements, each would be default initialized. But no
 
 > What if we define the `vector` in the previous exercise to hold objects of type `C`?
 
+No problem. cause `c` have the default constructor.
+
 ## Exercise 7.46
 
 > Which, if any, of the following statements are untrue? Why?
 
-- (a) A class must provide at least one constructor.
-- (b) A default constructor is a constructor with an empty parameter list.
+- (a) A class must provide at least one constructor. (**untrue**, "The compiler-generated constructor is known as the
+  synthesized default constructor.")
+- (b) A default constructor is a constructor with an empty parameter list. (**untrue**, a default constructor is a constructor that is used if no initializer is supplied. What's more, a constructor that supplies default arguments for all its parameters also defines the default constructor.)
 - (c) If there are no meaningful default values for a class, the class should not provide a default constructor.
-- (d) If a class does not define a default constructor, the compiler generates one that initializes each data member to the default value of its associated type.
+  (**untrue**, the class should provide.)
+- (d) If a class does not define a default constructor, the compiler generates one that initializes each data member to the default value of its associated type. (**untrue**, only if our class does not explicitly define **any constructors**, the compiler will implicitly define the default constructor for us.)
 
+## Exercise 7.47
 
+> Explain whether the `Sales_data` constructor that takes a `string` should be `explicit`. What are the benefits of
+> making the constructor `explicit`? What are the drawbacks?
+
+Whether the conversion of a string to `Sales_data` is desired depends on how we think our users will use the conversion. In this case, it might be okay. The string in `null_book` probably represents a nonexistent ISBN.
+
+Benefits:
+
+- prevent the use of a constructor in a context that requires an implicit conversion
+- we can define a constructor which is used only with the direct form of initialization
+Drawbacks:
+
+- meaningful only on constructors that can be called with a single argument.
+
+## Exercise 7.48
+
+> Assuming the `Sales_data` constructors are not `explicit`, what operations happen during the following definitions
+
+```cpp
+string null_sabn("9-999-99999-9");
+Sales_data item1(null_isbn);
+Sales_data item2("9-999-99999-9");
+```
+
+Both are noting happened.
+
+## Exercise 7.49
+
+> For each of the three following declarations of `combine`, explain what happens if we call `i.combine(s)`, where `i`
+> is a `Sales_data` and `s` is a string:
+
+```cpp
+- (a) Sales_data &combine(Sales_data); // ok
+- (b) Sales_data &combine(Sales_data&); // [error] no matching function for the call to
+  'Sales_data::combine(std::string&)' (`std::string&` can not convert to `Sales_data` type.) 
+- (c) Sales_data &combine(const Sales_data&) const; // The trailing const mark can't be put here, as it forbids any mutation on data members. This comflicts with combine's semantics.
+```
+
+## Exercise 7.50
+
+> Determine whether any of your `Person` class constructors should be `explicit`.
+
+[ex7.50-codelink](exercise7.50.hpp)
+
+## Exercise 7.51
+
+> Why do you think `vector` defines its single-argument constructor as `explicit`, but `string` does not.
+
+Such as a function like that:
+
+```cpp
+int getSize(const std::vector<int>&);
+```
+
+if `vector` has not defined its single-argument constructor as explicit. we can use the function like:
+
+```cpp
+getSize(34);
+```
+
+What is this mean? It's very confused.
+
+But the `std::string` is different. In ordinary, we use `std::string` to replace `const char *`(the C language). so when we call a function like that:
+
+```cpp
+void setYourName(std::string); // declaration.
+setYourName("pezy"); // just fine.
+```
+
+it is very natural.

@@ -1,4 +1,4 @@
-##Exercise 8.1
+## Exercise 8.1
 
 > Write a function that takes and returns an *istream&*. The function should read the stream until it hits end-of-file.
 > The function should print what it reads to the standard output. Reset the stream so that it is valid before returning
@@ -17,13 +17,13 @@ std::istream & func(std::istream & is)
 }
 ```
 
-##Exercise 8.2
+## Exercise 8.2
 
 > Test your function by calling it, passing *cin* as an argument.
 
 [ex8.2-codelink](exercise8.2.cpp)
 
-##Exercise 8.3
+## Exercise 8.3
 
 > what causes the following *while* to terminate?
 
@@ -33,7 +33,7 @@ while (cin >> i) /* ... */
 
 when the `cin` is in an error state, `while` will be terminated. such as `badbit`, `failbit` or `eofbit`. 
 
-##Exercise 8.4
+## Exercise 8.4
 
 > Write a function to open a file for input and read its contents into a `vector` of `strings`, storing each line as a
 > separated element in the `vector`.
@@ -41,17 +41,17 @@ when the `cin` is in an error state, `while` will be terminated. such as `badbit
 [ex8.4-codelink](exercise8.4.cpp)
 
 
-##Exercise 8.20
+## Exercise 8.20
 
 > When are friends useful? Dismiss the pros and cons of using friends.
 
-##Exercise 8.22
+## Exercise 8.22
 
-> Update your *Sales_data* class to hide its implementation. The programs you've written to use *Sales_data* operations
+> Update your `Sales_data` class to hide its implementation. The programs you've written to use `Sales_data` operations
 > should still continue to work. Recompile those programs with your new class definition to verify that they still work.
 
-##Exercise 8.23
+## Exercise 8.23
 
-> Update your *Person* class to hide its implementation.
+> Update your `Person` class to hide its implementation.
 
 

@@ -63,6 +63,17 @@ when the `cin` is in an error state, `while` will be terminated. such as `badbit
 > Use the function you wrote for the first exercise in § 8.1.2 (p. 314) to print the contents of an `istringstream`
 > object.
 
+## Exercise 8.10
+
+> Write a program to store each line from a file in a `vector<string>`. Now use an `istringstream` to read each element
+> from the `vector` a word at a time.
+
+## Exercise 8.11
+
+> The program in this section defined its `istringstream` object inside the outer `while` loop. What changes would you
+> need to make if `record` were defined outside that loop? Rewrite the program, moving the definition of `record`
+> outside the `while`, and see whether you thought of all the changes that are needed.  
+
 ## Exercise 8.20
 
 > When are friends useful? Dismiss the pros and cons of using friends.

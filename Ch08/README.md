@@ -74,17 +74,15 @@ when the `cin` is in an error state, `while` will be terminated. such as `badbit
 > need to make if `record` were defined outside that loop? Rewrite the program, moving the definition of `record`
 > outside the `while`, and see whether you thought of all the changes that are needed.  
 
-## Exercise 8.20
+## Exercise 8.12
 
-> When are friends useful? Dismiss the pros and cons of using friends.
+> Why didn't we use in-class initializers in `PersonInfo`?
 
-## Exercise 8.22
+## Exercise 8.13
 
-> Update your `Sales_data` class to hide its implementation. The programs you've written to use `Sales_data` operations
-> should still continue to work. Recompile those programs with your new class definition to verify that they still work.
+> Rewrite the phone number program from this section to read from a named file rather than from `cin`.
 
-## Exercise 8.23
+## Exercise 8.14
 
-> Update your `Person` class to hide its implementation.
-
+> Why did we declare `entry` and `nums` as `const auto &`?
 

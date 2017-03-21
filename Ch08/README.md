@@ -23,7 +23,7 @@ std::istream & func(std::istream & is)
 
 ## Exercise 8.3
 
-> what causes the following *while* to terminate?
+> what causes the following `while` to terminate?
 
 ```cpp
 while (cin >> i) /* ... */

@@ -42,15 +42,21 @@ when the `cin` is in an error state, `while` will be terminated. such as `badbit
 
 > Rewrite the previous program to store each word in a separate element.
 
+[ex8.5-codelink](exercise8.5.cpp)
+
 ## Exercise 8.6
 
 > Rewrite the bookstore program from § 7.1.1 (p. 256) to read its transactions from a file. Pass the name of the file as
 > an argument to `main` (§ 6.2.5, p. 218).
 
+[ex8.6-codelink](exercise8.6.cpp)
+
 ## Exercise 8.7
 
 > Revise the bookstore program from the previous section to write its output to a file. Pass the name of that file as a
 > second argument to `main`.
+
+[ex8.7-codelink](exercise8.7.cpp)
 
 ## Exercise 8.8
 

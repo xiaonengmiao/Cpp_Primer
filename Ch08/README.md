@@ -90,11 +90,18 @@ when the `cin` is in an error state, `while` will be terminated. such as `badbit
 
 > Why didn't we use in-class initializers in `PersonInfo`?
 
+Cause we need a aggregate class here. So it should have no in-class initializers.
+
 ## Exercise 8.13
 
 > Rewrite the phone number program from this section to read from a named file rather than from `cin`.
 
+[ex8.13-codelink](exercise8.13.cpp)
+
 ## Exercise 8.14
 
 > Why did we declare `entry` and `nums` as `const auto &`?
+
+- cause they are all class type, not the built-in type. so **reference** more effective.
+- output shouldn't change their values. so we added the `const`.
 

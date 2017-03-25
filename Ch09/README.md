@@ -24,10 +24,24 @@ std::list<std::deque<int>> a_list_of_deque_of_ints;
 
 > What are the constraints on the iterators that form iterator ranges.
 
+two iterators, `begin` and `end`:
+
+- they refer to elements of the same container.
+- It is possible to reach `end` by repeatedly incrementing `begin`.
+
 ## Exercise 9.04
 
 > Write a function that takes a pair of iterators to a `vector<int>` and an `int` value. Look for that value in the
 > range and return a `bool` indicating whether it was found.
+
+```cpp
+auto contains(vector<int>::const_iterator begin, vector<int>::const_iterator end, int i)
+{
+    for (; begin != end; ++begin)
+        if (*begin == i) return true;
+    return false;
+}
+```
 
 ## Exercise 9.05
 

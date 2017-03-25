@@ -16,4 +16,19 @@
 
 > Define a `list` that holds elements that are `deques` that hold `ints`.
 
+```cpp
+std::list<std::deque<int>> a_list_of_deque_of_ints;
+```
+
+## Exercise 9.03
+
+> What are the constraints on the iterators that form iterator ranges.
+
+## Exercise 9.04
+
+> Write a function that takes a pair of iterators to a `vector<int>` and an `int` value. Look for that value in the
+> range and return a `bool` indicating whether it was found.
+
+
+
 

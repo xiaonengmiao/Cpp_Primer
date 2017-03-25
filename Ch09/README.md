@@ -48,6 +48,8 @@ auto contains(vector<int>::const_iterator begin, vector<int>::const_iterator end
 > Rewrite the previous program to return an iterator to the requested element. Note that the program must handle the
 > case where the element is not found.
 
+[ex9.05-codelink](exercise9.05.cpp)
+
 ## Exercise 9.06
 
 > What is wrong with the following program? How might you correct it?
@@ -59,5 +61,11 @@ list<int>::iterator iter1 = lst1.begin(), iter2 = lst1.end();
 while (iter1 < iter2) /* ... */
 ```
 
- 
+**Fixed**
+
+```cpp
+While (iter1 != iter2)
+```
+**note**
+operator `<` is not implemented in `std::list`, because `std::list` is essentially a doubly linked list. Addresses of nodes of linked `list` are not necessarily continuous.
 

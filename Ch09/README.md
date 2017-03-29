@@ -69,3 +69,61 @@ While (iter1 != iter2)
 **note**
 operator `<` is not implemented in `std::list`, because `std::list` is essentially a doubly linked list. Addresses of nodes of linked `list` are not necessarily continuous.
 
+## Exercise 9.07
+
+> What type should be used as the index into a `vector` of `ints`?
+
+`vector<int>::size_type`
+
+## Exercise 9.08
+
+> What type should be used to read elements in a `list` of `strings`? To write them?
+
+```cpp
+list<string>::const_iterator // to read
+lisr<string>::iterator // to write
+```
+
+## Exercise 9.09
+
+> What is the difference between the `begin` and `cbegin` functions?
+
+`cbegin` is a `const` member that returns the container’s `const_iterator` type.
+
+`begin` is `nonconst` and returns the container’s iterator type.
+
+## Exercise 9.10
+
+> What are the types of the following four objects?
+
+```cpp
+vector<int> v1;
+const vector<int> v2;
+auto it1 = v1.begin(), it2 = v2.begin();
+auto it3 = v1.cbegin(), it4 = v2.cbegin();
+```
+
+`it1` is `vector<int>::iterator`
+`it2`, `it3` and `it4` are `vector<int>::const_iterator`
+
+## Exercise 9.11
+
+> Show an example of the each of the six ways to create and initialize a `vector`. Explain what values each `vector`
+> contains.
+
+## Exercise 9.12
+
+> Explain the differences between the constructor that takes a container to copy and the constructor that takes two
+> iterators.
+
+## Exercise 9.13
+
+> How would you initialize a `vector<double>` from a `list<int>`? From a `vector<int>`? Write code to check your
+> answers.
+
+## Exercise 9.14
+
+> Write a program to assign the elements from a `list` of `char*` pointers to C-style character strings to a `vector` of
+> `strings`.
+
+## Exercise 9.15

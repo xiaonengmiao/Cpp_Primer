@@ -155,4 +155,6 @@ forward_list<float> numbers5(numbers.begin(), numbers.end());   // ok, numbers5 
 > Write a program to assign the elements from a `list` of `char*` pointers to C-style character strings to a `vector` of
 > `strings`.
 
+[ex9.14-codelink](exercise9.14.cpp)
+
 ## Exercise 9.15

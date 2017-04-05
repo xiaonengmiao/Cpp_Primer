@@ -131,6 +131,35 @@ int main()
 
 `void f(T)` pass the argument by value. *nothing* the function does to the parameter *can affect the argument*. `void f(T&)` pass a reference, will be *bound to* whatever T object we pass.
 
+## Exercise 6.14
+
+> Give an example of when a parameter should be a reference type. Give an example of when a parameter should not be a
+> reference.
+
+a parameter should be a reference:
+```cpp
+void reset(int &i)
+{
+    i = 0;
+}
+```
+a parameter should not be reference:
+```cpp
+void print(std::vector<int>::iterator begin, std::vector<int>::iterator end)
+{
+    for (std::vector<int>::iterator iter = begin; iter != end; ++iter)
+        std::cout << *iter << std::endl;
+}
+```
+
+## Exercise 6.15
+
+> Explain the rationale for the type of each of `find_char`'s parameters. In particular, why is a reference to `const`
+> but `occurs` is a plain reference? Why are these parameters references, but the `char` parameter `c` is not? What
+> would happen if we made `s` a plain reference? What if we made `occurs` a reference to `const`.
+
+
+
 ## Exercise 6.43
 
 ## Exercise 6.54

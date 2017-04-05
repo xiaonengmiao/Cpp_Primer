@@ -94,9 +94,15 @@ int main()
 > Write a header file named `Chapter6.h` that contains declarations for the functions you wrote for the exercises in §
 > 6.1 (p.205).
 
-[ex6.8-codelink](exercise6.08.cc)
+[Chapter6.h-codelink](Chapter6.h)
 
 ## Exercise 6.9
+
+> Write your own version of the `factor.cc` and `factMain.cc` files. These files should include your `Chapter6.h` from
+> the exercises in the previous section. Use these files to understand how your compiler supports separate compilation.
+
+[fact.cc-codelink](fact.cc)
+[factMain.cc-codelink](factMain.cc)
 
 ## Exercise 6.10
 

@@ -119,7 +119,17 @@ int main()
 
 ## Exercise 6.12
 
->
+> Rewrite the program from the exercise 6.10 in § 6.2.1 (p.210) to use references instead of pointers to swap the values
+> of two `ints`. Which version do you think would be easier to use and why?
+
+[ex6.12-codelink](exercise6.12.cc)
+
+## Exercise 6.13
+
+> Assuming `T` is the name of a type, explain the difference between a function declared as `void f(T)` and `void
+> f(T&)`.
+
+`void f(T)` pass the argument by value. *nothing* the function does to the parameter *can affect the argument*. `void f(T&)` pass a reference, will be *bound to* whatever T object we pass.
 
 ## Exercise 6.43
 

@@ -109,9 +109,13 @@ int main()
 > Using pointers, write a function to swap the values of two *ints*. Test the function by calling it and printing the
 > swapped values.
 
+
+
 ## Exercise 6.11
 
->
+> Write and test your own version of `reset` that takes a reference.
+
+[ex6.11-codelink](exercise6.11.cc)
 
 ## Exercise 6.12
 

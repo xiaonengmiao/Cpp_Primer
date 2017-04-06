@@ -158,6 +158,20 @@ void print(std::vector<int>::iterator begin, std::vector<int>::iterator end)
 > but `occurs` is a plain reference? Why are these parameters references, but the `char` parameter `c` is not? What
 > would happen if we made `s` a plain reference? What if we made `occurs` a reference to `const`.
 
+cause the `s` should not be changed by this function. but `occurs`'s result must be calculated by the function.
+
+casue `c` maybe a `temp` variable. such as `find_char(s, 'a', occurs)`.
+
+`s` could be changed in the function, and `occurs` would not be changed. so occurs = 0; is an error.
+
+## Exercise 6.16
+
+> The following function, although legal, is less useful than it might be. Identify and correct the limitation on this
+> function:
+```cpp
+bool is_empty(string& s) { return s.empty() }
+```
+
 
 
 ## Exercise 6.43

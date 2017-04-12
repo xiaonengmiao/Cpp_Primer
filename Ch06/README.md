@@ -172,6 +172,34 @@ casue `c` maybe a `temp` variable. such as `find_char(s, 'a', occurs)`.
 bool is_empty(string& s) { return s.empty() }
 ```
 
+## Exercise 6.17
+
+> Write a function to determine whether a `string` contains any capital letters. Write a function to change a `string` to all lowercase. Do the parameters you used in these functions have the same type? If so, why? If not, why not?
+
+## Exercise 6.18
+
+> Write declarations for each of the following functions. When you write these decarations, use the name of the function to indicate what the function does.
+
+- (a) A function named `compare` that returns a `bool` and has two parameters that are references to a class named `matrix`.
+- (b) A function named `change_val` that returns a vectors a `vector<int>` iterator and takes two parameters: One is an `int` and the other is an iterator for a `vector<int>`.
+
+
+## Exercise 6.19
+
+> Given the following declarations, determine which calls are legal and which are illegal. For those that are illegal, explain why.
+
+```cpp
+double calc(double);
+int count(count string &, char);
+int sum(vector<int>::iterator, vector<int>::iterator, int);
+vector<int> vec(10);
+(a) calc(23.4, 55.1); (b) count("abcda", 'a');
+(c) calc(66);         (d) sum(vec.begin(), vec.end(), 3.8);
+```
+
+## Exercise 6.20
+
+> When should reference parameters be references to `const`? What happens if we make a parameter a plain reference when it could be a reference to `const`?
 
 
 ## Exercise 6.43

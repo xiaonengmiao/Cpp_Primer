@@ -176,6 +176,8 @@ bool is_empty(string& s) { return s.empty() }
 
 > Write a function to determine whether a `string` contains any capital letters. Write a function to change a `string` to all lowercase. Do the parameters you used in these functions have the same type? If so, why? If not, why not?
 
+Not the same. For the first one "const" was used, since no change need to do for the argument. For the second function, "const" can't be used, because the content of the agument should be changed.
+
 ## Exercise 6.18
 
 > Write declarations for each of the following functions. When you write these decarations, use the name of the function to indicate what the function does.
@@ -183,6 +185,8 @@ bool is_empty(string& s) { return s.empty() }
 - (a) A function named `compare` that returns a `bool` and has two parameters that are references to a class named `matrix`.
 - (b) A function named `change_val` that returns a vectors a `vector<int>` iterator and takes two parameters: One is an `int` and the other is an iterator for a `vector<int>`.
 
+- (a) bool compare(matrix &m1, matrix &m2);
+- (b) vector<int>::iterator change_val(int i, vector<int>::iterator iter);
 
 ## Exercise 6.19
 

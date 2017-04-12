@@ -201,6 +201,8 @@ vector<int> vec(10);
 (c) calc(66);         (d) sum(vec.begin(), vec.end(), 3.8);
 ```
 
+(a) illegal, only one parameter (b) legal (c) legal (d) legal
+
 ## Exercise 6.20
 
 > When should reference parameters be references to `const`? What happens if we make a parameter a plain reference when it could be a reference to `const`?

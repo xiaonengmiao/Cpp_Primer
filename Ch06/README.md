@@ -254,6 +254,32 @@ In this question, `const int ia[10]` is actually same as `const int*`, and the s
 void print10(const int (&ia)[10]) { /*...*/ }
 ```
 
+## Exercise 6.25
+
+> Write a `main` function that takes two arguments. Concatenate the supplied arguments and print the resulting `string`.
+
+[ex6.25-codelink](exercise6.25.cc)
+
+## Exercise 6.26
+
+> Write a program that accepts the options presented in this section. Print the values of the arguments passed to `main`.
+
+[ex6.26-codelink](exercise6.26.cc)
+
+## Exercise 6.27
+
+> Write a function that takes an `initialized_list<int>` and produces the sum of the elements in the list.
+
+[ex6.27-codelink](exercise6.27.cc)
+
+## Exercise 6.28
+
+> In the second version of `error_msg` that has an `ErrCode` parameter, what is the type of `elem` in the `for` loop?
+
+## Exercise 6.29
+
+> When you use an `initializer_list` in a range `for` would you ever use a reference as the loop control variable? If so, why? If not, why not?
+
 ## Exercise 6.43
 
 ## Exercise 6.54

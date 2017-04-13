@@ -282,6 +282,8 @@ void print10(const int (&ia)[10]) { /*...*/ }
 
 > When you use an `initializer_list` in a range `for` would you ever use a reference as the loop control variable? If so, why? If not, why not?
 
+Depends on the type of elements of `initializer_list`. When the type is [PODType](http://en.cppreference.com/w/cpp/concept/PODType), reference is unnecessary. Because `POD` is **cheap to copy**(such as `int`). Otherwise, Using reference(`const`) is the better choice.
+
 ## Exercise 6.43
 
 ## Exercise 6.54

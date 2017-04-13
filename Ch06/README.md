@@ -341,6 +341,63 @@ When the recursion termination condition becomes `var != 0`, two situations can 
 
 the recursive function will always use `val` as the parameter. a *recursion* loop would happen.
 
+## Exercise 6.36
+
+> Write the declaration for a function that returns a reference to an array of ten `strings`, without using either a trailing return, `decltype`, or a type alias.
+
+```cpp
+string (&func(string (&arrStr)[10]))[10]
+```
+
+## Exercise 6.37
+
+> Write three addtional declarations for the function in the previous exercise. One should use a type alias, one should use a trailing return, and the third should use `decltype`. Which form do you prefer and why?
+
+```cpp
+using ArrT = string[10];
+ArrT &func1(ArrT &arr);
+
+auto func2(ArrT &arr) -> string(&)[10]
+
+string arrS[10]
+decltype(arrS) &func3(ArrT &arr);
+```
+
+I pefer the first one. because it is more simpler to me.
+
+## Exercise 6.38
+
+> Revise the `arrPtr` function on to return a reference to the array.
+
+```cpp
+decltype(arrStr)& arrPtr(int i)
+{
+          return (i % 2) ? odd : even;
+}
+```
+
+## Exercise 6.39
+
+> Explain the effect of the second declaration in each of the following sets of declarations. Indicate which, if any, are illegal.
+
+```cpp
+(a) int calc(int, int);
+    int calc(const int, const int);
+(b) int get();
+    double get();
+(c) int *reset(int *);
+    double *reset(double *);
+```
+
+## Exercise 6.40
+
+> Which, if either, of the following declarations are errors? Why?
+
+```cpp
+(a) int ff(int a, int b = 0, int c = 0);
+(b) char *init(int ht = 24, int wd, char bckgrnd);
+```
+
 ## Exercise 6.43
 
 ## Exercise 6.54

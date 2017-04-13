@@ -288,9 +288,18 @@ Depends on the type of elements of `initializer_list`. When the type is [PODType
 
 > Compile the version of `str_subrange` as presented on page 223 to see what your compiler does with the indicated errors.
 
+exercise6.30.cc:13:7: error: non-void function 'str_subrange' should return a value [-Wreturn-type]
+      return;
+      ^
+1 error generated.
+
+[ex6.30-codelink](exercise6.30.cc) note that this code is wrong!!!
+
 ## Exercise 6.31
 
 > When is it valid to return a reference? A reference to `const`?
+
+when you can find the preexited object that the reference refered.
 
 ## Exercise 6.32
 
@@ -305,9 +314,13 @@ int main() {
 }
 ```
 
+legal, it gave the values (0 ~ 9) to array `ia`.
+
 ## Exercise 6.33
 
 > Write a recursive function to print the contents of a `vector`.
+
+[ex6.33-codelink](exercise6.33.cc)
 
 ## Exercise 6.34
 
@@ -317,9 +330,16 @@ int main() {
 if (val != 0)
 ```
 
+When the recursion termination condition becomes `var != 0`, two situations can happen :
+
+- case 1 : If the argument is positive, recursion stops at 0.(Note : There is one extra multiplication step though as the combined expression for factorial(5) reads 5 * 4 * 3 * 2 * 1 * 1. In terms of programming languages learning, such subtle difference probably looks quite trivial. In algorithms analysis and proof, however, this extra step may be super important.)
+- case 2 : if the argument is negative, recursion would never stop. As a result, a stack overflow would occur.
+
 ## Exercise 6.35
 
 > In the call to `factorial`, why did we pass `val - 1` rather than `val--`?
+
+the recursive function will always use `val` as the parameter. a *recursion* loop would happen.
 
 ## Exercise 6.43
 

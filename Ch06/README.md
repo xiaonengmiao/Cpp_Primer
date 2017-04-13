@@ -284,6 +284,43 @@ void print10(const int (&ia)[10]) { /*...*/ }
 
 Depends on the type of elements of `initializer_list`. When the type is [PODType](http://en.cppreference.com/w/cpp/concept/PODType), reference is unnecessary. Because `POD` is **cheap to copy**(such as `int`). Otherwise, Using reference(`const`) is the better choice.
 
+## Exercise 6.30
+
+> Compile the version of `str_subrange` as presented on page 223 to see what your compiler does with the indicated errors.
+
+## Exercise 6.31
+
+> When is it valid to return a reference? A reference to `const`?
+
+## Exercise 6.32
+
+> Indicate whether the following function is legal. If so, explain what it does; if not, correct any errors and then explain it.
+
+```cpp
+int &get(int *arry, int index) { return arry[index]; }
+int main() {
+    int ia[10];
+    for (int i = 0; i != 10; ++i)
+        get(ia, i) = i;
+}
+```
+
+## Exercise 6.33
+
+> Write a recursive function to print the contents of a `vector`.
+
+## Exercise 6.34
+
+> What would happen if the stopping condition in `factorial` were
+
+```cpp
+if (val != 0)
+```
+
+## Exercise 6.35
+
+> In the call to `factorial`, why did we pass `val - 1` rather than `val--`?
+
 ## Exercise 6.43
 
 ## Exercise 6.54

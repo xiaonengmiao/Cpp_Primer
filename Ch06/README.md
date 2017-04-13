@@ -276,6 +276,8 @@ void print10(const int (&ia)[10]) { /*...*/ }
 
 > In the second version of `error_msg` that has an `ErrCode` parameter, what is the type of `elem` in the `for` loop?
 
+`const string&`.
+
 ## Exercise 6.29
 
 > When you use an `initializer_list` in a range `for` would you ever use a reference as the loop control variable? If so, why? If not, why not?

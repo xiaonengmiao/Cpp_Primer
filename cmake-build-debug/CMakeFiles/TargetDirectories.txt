@@ -1,3 +1,0 @@
-/Users/lihaohan/Dropbox/macscript/local/bin/C++/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/lihaohan/Dropbox/macscript/local/bin/C++/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/lihaohan/Dropbox/macscript/local/bin/C++/cmake-build-debug/CMakeFiles/C__.dir

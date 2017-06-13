@@ -397,7 +397,9 @@ decltype(arrStr)& arrPtr(int i)
 (a) int ff(int a, int b = 0, int c = 0);
 (b) char *init(int ht = 24, int wd, char bckgrnd);
 ```
+## Exercise 6.41
 
+> Which, if any, of the following calls are illegal? Why? Which, if any, are legal but unlikely to match the programmer's intent? Why?
 ## Exercise 6.43
 
 ## Exercise 6.54

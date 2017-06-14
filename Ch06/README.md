@@ -109,7 +109,16 @@ int main()
 > Using pointers, write a function to swap the values of two *ints*. Test the function by calling it and printing the
 > swapped values.
 
+```cpp
+void swap(int *i, int *j)
+{
+    int k = *i;
+    *i = *j;
+    *j = k;
 
+    return 0;
+}
+```
 
 ## Exercise 6.11
 

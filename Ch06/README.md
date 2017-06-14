@@ -178,14 +178,23 @@ casue `c` maybe a `temp` variable. such as `find_char(s, 'a', occurs)`.
 > The following function, although legal, is less useful than it might be. Identify and correct the limitation on this
 > function:
 ```cpp
-bool is_empty(string& s) { return s.empty() }
+bool is_empty(string& s) { return s.empty(); }
 ```
+
+Fixed:
+
+```cpp
+bool is_empty(const string& s) { return s.empty(); }
+```
+Since this function does not change the argument.
 
 ## Exercise 6.17
 
 > Write a function to determine whether a `string` contains any capital letters. Write a function to change a `string` to all lowercase. Do the parameters you used in these functions have the same type? If so, why? If not, why not?
 
 Not the same. For the first one "const" was used, since no change need to do for the argument. For the second function, "const" can't be used, because the content of the agument should be changed.
+
+[ex6.17-codelink](exercise6.17.cpp)
 
 ## Exercise 6.18
 

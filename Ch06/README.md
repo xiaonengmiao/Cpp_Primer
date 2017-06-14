@@ -412,13 +412,27 @@ decltype(arrStr)& arrPtr(int i)
 > Which, if either, of the following declarations are errors? Why?
 
 ```cpp
-(a) int ff(int a, int b = 0, int c = 0);
-(b) char *init(int ht = 24, int wd, char bckgrnd);
+(a) int ff(int a, int b = 0, int c = 0); // no error
+(b) char *init(int ht = 24, int wd, char bckgrnd); // missing default on parameter 'wd','bckgrnd'
 ```
+
 ## Exercise 6.41
 
 > Which, if any, of the following calls are illegal? Why? Which, if any, are legal but unlikely to match the programmer's intent? Why?
+```cpp
+char *init(int ht, int wd = 80, char bckgrnd = ' ');
+(a) init(); \\ illegal (b) init(24,10); \\ legal (c) init(14,'*'); \\ illegal
+```
+
+## Exercise 6.42
+
+> Give the second parameter of make_plural (§6.3.2,p.224) a default argument of `s`. Test your program by printing singular and plural versions of the words success and failure.
+
+[ex6.42-codelink](exercise6.42.cc)
+
 ## Exercise 6.43
+
+> 
 
 ## Exercise 6.54
 

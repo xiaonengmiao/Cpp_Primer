@@ -434,13 +434,32 @@ char *init(int ht, int wd = 80, char bckgrnd = ' ');
 
 > Which one of the following declarations and definitions would you put in a header? In a source file? Explain why.
 ```cpp
-(a) inline bool eq(const BigInt&, const BigInt&) {...} // source file cause its inline function
+(a) inline bool eq(const BigInt&, const BigInt&) {...} // header file cause its inline function
 (b) void putValues(int *arr, int size); // header cause its declaration
 ```
 
+## Exercise 6.44
+
+> Rewrite the `isShorter` function from §6.2.2(p.211) to be `inline`.
+
+```cpp
+inline bool isShorter(const string &s1, const string &s2)
+{
+  return s1.size() > s2.size();
+}
+```
+
+## Exercise 6.45
+
+> Review the programs you've written for the earlier exercises and decide whether they should be defined as `inline`. If so, do so. If not, explain why they should not be `inline`.
+
+For example, the function arrPtr in Exercise 6.38 and make_plural in Exercise 6.42 should be defined as inline. But the function func in Exercise 6.4 shouldn't. Cause it just being call once and too many codes in the function.
+
 ## Exercise 6.54
 
+  cout << "singual: " << make_plural(1,"success", "es") << " " << make_plural(1,"failure") << endl;
 > Write a decaration for a function that takes two *int* parameters and returns an *int*, and declare a *vector* whose elements have this function pointer type.
+  cout << "singual: " << make_plural(1,"success", "es") << " " << make_plural(1,"failure") << endl;
 
 ## Exercise 6.55
 

@@ -400,11 +400,11 @@ decltype(arrStr)& arrPtr(int i)
 
 ```cpp
 (a) int calc(int, int);
-    int calc(const int, const int);
+    int calc(const int, const int); // illegal
 (b) int get();
-    double get();
+    double get(); // illegal
 (c) int *reset(int *);
-    double *reset(double *);
+    double *reset(double *); legal
 ```
 
 ## Exercise 6.40

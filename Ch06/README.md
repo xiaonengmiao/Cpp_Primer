@@ -432,7 +432,11 @@ char *init(int ht, int wd = 80, char bckgrnd = ' ');
 
 ## Exercise 6.43
 
-> 
+> Which one of the following declarations and definitions would you put in a header? In a source file? Explain why.
+```cpp
+- (a) inline bool eq(const BigInt&, const BigInt&) {...} // source file cause its inline function
+- (b) void putValues(int *arr, int size); // header cause its declaration
+```
 
 ## Exercise 6.54
 

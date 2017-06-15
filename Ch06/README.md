@@ -482,6 +482,28 @@ This loop let user input a word all the way until the word is sought.
 
 It isn't a good use of assert. because if user begin to input a word, the `cin` would be always have content. so the `assert` would be always true. It is meaningless. using `assert(s == sought)` is more better.
 
+## Exercise 6.49
+
+> What is a candidate function? What is a visible function?
+
+candidate function:
+
+> Set of functions that are considered when resolving a function call. (all the functions with the name used in the call for which a declaration is in scope at the time of the call.)
+
+viable function:
+
+> Subset of the candidate functions that could match a given call. It have the same number of parameters as arguments to the call, and each argument type can be converted to the corresponding parameter type.
+
+## Exercise 6.50
+
+> Given the declarations for `f` from page 242, list the viable functions, if any for each of the following calls. Indicate which function is the best match, or if the call is illegal whether there is no match or why the call is ambiguous.
+
+(a) `f(2.56)` (b) `f(42)` (c) `f(42,0)` (d) `f(2.56,3.14)`
+
+## Exercise 6.51
+
+> Write all four versions of `f`. Each function should print a distinguishing message. Check your answers for the previous exercise. If your answers were incorrect, study this section until you understand why your answers were wrong.
+
 ## Exercise 6.54
 
   cout << "singual: " << make_plural(1,"success", "es") << " " << make_plural(1,"failure") << endl;

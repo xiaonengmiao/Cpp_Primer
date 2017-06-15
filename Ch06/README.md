@@ -463,6 +463,25 @@ No.
 
 Because `std::string::size()` is not a `constexpr` function and `s1.size() == s2.size()` is not a constant expression.
 
+## Exercise 6.47
+
+> Revise the program you wrote in the exercises in §6.3.2(p.228) that used recursion to print the contents of a vector to conditionally print information about its execution. For example, you might print the size of the vector on each call. Compile and run the program with debugging turned on and again with it turned off.
+
+[ex6.470-codelink](exercise6.47.cc)
+
+## Exercise 6.48
+
+> Explain what this loop does and whether it is a good use of assert:
+
+```cpp
+string s;
+while (cin >> s && s != sought) { } // empty body
+assert (cin)
+```
+This loop let user input a word all the way until the word is sought.
+
+It isn't a good use of assert. because if user begin to input a word, the `cin` would be always have content. so the `assert` would be always true. It is meaningless. using `assert(s == sought)` is more better.
+
 ## Exercise 6.54
 
   cout << "singual: " << make_plural(1,"success", "es") << " " << make_plural(1,"failure") << endl;

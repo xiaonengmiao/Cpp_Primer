@@ -511,11 +511,75 @@ viable function:
 
 [ex6.51-codelink](exercise6.51.cc)
 
+## Exercise 6.52
+
+> Given the following declarations,
+```cpp
+void manip(int, int);
+double dobj;
+```
+what is the rank(§6.6.1,p.245) of each conversion in the following calls?
+
+(a) manip('a', 'z');  (b) manip(55.4, dobj);
+
+(a) Match through a promotion
+
+(b) Arithmetic type conversion
+
+## Exercise 6.53
+
+> Explain the effect of the second declaration in each one of the following sets of declarations. Indicate which, if any, are illegal.
+
+(a) int calc(int&, int&);
+    int calc(const int&, const int&);
+(b) int calc(char*, char*);
+    int calc(const char*, const char*);
+(c) int calc(char*, char*);
+    int calc(char* const, char* const);
+```cpp
+(a) int calc(int&, int&); // calls lookup(int&)
+    int calc(const int&, const int&); // calls lookup(const int&)
+(b) int calc(char*, char*); // calls lookup(char*)
+    int calc(const char*, const char*); // calls lookup(const char *)
+(c) int calc(char*, char*); // calls lookup(char*)
+    int calc(char* const, char* const); // calls lookup(char*)
+    illegal.
+```
+
 ## Exercise 6.54
 
-  cout << "singual: " << make_plural(1,"success", "es") << " " << make_plural(1,"failure") << endl;
 > Write a decaration for a function that takes two *int* parameters and returns an *int*, and declare a *vector* whose elements have this function pointer type.
-  cout << "singual: " << make_plural(1,"success", "es") << " " << make_plural(1,"failure") << endl;
+
+```cpp
+int func(int a, int b);
+
+using pFunc1 = decltype(func) *;
+typedef decltype(func) *pFunc2;
+using pFunc3 = int (*)(int a, int b);
+using pFunc4 = int(int a, int b);
+typedef int(*pFunc5)(int a, int b);
+using pFunc6 = decltype(func);
+
+std::vector<pFunc1> vec1;
+std::vector<pFunc2> vec2;
+std::vector<pFunc3> vec3;
+std::vector<pFunc4*> vec4;
+std::vector<pFunc5> vec5;
+std::vector<pFunc6*> vec6;
+```
 
 ## Exercise 6.55
 
+> Write four functions that add, subtract, multiply, and divide two `int` functions. Store pointers to these functions in your `vector` from the previous exercise.
+```cpp
+int add(int a, int b) { return a + b; }
+int subtract(int a, int b) { return a - b; }
+int multiply(int a, int b) { return a * b; }
+int divide(int a, int b) { return b != 0 ? a / b : 0; }
+```
+
+## Exercise 6.56
+
+> Call each element in the `vector` and print their result.
+
+[ex6.56-codelink](exercise6.56.cc)

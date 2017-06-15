@@ -455,6 +455,14 @@ inline bool isShorter(const string &s1, const string &s2)
 
 For example, the function arrPtr in Exercise 6.38 and make_plural in Exercise 6.42 should be defined as inline. But the function func in Exercise 6.4 shouldn't. Cause it just being call once and too many codes in the function.
 
+## Exercise 6.46
+
+> Would it be possible to define `isShorter` as a `constexpr`? If so, do so. If not, explain why not.
+
+No.
+
+Because `std::string::size()` is not a `constexpr` function and `s1.size() == s2.size()` is not a constant expression.
+
 ## Exercise 6.54
 
   cout << "singual: " << make_plural(1,"success", "es") << " " << make_plural(1,"failure") << endl;

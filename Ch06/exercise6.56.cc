@@ -23,4 +23,5 @@ int main()
   {
     cout << (*it)(2,2) << endl;
   }
+  return 0;
 }

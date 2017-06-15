@@ -13,7 +13,7 @@ typedef decltype(f) fp;//fp is just a function type not a function pointer
 inline int numAdd(const int s1, const int s2) { return s1 + s2; }
 inline int numSub(const int s1, const int s2) { return s1 - s2; }
 inline int numMul(const int s1, const int s2) { return s1 * s2; }
-inline int numDiv(const int s1, const int s2) { return s1 / s2; }
+inline int numDiv(const int s1, const int s2) { return (s2 != 0) ? s1 / s2 : 0; }
 
 vector<fp*> vec{ numAdd, numSub, numMul, numDiv};
 

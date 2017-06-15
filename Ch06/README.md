@@ -500,9 +500,16 @@ viable function:
 
 (a) `f(2.56)` (b) `f(42)` (c) `f(42,0)` (d) `f(2.56,3.14)`
 
+- (a) illegal. 2.56 is `double`, but 42 is `int`.
+- (b) match `void f(int)`
+- (c) match `void f(int, int)`
+- (d) match `void f(double, double = 3.14)`
+
 ## Exercise 6.51
 
 > Write all four versions of `f`. Each function should print a distinguishing message. Check your answers for the previous exercise. If your answers were incorrect, study this section until you understand why your answers were wrong.
+
+[ex6.51-codelink](exercise6.51.cc)
 
 ## Exercise 6.54
 

@@ -4,7 +4,7 @@
 
 ## Exercise 7.2
 
-> Add the *combine* and *isbn* members to the *Sales_data* class you wrote for the exercises in
+> Add the *combine* and *isbn* members to the *Sales_data* class you wrote for the exercises in §2.6.2(p.76).
 
 [ex7.2-codelink](exercise7.02.hpp)
 
@@ -67,7 +67,7 @@ if (read(read(cin, data1), data2))
 
 > Add constructors to your *Sales_data* class and write a program to use each of the constructors.
 
-[ex7.11.h-codelink](exercise7.11.h)
+[ex7.11.h-codelink](exercise7.11.hpp)
 
 [ex7.11.cpp-codelink](exercise7.11.cpp)
 

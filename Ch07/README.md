@@ -213,7 +213,7 @@ myScreen.display(cout);
 cout << "\n";
 ```
 [ex7.27.hpp-codelink](exercise7.27.hpp)
-[ex7.27.cpp-codelink](exercise7.27.cpp)
+[ex7.27.cpp-codelink](exercise7.27.hpp)
 
 ## Exercise 7.28
 

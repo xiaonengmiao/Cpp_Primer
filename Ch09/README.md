@@ -162,3 +162,17 @@ forward_list<float> numbers5(numbers.begin(), numbers.end());   // ok, numbers5 
 > Write a program to determine whether two `vector<int>`s are equal.
 
 [ex9.15-codelink](exercise9.15.cpp)
+
+## Exercise 9.16
+
+> Repeat the previous program, but compare elements in a `list<int>` to a `vector<int>`.
+
+## Exercise 9.17
+
+> Assuming `c1` and `c2` are containers, what (if any) constraints does the folllowing usage place on the types of `c1` and `c2`?
+```cpp
+if (c1 < c2)
+```
+
+
+

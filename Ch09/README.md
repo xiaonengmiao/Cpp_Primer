@@ -167,6 +167,8 @@ forward_list<float> numbers5(numbers.begin(), numbers.end());   // ok, numbers5 
 
 > Repeat the previous program, but compare elements in a `list<int>` to a `vector<int>`.
 
+[ex9.16-codelink](exercise9.16.cpp)
+
 ## Exercise 9.17
 
 > Assuming `c1` and `c2` are containers, what (if any) constraints does the folllowing usage place on the types of `c1` and `c2`?

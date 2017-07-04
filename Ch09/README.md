@@ -161,3 +161,4 @@ forward_list<float> numbers5(numbers.begin(), numbers.end());   // ok, numbers5 
 
 > Write a program to determine whether two `vector<int>`s are equal.
 
+[ex9.15-codelink](exercise9.15.cpp)

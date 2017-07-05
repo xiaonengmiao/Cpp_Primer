@@ -175,6 +175,28 @@ forward_list<float> numbers5(numbers.begin(), numbers.end());   // ok, numbers5 
 ```cpp
 if (c1 < c2)
 ```
+First, there must be the identical container and same type holded. Second, the type held must support relational operation. (@Mooophy)
 
+Both c1 and c2 are the containers except the unordered associative containers.(@pezy)
+
+## Exercise 9.18
+
+> Write a program to read a sequence of `strings` from the standard input into a `deque`. Use iterators to write a loop to print the elements in the `deque`.
+
+## Exercise 9.19
+
+> Rewrite the program from the previous exercise to use a `list`. List the changes you needed to make.
+
+## Exercise 9.20
+
+> Write a program to copy elements from a `list<int>` into two `deques`. The even-valued elements should go into one `deque` and the odd ones into the other.
+
+## Exercise 9.21
+
+> Explain how the loop from page 345 that used the return from insert to add elements to a list would work if we inserted into a vector instead.
+
+## Exercise 9.22
+
+> Assuming `iv` is a `vector` of `ints`, what is wrong with the following program? How might you correct the problem(s)?
 
 

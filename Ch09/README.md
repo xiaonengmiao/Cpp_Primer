@@ -258,3 +258,46 @@ same value that equal to the first element's.
 
 [ex9.24-codelink](exercise9.24.cpp)
 
+## Exercise 9.25
+
+> In the program on page 349 that erased a range of elements, what happens if elem1 and elem2 are equal? What if elem2 or both elem1 and elem2 are the off-the-end iterator?
+
+if elem1 and elem2 are equal, nothing happened.
+
+if elem2 is the off-the-end iterator, it would delete from elem1 to the end.
+
+if both elem1 and elem2 are the off-the-end iterator, nothing happened too.
+
+## Exercise 9.26
+
+> Using the following defination of `ia`, copy `ia` into a `vector` and into a `list`. Use the single-iterator form of `erase` to remove the elements with odd values from your `list` and the even values from your `vector`.
+```cpp
+int ia[] = { 0, 1, 1, 2, 3, 5, 8, 13, 21, 55，89 }；
+```
+[ex9.26-codelink](exercise9.26.cpp)
+
+## Exercise 9.27
+
+> Write a function that takes a `forward_list<string>` and two additional `string` arguments. The function should find the first `string` and insert the second immediately following the first `string` is not found, then insert the second `string` at the end of the list.
+
+[ex9.27-codelink](exercise9,27.cpp)
+
+## Exercise 9.28
+ 
+> Write a function that takes a `forward_list` and two additional `string` arguments. The function should find the first `string` and insert the second immediately following the first. If the first `string` is not found, then insert the second `string` at the end of the list.
+
+```cpp
+void find_and_insert(forward_list<string> &list, string const& to_find, string const& to_add)
+{
+    auto prev = list.before_begin();
+    for (auto curr = list.begin(); curr != list.end(); prev = curr++)
+    {
+        if (*curr == to_find)
+        {
+            list.insert_after(curr, to_add);
+            return;
+        }
+    }
+    list.insert_after(prev, to_add);
+}
+```

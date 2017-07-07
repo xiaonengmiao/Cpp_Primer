@@ -246,4 +246,15 @@ int main()
 }
 
 ```
+## Exercise 9.23
+
+> In the first program in this section on page 346, what would the values of `val`, `val2`, `val3`, and `val4` be if `c.size()` is 1?
+
+same value that equal to the first element's.
+
+## Exercise 9.24
+
+> Write a program that fetches the first element in a `vector` using `at`, the subscript operator, `front`, and `begin`. Test your program on an empty `vector`.
+
+[ex9.24-codelink](exercise9.24.cpp)
 

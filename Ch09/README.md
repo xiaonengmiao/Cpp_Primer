@@ -315,3 +315,49 @@ vec.resize(10);     // erases 90 elements from the back of vec
 > What, if any, restrictions does using the version of resize that takes a single argument place on the element type?
 
 If the container holds elements of a class type and resize adds elements we **must supply an initializer** or the element type must have a **default constructor**.
+
+## Exercise 9.31
+
+> The program on page 354 to remove even-valued elements and duplicate odd ones will not work on a `list` or `forward_list`. Why? Revise the program so that it works on these types as well.
+
+[ex9.31_list-codelink](exercise9.31_list.cpp)
+[ex9.32_forward_list-codelink](exercise9.32_forward_list.cpp)
+
+## Exercise 9.32 
+
+> In the program on page 354 would it be legal to write the call to `insert` as follows? If not, why not?
+```cpp
+iter = vi.insert(iter,*iter++);
+```
+
+the statement is illegal, because as said in Standard [5.2.2] :
+"The order of evaluation of arguments is unspecified."
+As a result, after entering function insert,
+iter could be its original value or original value + 1 or even anything else,
+depending on how compiler implemented.
+
+## Exercise 9.33
+
+In the final example in this section what would happen if we did not assign the result of `insert` to `begin`? Write a program that omits this assignment to see if your expectation to was correct.
+
+Crash, because the iterator is invalid after inserting.
+
+[ex9.33-codelink](exercise9.33.cpp)
+
+## Exercise 9.34
+
+> Assuming `vi` is a container of `int`s that includes even and odd values, predict the behavior of the following loop. After you've analyzed this loop, write a program to test whether your expectations were correct.
+```cpp
+iter = vi.begin();
+while (iter != vi.end())
+  if ( *iter % 2)
+    iter = vi.insert(iter, *iter);
+  ++iter;
+```
+
+"infinite loop". Becasue the `++iter` is outside of the scope of the `while` loop.
+Fixed as following.
+
+[ex9.34-codelink](exercise9.34.cpp)
+
+

@@ -301,3 +301,17 @@ void find_and_insert(forward_list<string> &list, string const& to_find, string c
     list.insert_after(prev, to_add);
 }
 ```
+## Exercise 9.29
+
+> Given that vec holds 25 elements, what does vec.resize(100) do? What if we next wrote vec.resize(10)?
+
+```cpp
+vec.resize(100);    // adds 75 elements of value 0 to the back of vec
+vec.resize(10);     // erases 90 elements from the back of vec
+```
+
+## Exercise 9.30
+
+> What, if any, restrictions does using the version of resize that takes a single argument place on the element type?
+
+If the container holds elements of a class type and resize adds elements we **must supply an initializer** or the element type must have a **default constructor**.

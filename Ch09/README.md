@@ -468,8 +468,10 @@ Use member `reserve(120)` to allocate enough space for this string. (@Mooophy)
 
 > Write a class that has three `unsigned` members representing year, month, and day. Write a constructor that takes a `string` representing a date. Your constructor should handle a varity of date formats, such as January 1, 1900, 1/1/1900, Jan 1, 1900, and so on.
 
+[ex9.51-codelink](exercise9.51.cpp)
+
 ## Exercise 9.52 
 
 > Use a `stack` to process parenthesized expressions. When you see an open parenthesis, note that it was seen. When you see a close parenthesis after an open parenthesis, `pop` elements down to and including the open parenthesis off the `stack`. `push` a value onto the `stack` to indicate that a parenthesized expression was replaced.
 
-
+[ex9.52-codelink](exercise9.52.cpp)

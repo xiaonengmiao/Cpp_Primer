@@ -1,4 +1,4 @@
-## Exercise 9.01
+# Exercise 9.01
 
 > Which is the most appropriate--a `vector`, a `deque`, or a `list`--for the following program tasks? Explain the
 > rationale for your choice. If there is no reason to prefer one or another container, explain why not.
@@ -360,4 +360,54 @@ Fixed as following.
 
 [ex9.34-codelink](exercise9.34.cpp)
 
+## Exercise 9.35
 
+> Explain the difference between a vector’s capacity and its size.
+
+The **size** of a container is the number of **elements** it already holds;
+
+The **capacity** is how many elements it can hold before more **space** must be allocated.
+
+## Exercise 9.36
+
+> Can a container have a capacity less than its size?
+
+cannot.
+
+## Exercise 9.37
+
+> Why don’t list or array have a capacity member?
+
+`list` does not hold elements contiguously. `array` has the fixed size statically.
+
+## Exercise 9.38
+
+> Write a program to explain how `vector`s grow in the library you use.
+
+[ex9.38-codelink](exercise9.38.cpp)
+
+## Exercise 9.39
+
+> Explain what the following program fragment does:
+```cpp
+vector<string> svec;
+svec.reserve(1024);
+string word;
+while (cin >> word)
+    svec.push_back(word);
+svec.resize(svec.size()+svec.size()/2);
+```
+The `while` loop will read words from `cin` and store them in out vector. Even if we initially `reserved` 1024 elements, if there are more words read from `cin`, our vector's capacity will be automatically increased (most implementations will double the previous capacity) to accommodate them.
+
+And now comes the catch. resize() is different from `reserve()`. In this case `resize()` will add another `svec.size()/2` value initialized elements to `svec`. If this exceeds `svec.capacity()` it will also automatically increase it to accommodate the new elements.
+
+## Exercise 9.40
+
+> If the program in the previous exercise reads 256 words, what is its likely capacity after it is resized? What if it reads 512? 1, 000? 1, 048?
+
+read | size | capacity
+------ | ------ | ------
+256 | 384 | 1024
+512 | 768 | 1024
+1000 | 1500 | 2000(clang is 2048)
+1048 | 1572 | 2048

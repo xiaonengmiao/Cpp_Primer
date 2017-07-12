@@ -411,3 +411,65 @@ read | size | capacity
 512 | 768 | 1024
 1000 | 1500 | 2000(clang is 2048)
 1048 | 1572 | 2048
+
+## Exercise 9.41
+
+> Write a program that initializes a `string` from a `vector<char>`.
+
+[ex9.41-codelink](exercise9.41.cpp)
+
+## Exercise 9.42
+
+> Given that you want to read a character at a time into a string, and you know that you need to read at least 100 characters, how might you improve the performance of your program?
+
+Use member `reserve(120)` to allocate enough space for this string. (@Mooophy)
+
+## Exercise 9.43
+
+> Write a function that takes three strings, `s`, `oldVal`, and `newVal`. Using iterator, and the `insert`  and `erase` functions replace all instances of `oldVal` that appear in `s` by `newVal`. Test your function by using it to replace common abbreviations, such as "tho" by "though" and "thru" by "through".
+
+[ex9.43-codelink](exercise9.45.cpp)
+
+## Exercise 9.44
+
+> Rewrite the previous function using an index and `replace`.
+
+[ex9.44-codelink](exercise9.45.cpp)
+
+## Exercise 9.45
+
+> Write a function that takes a `string` representing a name and two other `string`s representing a prefix, such as "Mr." or "Ms." and a suffix, such as "Jr." or "III". Using iterators and the `insert` and `append` functions, generate and return a new `string` with the suffix and prefix added to the given name.
+
+[ex9.45-codelink](exercise9.45.cpp)
+
+## Exercise 9.46
+
+> Rewrite the previous exercise using a position and length to manage the `string`s. This time use only the `insert` function.
+
+[ex9.46-codelink](exercise9.46.cpp)
+
+## Exercise 9.47
+
+> Write a program that finds each numeric charater and then each alphabetic charater in the `string` "ab2c3d7R4E6". Write two versions of the program. The first should use `find_first_of`, and the second `find_first_not_of`.
+
+## Exercise 9.48
+
+> Given the definitions of `name` and `numbers` on page 365, what does `numbers.find(name)` return?
+
+## Exercise 9.49
+
+> A letter has an ascender if, as with `d` or `f`, part of the letter extends above the middle of the line. A letter has a descender if, as with `p` or `g`, part of the letter extends below the line. Write a program that reads a file containing words and reports the longest word that contains neither ascender nor descenders.
+
+## Exercise 9.50
+
+> Write a program to process a `vector<string>`s whose elements represent integral values. Produce the sum of all the elements in that `vector`. Change the program so that it sums of `string`s that represent floating-point values.
+
+## Exercise 9.51
+
+> Write a class that has three `unsigned` members representing year, month, and day. Write a constructor that takes a `string` representing a date. Your constructor should handle a varity of date formats, such as January 1, 1900, 1/1/1900, Jan 1, 1900, and so on.
+
+## Exercise 9.52 
+
+> Use a `stack` to process parenthesized expressions. When you see an open parenthesis, note that it was seen. When you see a close parenthesis after an open parenthesis, `pop` elements down to and including the open parenthesis off the `stack`. `push` a value onto the `stack` to indicate that a parenthesized expression was replaced.
+
+

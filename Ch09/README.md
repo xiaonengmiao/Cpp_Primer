@@ -459,15 +459,19 @@ Use member `reserve(120)` to allocate enough space for this string. (@Mooophy)
 
 > Given the definitions of `name` and `numbers` on page 365, what does `numbers.find(name)` return?
 
-
+npos
 
 ## Exercise 9.49
 
 > A letter has an ascender if, as with `d` or `f`, part of the letter extends above the middle of the line. A letter has a descender if, as with `p` or `g`, part of the letter extends below the line. Write a program that reads a file containing words and reports the longest word that contains neither ascender nor descenders.
 
+[ex9.49-codelink](exercise9.49.cpp)
+
 ## Exercise 9.50
 
 > Write a program to process a `vector<string>`s whose elements represent integral values. Produce the sum of all the elements in that `vector`. Change the program so that it sums of `string`s that represent floating-point values.
+
+[ex9.50-codelink](exercise9.50.cpp)
 
 ## Exercise 9.51
 

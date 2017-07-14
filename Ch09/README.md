@@ -452,9 +452,14 @@ Use member `reserve(120)` to allocate enough space for this string. (@Mooophy)
 
 > Write a program that finds each numeric charater and then each alphabetic charater in the `string` "ab2c3d7R4E6". Write two versions of the program. The first should use `find_first_of`, and the second `find_first_not_of`.
 
+[ex9.47_first-codelink](exercise9.47_first.cpp)
+[ex9.47_first_not-codelink](exercise9.47_first_not.cpp)
+
 ## Exercise 9.48
 
 > Given the definitions of `name` and `numbers` on page 365, what does `numbers.find(name)` return?
+
+
 
 ## Exercise 9.49
 

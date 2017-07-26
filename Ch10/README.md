@@ -70,6 +70,44 @@ Inserters like `back_inserter` is part of `<iterator>` rather than `<algorithm>`
 
 > Implement your own version of `elimDups`. Test your program by printing the `vector` after you read the input, after the call to `unique`, and after the call to `erase`.
 
+
+
 ## Exercise 10.10
 
 > Why do you think the algorithms don’t change the size of containers?
+
+## Exercise 10.11
+
+> Write a program that uses `stable_sort` and `isShorter` to sort a `vector` passed to your version of `elimDups`. Print the `vector` to verify that your program is correct.
+
+## Exercise 10.12
+
+> Write a function named `compareIsbn` that compares the `isbn()` members of two `Sales_data` objects.
+
+## Exercise 10.13
+
+> The library defines an algorithm named `partition` that takes a predicate and partions the container so that values for which the predicate is `true` appear in the first part and those for which the predicate is `false` appear in the second part. The algorithm returns an iterator just past the last element for which the predicate returned `true`. Write a function that takes a `string` and returns a `bool` indicating whether the `string` has five characters or more. Use that function to partion `word`s. Print the elements that have five or more characters.
+
+## Exercise 10.14
+
+> Write a lambda that takes two `int`s and returns their sum.
+
+## Exercise 10.15
+
+> Write a lambda that captures an `int` from its enclosing function and takes an `int` parameter. The lambda should return the sum of the captured `int` and the `int` parameter.
+
+## Exercise 10.16
+
+> Write your own version of the `biggies` function using lambdas.
+
+## Exercise 10.17
+
+> Rewrite exercise 10.12 from § 10.3.1 (p.387) to use a lambda in the call to `sort` instead of the `compareIsbn` function.
+
+## Exercise 10.18
+
+> Rewrite `biggies` to use `partition` instead of `find_if`. We described the `partition` algorithm in exercise 10.13 in § 10.3.1 (p.387).
+
+## Exercise 10.19
+
+> Rewrite the previous exercise to use `stable_partition`, which like `stable_sort` maintains the original element order in the partitioned sequence.

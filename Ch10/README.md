@@ -70,15 +70,19 @@ Inserters like `back_inserter` is part of `<iterator>` rather than `<algorithm>`
 
 > Implement your own version of `elimDups`. Test your program by printing the `vector` after you read the input, after the call to `unique`, and after the call to `erase`.
 
-
+[ex10.09-codelink](exercise10.09.cpp)
 
 ## Exercise 10.10
 
 > Why do you think the algorithms don’t change the size of containers?
 
+cause algorithms are designed to operate on iterators rather than containers themselves.
+
 ## Exercise 10.11
 
 > Write a program that uses `stable_sort` and `isShorter` to sort a `vector` passed to your version of `elimDups`. Print the `vector` to verify that your program is correct.
+
+
 
 ## Exercise 10.12
 

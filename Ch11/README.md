@@ -66,3 +66,27 @@ to insert an item into a set is proportional to the log of the
 number of items. If the number of items is large, that's a huge
 difference. Log(100, 000) is 17; that's a major speed improvement.
 The same goes for removal.
+
+## Exercise 11.09
+
+> Define a `map` that associates words with a `list` of line numbers on which the word might occur.
+
+```cpp
+map<string, list<size_t>> m;
+```
+
+## Exercise 11.10
+
+> Could you define a `map` from `vector<int>::iterator` to `int`? What about from `list<int>::iterator` to `int`? In each case, if not, why not?
+
+[ex11.10-codelink](exercise11.10.cpp)
+
+`vector<int>::iterator` to `int` is ok , because < is defined
+
+`list<int>::iterator` to `int` is not ok, as no < is defined.<Paste>
+
+## Exercise 11.11
+
+> Redifine `bookstore` without using `decltype`.
+
+[ex11.11-codelink](exercise11.11.cpp)

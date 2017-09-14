@@ -90,3 +90,70 @@ map<string, list<size_t>> m;
 > Redifine `bookstore` without using `decltype`.
 
 [ex11.11-codelink](exercise11.11.cpp)
+
+## Exercise 11.12
+
+> Write a program to read a sequence of `string`s and `int`s, storing each into a `pair`. Store the `pair`s in a `vector`.
+
+[ex11.12-codelink](exercise11.12.cpp)
+
+## Exercise 11.13
+
+> There are at least three ways to create the `pair`s in the program for the previous exercise. Write three versions of that program, creating the `pair`s in each way. Explain which form you think is easiest to write and understand, and why.
+
+## Exercise 11.14
+
+> Extend the map of children to their family name that you wrote for the exercises in § 11.2.1 (p. 424) by having the `vector` store a `pair` that hold a child's name and birthday.
+
+## Exercise 11.15
+
+> What are the `mapped_type`, `key_type`, and `value_type` of a `map` from `int` to `vector<int>`?
+
+`mapped_key` : `vector<int>`
+`key_type` : `int`
+`value_type` : `pair<int, vector<int>>`
+
+## Exercise 11.16
+
+> Using a `map` iterator write an expression that assigns a value to an element.
+
+```cpp
+std::map<int, std::string> map;
+std::map<int, std::string>::iterator it = map.begin();
+it->second = "Tech";
+```
+
+## Exercise 11.17
+
+> Assuming `c` is a `multiset` of `string`s and `v` is a `vector` of `string`s, explain the following calls. Indicate whether each call is legal:
+```cpp
+copy(v.begin(), v.end(), inserter(c, c.end()));
+copy(v.begin(), v.end(), back_inserter(c));
+copy(c.begin(), c.end(), inserter(v, v.end()));
+copy(c.begin(), c.end(), back_inserter(v));
+```
+```cpp
+copy(v.begin(), v.end(), inserter(c, c.end())); // legal
+copy(v.begin(), v.end(), back_inserter(c));     // illegal, no `push_back` in `set`
+copy(c.begin(), c.end(), inserter(v, v.end())); // legal
+copy(c.begin(), c.end(), back_inserter(v));     // legal
+```
+
+## Exercise 11.18
+
+> Write the type of `map_it` from the loop on page 430 without using `auto` or `decltype`.
+
+```cpp
+std::map<std::string, size_t>::const_iterator;
+```
+
+## Exercise 11.19
+
+> Define a variable that you initialize by calling `begin()` on the `multiset` named `bookstore` from § 11.2.2(p.425). Write the variable's type without using `auto` and `decltype`.
+
+```cpp
+using compareType = bool (*)(const Sales_data &lhs, const Sales_data &rhs);
+std::multiset<Sales_data, compareType> bookstore(compareIsbn);
+std::multiset<Sales_data, compareType>::iterator c_it = bookstore.begin();
+```
+

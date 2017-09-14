@@ -56,4 +56,28 @@ short value = 32767; ++value; // -32768
 unsigned value = 0; --value; // 4294967295
 unsigned short value = 65535; ++value; // 0
 ```
+## Exercise 4.8
+
+> Explain when operands are evaluated in the logical `AND`, logical `OR`, and equality operators.
+
+## Exercise 4.9
+
+> Explain the behavior of the condition in the following `if`:
+```cpp
+const char *cp = "Hello World";
+if (cp && *cp)
+```
+
+## Exercise 4.10
+
+> Write the condition for a `while` loop that would read `int`s from the standard input and stop when the value read is equal to 42.
+
+## Exercise 4.11
+
+> Write an expression that tests four values, `a`, `b`, `c`, and `d`, and ensures that `a` is greater than `b`, which is greater than `c`, which is greater than `d`.
+
+## Exercise 4.12
+
+> Assuming `i`, `j`, and `k` are all `int`s, explain what `i` != `j` < `k` means.
+
 

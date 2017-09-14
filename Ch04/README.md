@@ -80,4 +80,49 @@ if (cp && *cp)
 
 > Assuming `i`, `j`, and `k` are all `int`s, explain what `i` != `j` < `k` means.
 
+## Exercise 4.13
 
+> What are the values of `i` and `d` after each assignment?
+```cpp
+int i; double d;
+(a) d = i = 3.5;  (b) i = d = 3.5;
+```
+
+## Exercise 4.14
+
+> Explain what happens in each of the `if` tests:
+```cpp
+if (42 = i)  // ...
+if (i = 42)  // ...
+```
+
+## Exercise 4.15
+
+> The following assignment is illegal. Why? How would you correct it?
+```cpp
+double dval; int ival; int *pi;
+dval = ival = pi = 0;
+```
+
+## Exercise 4.16
+
+> Although the following are legal, they probably do not bahave as the programmer expects. Why? Rewrite the expressions as you think they should be.
+```cpp
+(a) if (p = getPtr() != 0)    (b) if (i = 1024)
+```
+
+## Exercise 4.17
+
+> Explain the difference between prefix and postfix increment.
+
+## Exercise 4.18
+
+> What would happen if the `while` loop on page 148 that prints the elements from a `vector` used the prefix increment operator?
+
+## Exercise 4.19
+
+> Given that `ptr` points to an `int`, that `vec` is a `vector<int>`, and that `ival` is an `int`, explain the behavior of each of these expressions. Which, if any, are likely to be incorrect? Why? How might each be corrected?
+```cpp
+(a) ptr != 0 && *ptr++   (b) ival++ && ival
+(c) vec[ival++] <= vec[ival]
+```

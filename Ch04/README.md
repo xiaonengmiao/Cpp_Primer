@@ -126,3 +126,5 @@ dval = ival = pi = 0;
 (a) ptr != 0 && *ptr++   (b) ival++ && ival
 (c) vec[ival++] <= vec[ival]
 ```
+## Exercise 4.20
+

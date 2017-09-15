@@ -60,6 +60,14 @@ unsigned short value = 65535; ++value; // 0
 
 > Explain when operands are evaluated in the logical `AND`, logical `OR`, and equality operators.
 
+The logical `AND` and `OR` operators always evaluate their left operand before the right. Moreover, the right operand is evaluated if and only if the left operand does not determine the result. This strategy is known as **short-circuit evaluation**.
+
+- logical `AND` : the second operand is evaluated if and only if the left side is true.
+
+- logical `OR` : the second operand is evaluated if and only if the left side is false
+
+- equality operators == : undefined.
+
 ## Exercise 4.9
 
 > Explain the behavior of the condition in the following `if`:
@@ -67,18 +75,29 @@ unsigned short value = 65535; ++value; // 0
 const char *cp = "Hello World";
 if (cp && *cp)
 ```
+cp is a pointer to `const char *`, and it's not a nullptr. true.
+
+`*cp` is a const char: 'H', and it is explicit a nonzero value. true.
+
+true && true -> true.
 
 ## Exercise 4.10
 
 > Write the condition for a `while` loop that would read `int`s from the standard input and stop when the value read is equal to 42.
 
+[ex4.10-codelink](exercise4.10.cpp)
+
 ## Exercise 4.11
 
 > Write an expression that tests four values, `a`, `b`, `c`, and `d`, and ensures that `a` is greater than `b`, which is greater than `c`, which is greater than `d`.
 
+[ex4.11-codelink](exercise4.11.cpp)
+
 ## Exercise 4.12
 
 > Assuming `i`, `j`, and `k` are all `int`s, explain what `i` != `j` < `k` means.
+
+`i != j < k` is equivalent to `i != (j < k)`.
 
 ## Exercise 4.13
 

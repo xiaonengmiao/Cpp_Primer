@@ -104,15 +104,16 @@ true && true -> true.
 > What are the values of `i` and `d` after each assignment?
 ```cpp
 int i; double d;
-(a) d = i = 3.5;  (b) i = d = 3.5;
+(a) d = i = 3.5; // i = 3, d = 3.0
+(b) i = d = 3.5; // d = 3.5, i = 3
 ```
 
 ## Exercise 4.14
 
 > Explain what happens in each of the `if` tests:
 ```cpp
-if (42 = i)  // ...
-if (i = 42)  // ...
+if (42 = i)  // complie error: expression is not assignable
+if (i = 42)  // true
 ```
 
 ## Exercise 4.15
@@ -121,6 +122,11 @@ if (i = 42)  // ...
 ```cpp
 double dval; int ival; int *pi;
 dval = ival = pi = 0;
+// pi is a pointer to int.
+// can not assign to `int` from type `int *`
+// correct it
+dval = ival = 0;
+pi = 0;
 ```
 
 ## Exercise 4.16
@@ -128,15 +134,22 @@ dval = ival = pi = 0;
 > Although the following are legal, they probably do not bahave as the programmer expects. Why? Rewrite the expressions as you think they should be.
 ```cpp
 (a) if (p = getPtr() != 0)    (b) if (i = 1024)
+// correct it
+(a) if ((p = getPtr()) != 0)
+(b) if (i == 1024)
 ```
 
 ## Exercise 4.17
 
 > Explain the difference between prefix and postfix increment.
 
+See: [What is the difference between ++i and i++](https://stackoverflow.com/questions/24853/what-is-the-difference-between-i-and-i)
+
 ## Exercise 4.18
 
 > What would happen if the `while` loop on page 148 that prints the elements from a `vector` used the prefix increment operator?
+
+It will print from the second element and dereference v.end() at last, which is a *UB*.
 
 ## Exercise 4.19
 

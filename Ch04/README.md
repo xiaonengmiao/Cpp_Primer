@@ -149,7 +149,7 @@ See: [What is the difference between ++i and i++](https://stackoverflow.com/ques
 
 > What would happen if the `while` loop on page 148 that prints the elements from a `vector` used the prefix increment operator?
 
-It will print from the second element and dereference v.end() at last, which is a *UB*.
+It will print from the second element and dereference v.end() at last, which is a **UB**.
 
 ## Exercise 4.19
 

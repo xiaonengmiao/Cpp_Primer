@@ -155,8 +155,38 @@ It will print from the second element and dereference v.end() at last, which is 
 
 > Given that `ptr` points to an `int`, that `vec` is a `vector<int>`, and that `ival` is an `int`, explain the behavior of each of these expressions. Which, if any, are likely to be incorrect? Why? How might each be corrected?
 ```cpp
-(a) ptr != 0 && *ptr++   (b) ival++ && ival
-(c) vec[ival++] <= vec[ival]
+(a) ptr != 0 && *ptr++       // check ptr is not a nullptr, and then check the pointer value is not 0
+(b) ival++ && ival           // check ival, and then ival+1 is not 0
+(c) vec[ival++] <= vec[ival] // incorrect. It is an **undefined behavior.**
+// correct it
+(c) vec[ival] <= vec[ival+1]
 ```
+See [order of evaluation](http://en.cppreference.com/w/cpp/language/eval_order)
+
 ## Exercise 4.20
 
+> Assuming that `iter` is a `vector<string>::iterator`, indicate which, if any, of the following expressions are legal. Explain the behavior of the legal expressions and why those that aren't legal are in error.
+```cpp
+(a) *iter++;  (b) (*iter)++;  (c) *iter.empty();
+(d) iter->empty;  (e) ++*iter;  (f) iter++->empty();
+```
+
+## Exercise 4.21
+
+> Write a program to use a conditional operator to find the elements in a `vector<int>` that have odd value and double the value of each such element.
+
+## Exercise 4.22
+
+> Extend the program that assigned high pass, pass, and fail grades to also assign low pass for grades between 60 and 75 inclusive. Write two versions: One version that uses only conditional operators; the other should use one or more `if` statements. Which version do you think is easier to understand and why?
+
+## Exercise 4.23
+
+> The following expression fails to complie due to operator precedence. Using Table 4.12(p.166), explain why it fails. How would you fix it?
+```cpp
+string s = "word";
+string pl = s + s[s.size() - 1] == 's' ? "" : "S";
+```
+
+## Exercise 4.24
+
+> Our program 

@@ -156,4 +156,39 @@ using compareType = bool (*)(const Sales_data &lhs, const Sales_data &rhs);
 std::multiset<Sales_data, compareType> bookstore(compareIsbn);
 std::multiset<Sales_data, compareType>::iterator c_it = bookstore.begin();
 ```
+## Exercise 11.20
 
+> Rewrite the word-counting program from § 11.1 (p. 421) to use `insert` instead of subsripting. Which program do you think is easier to write and read? Explain your reasoning.
+
+[ex11.20-codelink](exercise11.20.cpp)
+
+## Exercise 11.21
+
+> Assuming `word_count` is a `map` from `string` to `size_t` and `word` is a `string`, explain the following loop:
+```cpp
+while (cin >> word)
+  ++word_count.insert({word, 0}).first->second;
+```
+```cpp
+while reading into word
+   if word_count has key word:
+       word_count[word] += 1
+   else:
+       word_count[word] = 0
+       word_count[word] += 1
+```
+
+## Exercise 11.22
+
+> Given a `map<string, vector<int>>`, write the types used as an argument and as the return value for the version of `insert` that inserts one element.
+
+```cpp
+std::pair<std::string, std::vector<int>>  // argument
+std::pair<std::map<std::string, std::vector<int>>::iterator, bool> // return
+```
+
+## Exercise 11.23
+
+> Rewrite the `map` that stored `vector`s of children's names with a key that is the family last name for the exercise in § 11.2.1 (p. 424) to use a `multimap`.
+
+[ex11.23-codelink](exercise11.23.cpp)

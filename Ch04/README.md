@@ -239,6 +239,8 @@ ul1 || ul2 // == ture
 
 > Write a program to print the size of each of the build-in types.
 
+[ex4.28-codelink](exercise4.28.cpp)
+
 ## Exercise 4.29
 
 > Predict the output of the following code and explain your reasoning. Now run the program. Is the output what you expected? If not, figure out why.

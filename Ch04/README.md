@@ -175,9 +175,13 @@ See [order of evaluation](http://en.cppreference.com/w/cpp/language/eval_order)
 
 > Write a program to use a conditional operator to find the elements in a `vector<int>` that have odd value and double the value of each such element.
 
+[ex4.21-codelink](exercise4.21.cpp)
+
 ## Exercise 4.22
 
 > Extend the program that assigned high pass, pass, and fail grades to also assign low pass for grades between 60 and 75 inclusive. Write two versions: One version that uses only conditional operators; the other should use one or more `if` statements. Which version do you think is easier to understand and why?
+
+[ex4.22-codelink](exercise4.22.cpp)
 
 ## Exercise 4.23
 
@@ -186,7 +190,13 @@ See [order of evaluation](http://en.cppreference.com/w/cpp/language/eval_order)
 string s = "word";
 string pl = s + s[s.size() - 1] == 's' ? "" : "S";
 ```
+Operator Precedence: `?:` < `+` Fix it:
+```cpp
+string pl = s + (s[s.size() - 1] == 's' ? "" : "S");
+```
 
 ## Exercise 4.24
 
-> Our program 
+> Our program that distinguished between high pass, pass, and fail depended on the fact that the conditional operator is right associative. Describe how that operator would be evaluated if the operator were left associative.
+
+

@@ -167,8 +167,12 @@ See [order of evaluation](http://en.cppreference.com/w/cpp/language/eval_order)
 
 > Assuming that `iter` is a `vector<string>::iterator`, indicate which, if any, of the following expressions are legal. Explain the behavior of the legal expressions and why those that aren't legal are in error.
 ```cpp
-(a) *iter++;  (b) (*iter)++;  (c) *iter.empty();
-(d) iter->empty;  (e) ++*iter;  (f) iter++->empty();
+(a) *iter++; // return *iter, then ++iter.
+(b) (*iter)++; // illegal, *iter is a string, cannot increment value.
+(c) *iter.empty(); // illegal, iter should use '->' to indicate whether empty.
+(d) iter->empty; // indicate the iter's value whether empty 
+(e) ++*iter; // illegal, string have not increment
+(f) iter++->empty(); // return iter->empty(), then ++iter
 ```
 
 ## Exercise 4.21
@@ -199,4 +203,163 @@ string pl = s + (s[s.size() - 1] == 's' ? "" : "S");
 
 > Our program that distinguished between high pass, pass, and fail depended on the fact that the conditional operator is right associative. Describe how that operator would be evaluated if the operator were left associative.
 
+if the operator were left associative.
+```cpp
+finalgrade = (grade > 90) ? "high pass" : (grade < 60) ? "fail" : "pass";
+```
+would same as :
+```cpp
+finalgrade = ((grade > 90) ? "high pass" : (grade < 60)) ? "fail" : "pass";
+```
+if `grade > 90`, first conditional operator's result is `high pass`. so the finalgrade is always fail.
+It's contradictory obviously.
 
+## Exercise 4.25
+
+> What is the value of ~'q' << 6 on a machine with 32-bit ints and 8 bit chars, that uses Latin-1 character set in which 'q' has the bit pattern 01110001?
+
+The final value in decimal is `-7296`.  
+
+## Exercise 4.26
+> In our grading example in this section, what would happen if we used unsigned int as the type for quiz1?
+
+The C++ standard does not specify the size of integral types in bytes, but it specifies minimum ranges they must be able to hold. Minimum mange of `unsigned int` is 0 to 65535. Thus if `unsigned int` adopted, the result is undefined.
+
+## Exercise 4.27
+> What is the result of each of these expressions?
+```cpp
+unsigned long ul1 = 3, ul2 = 7;
+ul1 & ul2 // == 3
+ul1 | ul2 // == 7
+ul1 && ul2 // == true
+ul1 || ul2 // == ture
+```
+
+## Exercise 4.28
+
+> Write a program to print the size of each of the build-in types.
+
+## Exercise 4.29
+
+> Predict the output of the following code and explain your reasoning. Now run the program. Is the output what you expected? If not, figure out why.
+```cpp
+int x[10];   int *p = x;
+cout << sizeof(x)/sizeof(*x) << endl;
+cout << sizeof(p)/sizeof(*p) << endl;
+```
+
+ * The first is 10. It returns the number of elements in x. 
+ * The second result is undefined.
+
+-----
+reference: [Why the size of a pointer is 4bytes in C++](http://stackoverflow.com/a/2428809)
+
+## Exercise 4.30
+> Using Table 4.12 (p. 166), parenthesize the following expressions to match the default evaluation:
+```cpp
+sizeof x + y      // (sizeof x)+y . "sizeof" has higher precedence than binary `+`.
+sizeof p->mem[i]  // sizeof(p->mem[i])
+sizeof a < b      // sizeof(a) < b
+sizeof f()        //If `f()` returns `void`, this statement is undefined, otherwise it returns the size of return type.
+```
+
+-----
+reference: [sizeof operator](http://en.cppreference.com/w/cpp/language/sizeof)
+
+## Exercise 4.31
+> The program in this section used the prefix increment and decrement operators. Explain why we used prefix and not postfix. What changes would have to be made to use the postfix versions? Rewrite the program using postfix operators.
+
+~~postfix will copy itself as return, then increment or decrement. prefix will increment or decrement first, and return itself. so prefix is more effective in this program.(reduce one copy space.)~~
+
+We use prefix and not postfix, just because of the `Advice: Use Postfix Operators only When Necessary` on `§4.5. Increment and Decrement Operators`.
+
+>**Advice: Use Postfix Operators only When Necessary**
+
+>Readers from a C background might be surprised that we use the prefix increment in the programs we've written. The reason is simple: The prefix version avoids unnecessary work. It increments the value and returns the incremented version.The postfix operator must store the original value so that it can return the unincremented value as its result. If we don’t need the unincremented value, there’s no need for the extra work done by the postfix operator.
+
+>For ints and pointers, the compiler can optimize away this extra work. For more complicated iterator types, this extra work potentially might be more costly. By habitually using the prefix versions, we do not have to worry about whether the performance difference matters. Moreover—and perhaps more importantly—we can express the intent of our programs more directly.
+
+So, it's just a good habits. And there are no changes if we have to be made to use the postfix versions. Rewrite:
+```cpp
+for(vector<int>::size_type ix = 0; ix != ivec.size(); ix++, cnt--)  
+    ivec[ix] = cnt;
+```
+
+## Exercise 4.32
+> Explain the following loop.
+```cpp
+constexpr int size = 5;
+int ia[size] = { 1, 2, 3, 4, 5 };
+for (int *ptr = ia, ix = 0;
+    ix != size && ptr != ia+size;
+    ++ix, ++ptr) { /* ... */ }
+```
+
+`ptr` and `ix` have the same function. The former use a pointer, and the latter use the index of array. we use the loop to through the array.(just choose one from `ptr` and `ix`)
+ 
+## Exercise 4.33
+> Using Table 4.12 (p. 166) explain what the following expression does:
+```cpp
+someValue ? ++x, ++y : --x, --y
+```
+
+Because of the most lowest precedence of the comma operator, the expression is same as:
+```cpp
+(someValue ? ++x, ++y : --x), --y
+```
+If someValue is true, then `++x`, and the result is `y`, if someValue is false, then `--x`, and the result is `--y`. so it is also same as:
+```cpp
+someValue ? (++x, y) : (--x, --y);
+```
+Even though the result has nothing to do with `x`, the evaluation of `someValue` does effect the operation on `x`.
+
+## Exercise 4.34
+> Given the variable definitions in this section, explain what conversions take place in the following expressions:
+(a) if (fval)
+(b) dval = fval + ival;
+(c) dval + ival * cval;
+Remember that you may need to consider the associativity of the operators.
+
+```cpp
+if (fval) // fval converted to bool
+dval = fval + ival; // ival converted to fval, then the result of fval add ival converted to double.
+dval + ival * cval; // cval converted to int, then that int and ival converted to double.
+```
+
+## Exercise 4.35
+>Given the following definitions,
+```cpp
+char cval; int ival; unsigned int ui; float fval; double dval;
+```
+identify the implicit type conversions, if any, taking place:
+```cpp
+cval = 'a' + 3; // 'a' promoted to int, then the result of ('a' + 3)(int) converted to char.
+fval = ui - ival * 1.0; // ival converted to double , ui also converted to double. then that double converted(by truncation) to float.
+dval = ui * fval; // ui promoted to float. then that float converted to double.
+cval = ival + fval + dval;  // ival converted to float, then that float and fval converted to double. At last, that double converted to char(by truncation).
+```
+
+## Exercise 4.36
+> Assuming i is an int and d is a double write the expression i *= d so that it does integral, rather than floating-point, multiplication.
+
+```cpp
+i *= static_cast<int>(d);
+```
+
+## Exercise 4.37
+> Rewrite each of the following old-style casts to use a named cast:
+```cpp
+int i; double d; const string *ps; char *pc; void *pv;
+pv = (void*)ps; // pv = const_cast<string*>(ps); or pv = static_cast<void*>(const_cast<string*>(ps));
+i = int(*pc);   // i = static_cast<int>(*pc);
+pv = &d;        // pv = static_cast<void*>(&d);
+pc = (char*)pv; // pc = reinterpret_cast<char*>(pv);
+```
+
+## Exercise 4.38
+> Explain the following expression:
+```cpp
+double slope = static_cast<double>(j/i);
+```
+
+j/i is an int(by truncation), then converted to double and assigned to slope.

@@ -255,9 +255,13 @@ pos.first->second       the value part of the key-value of the first element wit
 
 > Write a program that defines a `multimap` of authors and their works. Use `find` to find an element in the `multimap` and `erase` that element. Be sure your program works correctly if the element you look for is not in the `map`.
 
+[ex11.31-codelink](exercise11.31.cpp)
+
 ## Exercise 11.32
 
 > Using the `multimap` from the previous exercise, write a program to print the list of authors and their works alphabetically.
+
+[ex11.32-codelink](exercise11.32.cpp)
 
 ## Exercise 11.33
 

@@ -223,17 +223,33 @@ v[0] = 1;
 
 > What kinds of problems would you use `count` to solve? When might you use `find` instead?
 
+I would use count to deal with multimap or multi multiset.
+
+As for the associative container that have unique key, I would use find instead of count.
+
 ## Exercise 11.28
 
 > Define and initialize a variable to hold the result of calling `find` on a `map` from `string` to `vector` of `int`.
+
+```cpp
+std::map<std::string, std::vector<int>::iterator
+```
 
 ## Exercise 11.29
 
 > What do `upper_bound`, `lower_bound`, and `equal_range` return when you pass them a key that is not in the container?
 
+If the element is not in the multimap, then lower_bound and upper_bound will return equal iterators; both will refer to the point at which the key can be inserted without disrupting the order.
+
+If no matching element is found, then both the first and second iterators refer to the position where this key can be inserted.
+
 ## Exercise 11.30
 
-> Explain the meaning of the operand `pos.first->second` used in the output expression of the final program in this section.
+> Explain the meaning of the operand `pos.first->second` used in the output expression of the final program in this section. 
+
+pos                     a pair
+pos.first               the iterator refering to the first element with the matching key
+pos.first->second       the value part of the key-value of the first element with the matching key
 
 ## Exercise 11.31
 

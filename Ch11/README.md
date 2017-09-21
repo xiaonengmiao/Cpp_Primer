@@ -192,3 +192,90 @@ std::pair<std::map<std::string, std::vector<int>>::iterator, bool> // return
 > Rewrite the `map` that stored `vector`s of children's names with a key that is the family last name for the exercise in § 11.2.1 (p. 424) to use a `multimap`.
 
 [ex11.23-codelink](exercise11.23.cpp)
+
+## Exercise 11.24
+
+> What does the following program do?
+```cpp
+map<int, int> m
+m[0] = 1;
+```
+
+add a key-value `pair { 0, 1 }` into the map.
+
+## Exercise 11.25
+
+> Contrast the following program with the one in the previous exercise.
+```cpp
+vector<int> v;
+v[0] = 1;
+```
+
+**UB**, since it's trying to dereference an item out of range.
+
+## Exercise 11.26
+
+> What type can be used to subscript a `map`? What type does the subscript operator return? Give a concrete example--that is, define a `map` and then write the types that can be used to subscript the `map` and the type that would be returned from the subscript operator.
+
+[ex11.26-codelink](exercise11.26.cpp)
+
+## Exercise 11.27
+
+> What kinds of problems would you use `count` to solve? When might you use `find` instead?
+
+## Exercise 11.28
+
+> Define and initialize a variable to hold the result of calling `find` on a `map` from `string` to `vector` of `int`.
+
+## Exercise 11.29
+
+> What do `upper_bound`, `lower_bound`, and `equal_range` return when you pass them a key that is not in the container?
+
+## Exercise 11.30
+
+> Explain the meaning of the operand `pos.first->second` used in the output expression of the final program in this section.
+
+## Exercise 11.31
+
+> Write a program that defines a `multimap` of authors and their works. Use `find` to find an element in the `multimap` and `erase` that element. Be sure your program works correctly if the element you look for is not in the `map`.
+
+## Exercise 11.32
+
+> Using the `multimap` from the previous exercise, write a program to print the list of authors and their works alphabetically.
+
+## Exercise 11.33
+
+> Implement your own version of the word-transformation program.
+
+## Exercise 11.34:
+
+> What would happen if we used the subscript operator instead of find in the transform function?
+
+Say the code has been changed like below:
+```cpp
+const string& transform(const string &s, const map<string, string> &m)
+{
+    return m[s];
+}
+```
+The above code won't compile because the subscript operator might insert an element (when the element with the key s is not found), and we may use subscript only on a map that is not const.
+
+## Exercise 11.35:
+
+> In buildMap, what effect, if any, would there be from rewriting `trans_map[key] = value.substr(1);` as `trans_map.insert({ key, value.substr(1) })`?
+
+- use subscript operator: if a word does appear multiple times, our loops will put the **last** corresponding phrase into trans_map
+- use `insert`: if a word does appear multiple times, our loops will put the **first** corresponding phrase into trans_map
+
+## Exercise 11.36:
+
+> Our program does no checking on the validity of either input file. In particular, it assumes that the rules in the transformation file are all sensible.
+What would happen if a line in that file has a key, one space, and then the end of the line? Predict the behavior and then check it against your version of the program.
+
+If so, a key-value pair is going to be added into the map: `{key, ""}`. As a result, any key would be replaced with empty string.
+
+## Exercise 11.37:
+
+> What are the advantages of an unordered container as compared to the ordered version of that container? What are the advantages of the ordered version?
+
+[A summary](http://www.cs.fsu.edu/~lacher/courses/COP4531/fall13/lectures/containers2/slide04.html)

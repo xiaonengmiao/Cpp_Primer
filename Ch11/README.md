@@ -267,6 +267,8 @@ pos.first->second       the value part of the key-value of the first element wit
 
 > Implement your own version of the word-transformation program.
 
+[ex11.33-codelink](exercise11.33.cpp)
+
 ## Exercise 11.34:
 
 > What would happen if we used the subscript operator instead of find in the transform function?

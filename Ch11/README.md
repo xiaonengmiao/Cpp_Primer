@@ -301,3 +301,10 @@ If so, a key-value pair is going to be added into the map: `{key, ""}`. As a res
 > What are the advantages of an unordered container as compared to the ordered version of that container? What are the advantages of the ordered version?
 
 [A summary](http://www.cs.fsu.edu/~lacher/courses/COP4531/fall13/lectures/containers2/slide04.html)
+
+## Exercise 11.38
+
+> Rewrite the word-counting (§ 11.1, p.421) and word-transformation (§ 11.3.6, p.440) programs to use an `unordered_map`.
+
+[ex11.38-codelink](exercise11.38.cpp)
+

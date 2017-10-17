@@ -38,7 +38,7 @@
 
 > Write and test your own version of fact.
 
-[ex6.3-codelink](exercise6.3.cpp)
+[ex6.3-codelink](exercise6.03.cpp)
 
 ## Exercise 6.4
 

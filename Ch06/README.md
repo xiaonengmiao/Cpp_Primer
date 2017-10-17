@@ -38,19 +38,19 @@
 
 > Write and test your own version of fact.
 
-[ex6.3-codelink](exercise6.3.cc)
+[ex6.3-codelink](exercise6.3.cpp)
 
 ## Exercise 6.4
 
 > Write a function that interacts with the user, ask for a number and generating the factorial of that number. Call this function from main.
 
-This code is the same as the precious one [ex6.4-codelink](exercise6.3.cc).
+This code is the same as the precious one [ex6.4-codelink](exercise6.3.cpp).
 
 ## Exercise 6.5
 
 > Write a function to return the absolute value of its argument.
 
-[ex6.5-codelink](exercise6.5.cc)
+[ex6.5-codelink](exercise6.5.cpp)
 
 ## Exercise 6.6
 
@@ -87,7 +87,7 @@ int main()
 > Write a function that returns 0 when it is first called and then generates numbers in sequence each time it is called
 > again.
 
-[ex6.7-codelink](exercise6.07.cc)
+[ex6.7-codelink](exercise6.07.cpp)
 
 ## Exercise 6.8
 
@@ -98,11 +98,11 @@ int main()
 
 ## Exercise 6.9
 
-> Write your own version of the `factor.cc` and `factMain.cc` files. These files should include your `Chapter6.h` from
+> Write your own version of the `factor.cpp` and `factMain.cpp` files. These files should include your `Chapter6.h` from
 > the exercises in the previous section. Use these files to understand how your compiler supports separate compilation.
 
-[fact.cc-codelink](fact.cc)
-[factMain.cc-codelink](factMain.cc)
+[fact.cpp-codelink](fact.cpp)
+[factMain.cpp-codelink](factMain.cpp)
 
 ## Exercise 6.10
 
@@ -124,14 +124,14 @@ void swap(int *i, int *j)
 
 > Write and test your own version of `reset` that takes a reference.
 
-[ex6.11-codelink](exercise6.11.cc)
+[ex6.11-codelink](exercise6.11.cpp)
 
 ## Exercise 6.12
 
 > Rewrite the program from the exercise 6.10 in § 6.2.1 (p.210) to use references instead of pointers to swap the values
 > of two `ints`. Which version do you think would be easier to use and why?
 
-[ex6.12-codelink](exercise6.12.cc)
+[ex6.12-codelink](exercise6.12.cpp)
 
 ## Exercise 6.13
 
@@ -194,7 +194,7 @@ Since this function does not change the argument.
 
 Not the same. For the first one "const" was used, since no change need to do for the argument. For the second function, "const" can't be used, because the content of the agument should be changed.
 
-[ex6.17-codelink](exercise6.17.cc)
+[ex6.17-codelink](exercise6.17.cpp)
 
 ## Exercise 6.18
 
@@ -227,19 +227,19 @@ vector<int> vec(10);
 
 If we can use `const`, just use it. If we make a parameter a plain reference when it could be a reference to `const`, the reference value maybe changed.
 
-[ex6.20-codelink](exercise6.20.cc)
+[ex6.20-codelink](exercise6.20.cpp)
 
 ## Exercise 6.21
 
 > Write a function that takes an `int` and a pointer points. What type should you use for the pointer?
 
-[ex6.21-codelink](exercise6.21.cc)
+[ex6.21-codelink](exercise6.21.cpp)
 
 ## Exercise 6.22
 
 > Write a function to swap two `int` pointers.
 
-[ex6.22-codelink](exercise6.22.cc)
+[ex6.22-codelink](exercise6.22.cpp)
 
 ## Exercise 6.23
 
@@ -249,7 +249,7 @@ If we can use `const`, just use it. If we make a parameter a plain reference whe
 int i = 0, j[2] = {0, 1};
 ```
 
-[ex6.23-codelink](exercise6.23.cc)
+[ex6.23-codelink](exercise6.23.cpp)
 
 ## Exercise 6.24
 
@@ -276,19 +276,19 @@ void print10(const int (&ia)[10]) { /*...*/ }
 
 > Write a `main` function that takes two arguments. Concatenate the supplied arguments and print the resulting `string`.
 
-[ex6.25-codelink](exercise6.25.cc)
+[ex6.25-codelink](exercise6.25.cpp)
 
 ## Exercise 6.26
 
 > Write a program that accepts the options presented in this section. Print the values of the arguments passed to `main`.
 
-[ex6.26-codelink](exercise6.26.cc)
+[ex6.26-codelink](exercise6.26.cpp)
 
 ## Exercise 6.27
 
 > Write a function that takes an `initialized_list<int>` and produces the sum of the elements in the list.
 
-[ex6.27-codelink](exercise6.27.cc)
+[ex6.27-codelink](exercise6.27.cpp)
 
 ## Exercise 6.28
 
@@ -306,12 +306,12 @@ Depends on the type of elements of `initializer_list`. When the type is [PODType
 
 > Compile the version of `str_subrange` as presented on page 223 to see what your compiler does with the indicated errors.
 
-exercise6.30.cc:13:7: error: non-void function 'str_subrange' should return a value [-Wreturn-type]
+exercise6.30.cpp:13:7: error: non-void function 'str_subrange' should return a value [-Wreturn-type]
       return;
       ^
 1 error generated.
 
-[ex6.30-codelink](exercise6.30.cc) note that this code is wrong!!!
+[ex6.30-codelink](exercise6.30.cpp) note that this code is wrong!!!
 
 ## Exercise 6.31
 
@@ -338,7 +338,7 @@ legal, it gave the values (0 ~ 9) to array `ia`.
 
 > Write a recursive function to print the contents of a `vector`.
 
-[ex6.33-codelink](exercise6.33.cc)
+[ex6.33-codelink](exercise6.33.cpp)
 
 ## Exercise 6.34
 
@@ -428,7 +428,7 @@ char *init(int ht, int wd = 80, char bckgrnd = ' ');
 
 > Give the second parameter of make_plural (§6.3.2,p.224) a default argument of `s`. Test your program by printing singular and plural versions of the words success and failure.
 
-[ex6.42-codelink](exercise6.42.cc)
+[ex6.42-codelink](exercise6.42.cpp)
 
 ## Exercise 6.43
 
@@ -467,7 +467,7 @@ Because `std::string::size()` is not a `constexpr` function and `s1.size() == s2
 
 > Revise the program you wrote in the exercises in §6.3.2(p.228) that used recursion to print the contents of a vector to conditionally print information about its execution. For example, you might print the size of the vector on each call. Compile and run the program with debugging turned on and again with it turned off.
 
-[ex6.470-codelink](exercise6.47.cc)
+[ex6.470-codelink](exercise6.47.cpp)
 
 ## Exercise 6.48
 
@@ -509,7 +509,7 @@ viable function:
 
 > Write all four versions of `f`. Each function should print a distinguishing message. Check your answers for the previous exercise. If your answers were incorrect, study this section until you understand why your answers were wrong.
 
-[ex6.51-codelink](exercise6.51.cc)
+[ex6.51-codelink](exercise6.51.cpp)
 
 ## Exercise 6.52
 
@@ -582,4 +582,4 @@ int divide(int a, int b) { return b != 0 ? a / b : 0; }
 
 > Call each element in the `vector` and print their result.
 
-[ex6.56-codelink](exercise6.56.cc)
+[ex6.56-codelink](exercise6.56.cpp)

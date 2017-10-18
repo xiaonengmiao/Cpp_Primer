@@ -19,7 +19,8 @@ At the end of this code,
 [StrBlob](ex12_02.h) | [TEST](ex12_02_TEST.cpp)
 
 ## Exercise 12.03:
->Does this class need const versions of push_back and pop_back? If so, add them. If not, why aren’t they needed?
+
+> Does this class need const versions of push_back and pop_back? If so, add them. If not, why aren’t they needed?
 
 You can certainly do this if you want to, but there doesn't seem to be any
 logical reason. The compiler doesn't complain because this doesn't modify

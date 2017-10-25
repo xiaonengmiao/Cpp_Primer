@@ -201,10 +201,14 @@ Not the same. For the first one "const" was used, since no change need to do for
 > Write declarations for each of the following functions. When you write these decarations, use the name of the function to indicate what the function does.
 
 - (a) A function named `compare` that returns a `bool` and has two parameters that are references to a class named `matrix`.
-- (b) A function named `change_val` that returns a vectors a `vector<int>` iterator and takes two parameters: One is an `int` and the other is an iterator for a `vector<int>`.
+- (b) A function named `change_val` that returns a `vector<int>` iterator and takes two parameters: One is an `int` and the other is an iterator for a `vector<int>`.
 
-- (a) bool compare(matrix &m1, matrix &m2);
-- (b) vector<int>::iterator change_val(int i, vector<int>::iterator iter);
+- (a) ```cpp
+bool compare(matrix &m1, matrix &m2);
+```
+- (b) ```cpp
+vector<int>::iterator change_val(int i, vector<int>::iterator);
+```
 
 ## Exercise 6.19
 

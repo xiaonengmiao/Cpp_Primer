@@ -203,10 +203,12 @@ Not the same. For the first one "const" was used, since no change need to do for
 - (a) A function named `compare` that returns a `bool` and has two parameters that are references to a class named `matrix`.
 - (b) A function named `change_val` that returns a `vector<int>` iterator and takes two parameters: One is an `int` and the other is an iterator for a `vector<int>`.
 
-- (a) ```cpp
+- (a)
+```cpp
 bool compare(matrix &m1, matrix &m2);
 ```
-- (b) ```cpp
+- (b) 
+```cpp
 vector<int>::iterator change_val(int i, vector<int>::iterator);
 ```
 

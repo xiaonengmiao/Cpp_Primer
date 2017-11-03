@@ -235,7 +235,7 @@ If we can use `const`, just use it. If we make a parameter a plain reference whe
 
 ## Exercise 6.21
 
-> Write a function that takes an `int` and a pointer points. What type should you use for the pointer?
+> Write a function that takes an `int` and a pointer to an `int` and returns the larger of the `int` value to which the pointer points. What type should you use for the pointer?
 
 [ex6.21-codelink](exercise6.21.cpp)
 

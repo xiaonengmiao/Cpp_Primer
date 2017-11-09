@@ -57,13 +57,6 @@ function `print` just print out the parameter and it's not intend to change anyt
 
 [ex7.9-codelink](exercise7.09.hpp)
 
-## Exercise 7.8
-
-> Why does `read` defines its `Sales_data` parameter as a plain reference and `print` define its parameter as a
-> reference to const?
-
-function `read` is intended to change the parameter member `revenue`'s value, so it is a plain reference.
-
 ## Exercise 7.10
 
 > What does the condition in the following `if` statement do?

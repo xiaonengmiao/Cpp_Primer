@@ -55,6 +55,15 @@ function `print` just print out the parameter and it's not intend to change anyt
 
 > Add operations to read and print `Person` objects to the code you wrote for the exercises in § 7.1.2 (p.260).
 
+[ex7.9-codelink](exercise7.09.cpp)
+
+## Exercise 7.8
+
+> Why does `read` defines its `Sales_data` parameter as a plain reference and `print` define its parameter as a
+> reference to const?
+
+function `read` is intended to change the parameter member `revenue`'s value, so it is a plain reference.
+
 ## Exercise 7.10
 
 > What does the condition in the following `if` statement do?

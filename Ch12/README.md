@@ -18,7 +18,7 @@ At the end of this code,
 
 > Write your own version of the `StrBlob` class including the `const` versions of `front` and `back`.
 
-[ex12.02-codelink]()
+[ex12.02-codelink](exercise12.02.hpp) | [Test](exercise12.02.cpp)
 
 ## Exercise 12.03:
 

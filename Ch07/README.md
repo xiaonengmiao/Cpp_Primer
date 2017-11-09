@@ -55,7 +55,7 @@ function `print` just print out the parameter and it's not intend to change anyt
 
 > Add operations to read and print `Person` objects to the code you wrote for the exercises in § 7.1.2 (p.260).
 
-[ex7.9-codelink](exercise7.09.cpp)
+[ex7.9-codelink](exercise7.09.hpp)
 
 ## Exercise 7.8
 

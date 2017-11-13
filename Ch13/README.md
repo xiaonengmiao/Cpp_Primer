@@ -15,6 +15,7 @@ When copy initialization happens and that copy initialization requires either th
 - Some class types also use copy initialization for the objects they allocate.
 
 ## Exercise 13.2:
+
 > Explain why the following declaration is illegal:
 ```cpp
 Sales_data::Sales_data(Sales_data rhs);
@@ -49,6 +50,7 @@ when we copy a `StrBlob`, the `shared_ptr` member's use_count add one.
 when we copy a `StrBlobPrts`, the `weak_ptr` member's use_count isn't changed.(cause the count belongs to `shared_ptr`)
 
 ## Exercise 13.4:
+
 > Assuming Point is a class type with a public copy constructor, identify each use of the copy constructor in this program fragment:
 ```cpp
 Point global;
@@ -61,7 +63,19 @@ Point foo_bar(Point arg) // 1
 }
 ```
 
-## [Exercise 13.5](ex13_05.h)
+## Exercise 13.5:
+
+> Given the following sketch of a class, write a copy constructor that copies all the members. Your constructor should dynamically allocate a new `string` (§ 12.1.2, p. 458) and copy the object to which `ps` points, rather than copying `ps` itself.
+```cpp
+class HasPtr {
+public:
+    HasPtr(const std::string &s = std::string()):
+        ps(new std::string(s)) { }
+    private:
+        std::string *ps;
+        int i;
+};
+```
 
 ## Exercise 13.6:
 > What is a copy-assignment operator? When is this operator used? What does the synthesized copy-assignment operator do? When is it synthesized?

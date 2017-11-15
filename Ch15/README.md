@@ -34,7 +34,7 @@ A virtual member in a base class expects its derived class define its own versio
 ## Exercise 15.5:
 > Define your own version of the `Bulk_quote` class.
 
-[Bulk_quote](ex15.4.5.6/bulk_quote.h)
+[Bulk_quote](exercise15.05.hpp)
 
 ## Exercise 15.6:
 > Test your `print_total` function from the exercises in § 15.2.1 (p. 595) by passing both `Quote` and `Bulk_quote` objects o that function.

@@ -1,7 +1,6 @@
 #ifndef QUOTE_H
 #define QUOTE_H
 
-#include <iostream>
 #include <string>
 
 class Quote 

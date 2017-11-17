@@ -80,14 +80,41 @@ void Quote::debug() const
 
  Sure. override means overriding the same name virtual function in base class. final means preventing any overriding this virtual function by any derived classes that are more lower at the hierarchy.
 
-## [Exercise 15.13](ex15.12.13.14/main.cpp)
+## Exercise 15.13
 
-## [Exercise 15.14](ex15.12.13.14/main.cpp)
+> Given the following classes, expain each `print` function:
+```cpp
+class base
+{
+  public:
+    string name() { return basename; }
+    virtual void print(ostream &os) { os << basename; }
+  private:
+    string basename;
+};
+class derived : public base 
+{
+  public: 
+    void print(ostream &os) { print(os); os << " " << i; }
+  private:
+    int i;
+};
+```
+
+If there is a problem in this code, how would you fix it?
+
+**Fixed**:
+
+[ex15.13-codelink](exercise15.13.cpp)
+
+## Exercise 15.14
+
+[ex15.14-codelink](exercise15.13.cpp)
 
 ## Exercise 15.15:
 > Define your own versions of `Disc_quote` and `Bulk_quote`.
 
-[Disc_quote](ex15.15.16.17/disc_quote.h) | [Bulk_quote](ex15.15.16.17/bulk_quote.h)
+[Disc_quote](disc_quote.hpp) | [Bulk_quote](bulk_quote.hpp)
 
 ## Exercise 15.16:
 > Rewrite the class representing a limited discount strategy, which you wrote for the exercises in § 15.2.2 (p. 601), to inherit from Disc_quote.

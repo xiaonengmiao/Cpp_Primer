@@ -39,9 +39,12 @@ A virtual member in a base class expects its derived class define its own versio
 ## Exercise 15.6:
 > Test your `print_total` function from the exercises in § 15.2.1 (p. 595) by passing both `Quote` and `Bulk_quote` objects o that function.
 
-[main](ex15.4.5.6/main.cpp)
+[ex15.06-codelink](exercise15.06.cpp)
 
-## [Exercise 15.7](ex15.7/main.cpp)
+## Exercise 15.7
+> Define a class that implements a limited discount strategy, which applies a discount to books purchased up to a given limit. If the number of copies exceeds that limit, the normal price applies to those purchased beyond the limit.
+
+[ex15.07-codelink](exercise15.07.cpp)
 
 ## Exercise 15.8
 > Define static type and dynamic type.

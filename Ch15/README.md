@@ -34,7 +34,7 @@ A virtual member in a base class expects its derived class define its own versio
 ## Exercise 15.5:
 > Define your own version of the `Bulk_quote` class.
 
-[Bulk_quote](exercise15.05.hpp)
+[Bulk_quote](bulk_quote.hpp)
 
 ## Exercise 15.6:
 > Test your `print_total` function from the exercises in § 15.2.1 (p. 595) by passing both `Quote` and `Bulk_quote` objects o that function.
@@ -119,7 +119,7 @@ If there is a problem in this code, how would you fix it?
 ## Exercise 15.16:
 > Rewrite the class representing a limited discount strategy, which you wrote for the exercises in § 15.2.2 (p. 601), to inherit from Disc_quote.
 
-[Limit_quote](ex15.15.16.17/limit_quote.h)
+[Limit_quote](limit_quote.hpp)
 
 ## Exercise 15.17:
 > Try to define an object of type Disc_quote and see what errors you get from the compiler.

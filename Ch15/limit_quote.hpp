@@ -1,14 +1,14 @@
 #ifndef LIMIT_QUOTE_H
 #define LIMIT_QUOTE_H
 
-#include "quote.hpp"
+#include "disc_quote.hpp"
 
 class Limit_quote : public Disc_quote
 {
 public:
     Limit_quote();
     Limit_quote(const std::string& b, double p, std::size_t max, double disc):
-        Quote(b, p), max_qty(max), discount(disc)    {   }
+        Disc_quote(b, p, max, disc) {   }
 
     double net_price(std::size_t n) const override;
 

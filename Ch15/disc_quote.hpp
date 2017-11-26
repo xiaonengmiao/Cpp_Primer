@@ -3,7 +3,7 @@
 
 #include "quote.hpp"
 
-class Disc_quote::public Quote
+class Disc_quote : public Quote
 {
   public:
     Disc_quote() = default;

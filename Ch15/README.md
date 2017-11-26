@@ -44,7 +44,7 @@ A virtual member in a base class expects its derived class define its own versio
 ## Exercise 15.7
 > Define a class that implements a limited discount strategy, which applies a discount to books purchased up to a given limit. If the number of copies exceeds that limit, the normal price applies to those purchased beyond the limit.
 
-[ex15.07-codelink](exercise15.07.cpp)
+[ex15.07-codelink](exercise15.07.cpp) | [Limit_quote](limit_quote.hpp)
 
 ## Exercise 15.8
 > Define static type and dynamic type.
@@ -76,7 +76,7 @@ void Quote::debug() const
               << "price= " <<this->price<< " ";
 }
 ```
-[test](ex15.11/main.cpp)
+[ex15.11-codelink](exercise15.11.cpp)
 
 ## Exercise 15.12:
 > Is it ever useful to declare a member function as both override and final? Why or why not?

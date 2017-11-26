@@ -3,7 +3,7 @@
 
 #include "quote.hpp"
 
-class Limit_quote : public Quote
+class Limit_quote : public Disc_quote
 {
 public:
     Limit_quote();

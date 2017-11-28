@@ -106,27 +106,63 @@ It's safe. Because after 'r2 = q2', the reference count belongs to r2 reduce to 
 
 ## Exercise 12.10
 
-[ex12.07-codelink](exercise12.07.cpp)
+> Explain whether the following call to the `processing` function defined on page 464 is correct. If not, how would you correct the call?
+
+```cpp
+shared_ptr<int> p(new int());
+process(shared_ptr<int>(p));
+```
+
+[ex12.10-codelink](exercise12.10.cpp)
 
 ## Exercise 12.11
 
-[ex12.07-codelink](exercise12.07.cpp)
+> What would happen if we called `process` as follows?
+
+```cpp
+process(shared_ptr<int>(p.get()));
+```
+
+[ex12.11-codelink](exercise12.11.cpp)
 
 ## Exercise 12.12
 
-[ex12.07-codelink](exercise12.07.cpp)
+> Using the declarations of `p` and `sp` explain each of the following calls to `process`. If the call is legal, explain what it does. If the call is illegal, explain why:
+
+```cpp
+auto p = new int;
+auto sp = make_shared<int>();
+(a) process(sp);
+(b) process(new int());
+(c) process(p);
+(d) process(shared_ptr<int>(p));
+```
+
+[ex12.12-codelink](exercise12.12.cpp)
 
 ## Exercise 12.13
 
-[ex12.07-codelink](exercise12.07.cpp)
+> What happens if we execute the following code?
+
+```cpp
+auto sp = make_shared<int>();
+auto p = sp.get();
+delete p;
+```
+
+[ex12.13-codelink](exercise12.13.cpp)
 
 ## Exercise 12.14
 
-[ex12.07-codelink](exercise12.07.cpp)
+> Write your own version of a function that uses a `shared_ptr` to manage a `connection` function.
+
+[ex12.14-codelink](exercise12.14.cpp)
 
 ## Exercise 12.15
 
-[ex12.07-codelink](exercise12.07.cpp)
+> Rewrite the first execise to use a lambda (§ 10.3.2, p. 388) in place of the `end_connection` function.
+
+[ex12.15-codelink](exercise12.15.cpp)
 
 ## Exercise 12.16
 

@@ -150,7 +150,7 @@ auto p = sp.get();
 delete p;
 ```
 
-[ex12.13-codelink](exercise12.13.cpp)
+generate a runtime error: double free
 
 ## Exercise 12.14
 

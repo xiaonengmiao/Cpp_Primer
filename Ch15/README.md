@@ -41,12 +41,12 @@ A virtual member in a base class expects its derived class define its own versio
 
 [ex15.06-codelink](exercise15.06.cpp)
 
-## Exercise 15.7
+## Exercise 15.7:
 > Define a class that implements a limited discount strategy, which applies a discount to books purchased up to a given limit. If the number of copies exceeds that limit, the normal price applies to those purchased beyond the limit.
 
 [ex15.07-codelink](exercise15.07.cpp) | [Limit_quote](limit_quote.hpp)
 
-## Exercise 15.8
+## Exercise 15.8:
 > Define static type and dynamic type.
 
 The static type of an expression is always known at compile time.
@@ -265,7 +265,7 @@ The objects held for this exercise are smart pointers to the Quote objects.In th
 ## Exercise 15.30:
 > Write your own version of the `Basket` class and use it to compute prices for the same transactions as you used in the previous exercises.
 
-[Basket h](ex15.30/basket.h) | [Basket cpp](ex15.30/basket.cpp) | [main](ex15.30/main.cpp)
+[Basket h](ex15.30/basket.hpp) | [Basket cpp](ex15.30/basket.cpp) | [main](ex15.30/main.cpp)
 
 ## Exercise 15.31:
 > Given that s1, s2, s3, and s4 are all strings, determine what objects are created in the following expressions:

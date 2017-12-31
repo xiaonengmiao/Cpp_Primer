@@ -245,7 +245,7 @@ As a result, the default constructor of any class derived from it has been defin
 3. any data members of its own are default initialized.
 4. the rest details are in the section section 15.7.4.
 
-[Bulk_quote](/ex15.27/bulk_quote.h)
+[Bulk_quote](ex15.27/bulk_quote.h)
 
 ## Exercise 15.28:
 

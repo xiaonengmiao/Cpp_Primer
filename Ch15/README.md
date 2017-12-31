@@ -179,13 +179,13 @@ Member functions and friends of classes derived from D may use the derived-to-ba
 * Derived_from_Private **illegal**
 * Derived_from_Protected **legal**
 
-## Exercise 15.20
+## Exercise 15.20:
 
 > Write code to test your answers to the previous two exercises.
 
 [ex15.20-codelink](exercise15.20.cpp)
 
-## Exercise 15.21
+## Exercise 15.21:
 
 > Choose one of the following general abstractions containing a family of types (or choose one of your own). Organize the types into an inheritance hierarchy:
 
@@ -197,7 +197,7 @@ Member functions and friends of classes derived from D may use the derived-to-ba
 
 [Here is a example of 2D shape](ex15.21.22/main.cpp)
 
-## Exercise 15.22
+## Exercise 15.22:
 
 > For the class you chose in the previous exercise, identify some of the likely virtual functions as well as `public` and `protected` members.
 

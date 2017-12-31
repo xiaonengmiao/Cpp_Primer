@@ -233,7 +233,7 @@ As a result, the default constructor of any class derived from it has been defin
 
 >Compare your predictions with the output and continue experimenting until your predictions are reliably correct.
 
-[Quote](/ex15.26/quote.hpp) | [Bulk_quote](ex15.26/bulk_quote.hpp)
+[Quote](ex15.26/quote.hpp) | [Bulk_quote](ex15.26/bulk_quote.hpp)
 
 ## Exercise 15.27:
 > Redefine your `Bulk_quote` class to inherit its constructors.

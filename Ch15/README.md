@@ -349,7 +349,7 @@ for `rhs` which is a `WordQuery` : `WordQuery::rep()` where `query_word("wind")`
 ## Exercise 15.35:
 > Implement the `Query` and `Query_base classes`, including a definition of rep but omitting the definition of `eval`.
 
-[Query](ex15.34.35.36.39/query.h) | [Query_base](ex15.34.35.36.38/query_base.h)
+[Query](ex15.35/query.hpp) | [Query_base](ex15.35/query_base.hpp)
 
 ## Exercise 15.36:
 > Put print statements in the constructors and rep members and run your code to check your answers to (a) and (b) from the first exercise.
@@ -390,6 +390,8 @@ Press <RETURN> to close this window...
 ```
 
 ## Exercise 15.37:
+
+> What changes would your classes need if the derived classes had members of type `shared_ptr<Query_base>` rather than of type `Query`?
 
 ## Exercise 15.38:
 > Are the following declarations legal? If not, why not? If so, explain what the declarations mean.

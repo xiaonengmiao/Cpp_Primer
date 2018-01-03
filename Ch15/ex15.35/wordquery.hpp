@@ -1,7 +1,7 @@
 #ifndef WORDQUERY_H
 #define WORDQUERY_H
 
-#include "query_base.h"
+#include "query_base.hpp"
 
 /**
  * @brief The WordQuery class

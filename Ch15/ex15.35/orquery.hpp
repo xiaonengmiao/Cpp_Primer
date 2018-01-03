@@ -1,7 +1,7 @@
 #ifndef ORQUERY_H
 #define ORQUERY_H
 
-#include "binaryquery.h"
+#include "binaryquery.hpp"
 
 class OrQuery :public BinaryQuery
 {

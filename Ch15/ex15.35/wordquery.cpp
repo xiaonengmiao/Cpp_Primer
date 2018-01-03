@@ -1,2 +1,2 @@
-#include "wordquery.h"
+#include "wordquery.hpp"
 

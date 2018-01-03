@@ -1,8 +1,8 @@
 #ifndef BINARYQUERY_H
 #define BINARYQUERY_H
 
-#include "query_base.h"
-#include "query.h"
+#include "query_base.hpp"
+#include "query.hpp"
 
 
 

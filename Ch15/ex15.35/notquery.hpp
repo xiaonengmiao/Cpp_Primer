@@ -1,7 +1,7 @@
 #ifndef NOTQUERY_H
 #define NOTQUERY_H
-#include "query_base.h"
-#include "query.h"
+#include "query_base.hpp"
+#include "query.hpp"
 
 
 /**

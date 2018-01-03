@@ -2,7 +2,7 @@
 #define ANDQUERY_H
 
 
-#include "binaryquery.h"
+#include "binaryquery.hpp"
 
 class AndQuery : public BinaryQuery
 {

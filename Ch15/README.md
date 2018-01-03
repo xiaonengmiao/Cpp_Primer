@@ -410,7 +410,7 @@ Press <RETURN> to close this window...
 ## Exercise 15.39:
 > Implement the `Query` and `Query_base` classes. Test your application by evaluating and printing a query such as the one in Figure 15.3 (p. 638).
 
-[Query](ex.15.39/query.hpp) | [Query_base](ex.15.39/query_base.hpp) | [main](ex.15.39/main.cpp)
+[Query](ex15.39/query.hpp) | [Query_base](ex15.39/query_base.hpp) | [main](ex15.39/main.cpp)
 
 ## Exercise 15.40:
 > In the `OrQuery` eval function what would happen if its `rhs` member returned an empty set? What if its `lhs` member did so? What if both `rhs` and `lhs` returned empty sets?

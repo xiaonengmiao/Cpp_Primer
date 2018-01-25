@@ -83,7 +83,7 @@ void Quote::debug() const
 
  Sure. override means overriding the same name virtual function in base class. final means preventing any overriding this virtual function by any derived classes that are more lower at the hierarchy.
 
-## Exercise 15.13
+## Exercise 15.13:
 
 > Given the following classes, expain each `print` function:
 ```cpp
@@ -110,7 +110,15 @@ If there is a problem in this code, how would you fix it?
 
 [ex15.13-codelink](exercise15.13.cpp)
 
-## Exercise 15.14
+## Exercise 15.14:
+
+> Given the classes from the previous exercise and the following objects, determine which function is called at run time:
+
+```cpp
+base bobj;    base *bp1 = &bobj;     base &br1 = bobj;
+derived dobj; base *bp2 = &dobj;     base &br2 = dobl;
+(a) bobj.print(); (b) dobj.print(); (c) bp1->name();
+(d) bp2->name();  (e) br1.print();  (f) br2.print(); 
 
 [ex15.14-codelink](exercise15.13.cpp)
 
@@ -410,7 +418,7 @@ Press <RETURN> to close this window...
 ## Exercise 15.39:
 > Implement the `Query` and `Query_base` classes. Test your application by evaluating and printing a query such as the one in Figure 15.3 (p. 638).
 
-[Query](ex15.39/query.hpp) | [Query_base](ex15.39/query_base.hpp) | [main](ex15.39/main.cpp)
+[Query](ex15.39/query.hpp) | [main](ex15.39/main.cpp)
 
 ## Exercise 15.40:
 > In the `OrQuery` eval function what would happen if its `rhs` member returned an empty set? What if its `lhs` member did so? What if both `rhs` and `lhs` returned empty sets?

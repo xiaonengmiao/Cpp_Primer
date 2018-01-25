@@ -119,6 +119,7 @@ base bobj;    base *bp1 = &bobj;     base &br1 = bobj;
 derived dobj; base *bp2 = &dobj;     base &br2 = dobl;
 (a) bobj.print(); (b) dobj.print(); (c) bp1->name();
 (d) bp2->name();  (e) br1.print();  (f) br2.print(); 
+```
 
 [ex15.14-codelink](exercise15.13.cpp)
 

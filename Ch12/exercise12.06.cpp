@@ -31,6 +31,7 @@ int main()
 {
   auto vec = initialize(dynamiclly_allocate());
   print(vec) << std::endl;
+  delete vec;
 
   return 0;
 }

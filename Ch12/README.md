@@ -65,11 +65,15 @@ This design choice would easy to use but hard to debug.
 - We always uses the constructor to construct **a temporary StrBlob object**.
 - cannot use the copy form of initialization with an explicit constructor. not easy to use.
 
-## Exercise 12.06
+## Exercise 12.06:
+
+> Write a function that returns a dynamically allocated `vector` of `ints`. Pass that `vector` to another function that reads the standard input to give values to the elements. Pass the `vector` to another function to print values that were read. Remember to `delete` the `vector` at the appropriate time.
 
 [ex12.06-codelink](exercise12.06.cpp)
 
-## Exercise 12.07
+## Exercise 12.07: 
+
+> Redo the previous exercise, this time using `shared_ptr`.
 
 [ex12.07-codelink](exercise12.07.cpp)
 

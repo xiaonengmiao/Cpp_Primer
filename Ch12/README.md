@@ -77,7 +77,7 @@ This design choice would easy to use but hard to debug.
 
 [ex12.07-codelink](exercise12.07.cpp)
 
-## Exercise 12.08
+## Exercise 12.08:
 
 > Explain what if anything is wrong with the following function.
 ```cpp
@@ -90,7 +90,7 @@ bool b() {
 
 The p will convert to a bool , which means that the dynamic memory allocated has no chance to be freed. As a result, memory leakage will occur.
 
-## Exercise 12.09
+## Exercise 12.09:
 
 > Explain what happens in the following code:
 ```cpp
@@ -108,7 +108,7 @@ Memory leakage happens. Because after `r = q` was executed, no pointer points to
 
 It's safe. Because after 'r2 = q2', the reference count belongs to r2 reduce to 0 and the reference count belongs to q2 increase to 2, then the memory allocated by r2 will be released automatically.
 
-## Exercise 12.10
+## Exercise 12.10:
 
 > Explain whether the following call to the `processing` function defined on page 464 is correct. If not, how would you correct the call?
 
@@ -119,7 +119,7 @@ process(shared_ptr<int>(p));
 
 [ex12.10-codelink](exercise12.10.cpp)
 
-## Exercise 12.11
+## Exercise 12.11:
 
 > What would happen if we called `process` as follows?
 
@@ -129,7 +129,7 @@ process(shared_ptr<int>(p.get()));
 
 [ex12.11-codelink](exercise12.11.cpp)
 
-## Exercise 12.12
+## Exercise 12.12:
 
 > Using the declarations of `p` and `sp` explain each of the following calls to `process`. If the call is legal, explain what it does. If the call is illegal, explain why:
 
@@ -144,7 +144,7 @@ auto sp = make_shared<int>();
 
 [ex12.12-codelink](exercise12.12.cpp)
 
-## Exercise 12.13
+## Exercise 12.13:
 
 > What happens if we execute the following code?
 
@@ -156,7 +156,7 @@ delete p;
 
 generate a runtime error: double free
 
-## Exercise 12.14
+## Exercise 12.14:
 
 > Write your own version of a function that uses a `shared_ptr` to manage a `connection` function.
 
@@ -168,17 +168,33 @@ generate a runtime error: double free
 
 [ex12.15-codelink](exercise12.15.cpp)
 
-## Exercise 12.16
+## Exercise 12.16:
 
-[ex12.07-codelink](exercise12.07.cpp)
+> Compilers don't always give easy-to-understand error massages if we attempt to copy or assign a `unique_ptr`. Write a program that contains these errors to see how your compiler diagnoses them.
 
-## Exercise 12.17 and 12.18
+[ex12.16-codelink](exercise12.16.cpp)
 
-[ex12.07-codelink](exercise12.07.cpp)
+## Exercise 12.17:
 
-## Exercise 12.19 [Header](ex12_19.h)|[Implementation](ex12_19.cpp)
+> Which of the following `unique_ptr` declarations are illegal or likely to result in subsequent program error? Explain what the program is with each one.
 
-[ex12.07-codelink](exercise12.07.cpp)
+```cpp
+int ix = 1024, *pi = &ix, *pi2 = new int(2048);
+typedef unique_ptr<int> IntP;
+(a) IntP p0(ix);            (b) IntP p1(pi)
+(c) IntP p2(pi2);           (d) IntP p3(&ix)
+(e) IntP p4(new int(2048))  (f) IntP p5(p2.get());
+```
+
+[ex12.17-codelink](exercise12.17.cpp)
+
+## Exercise 12.18:
+
+> Why doesn't `shared_ptr` have a `released` member?
+
+## Exercise 12.19:
+
+[Header](exercise12.19.hpp)|[Implementation](exercise12.19.cpp)
 
 ## [Exercise 12.20](ex12_20.cpp)
 

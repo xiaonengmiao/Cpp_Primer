@@ -117,7 +117,7 @@ vector<int> vec = {0}; // 0
 vector<int> vec{0}; // 0
 vector<int> vec(1, 0); // 0
 vector<int> vec(1); // 0
-vector<int> vec(other_vec); // guess 
+vector<int> vec(other_vec); // guess
 vector<int> vec(other_vec.begin(),other_vec.end()); // guess
 ```
 
@@ -241,7 +241,7 @@ int main()
     std::vector<int> v{ 1, 9, 1, 9, 9, 9, 1, 1 };
     double_and_insert(v, 1);
 
-    for (auto i : v) 
+    for (auto i : v)
         std::cout << i << std::endl;
 }
 
@@ -283,7 +283,7 @@ int ia[] = { 0, 1, 1, 2, 3, 5, 8, 13, 21, 55，89 }；
 [ex9.27-codelink](exercise9,27.cpp)
 
 ## Exercise 9.28
- 
+
 > Write a function that takes a `forward_list` and two additional `string` arguments. The function should find the first `string` and insert the second immediately following the first. If the first `string` is not found, then insert the second `string` at the end of the list.
 
 ```cpp
@@ -323,7 +323,7 @@ If the container holds elements of a class type and resize adds elements we **mu
 [ex9.31_list-codelink](exercise9.31_list.cpp)
 [ex9.32_forward_list-codelink](exercise9.32_forward_list.cpp)
 
-## Exercise 9.32 
+## Exercise 9.32
 
 > In the program on page 354 would it be legal to write the call to `insert` as follows? If not, why not?
 ```cpp
@@ -428,13 +428,13 @@ Use member `reserve(120)` to allocate enough space for this string. (@Mooophy)
 
 > Write a function that takes three strings, `s`, `oldVal`, and `newVal`. Using iterator, and the `insert`  and `erase` functions replace all instances of `oldVal` that appear in `s` by `newVal`. Test your function by using it to replace common abbreviations, such as "tho" by "though" and "thru" by "through".
 
-[ex9.43-codelink](exercise9.45.cpp)
+[ex9.43-codelink](exercise9.43.cpp)
 
 ## Exercise 9.44
 
 > Rewrite the previous function using an index and `replace`.
 
-[ex9.44-codelink](exercise9.45.cpp)
+[ex9.44-codelink](exercise9.44.cpp)
 
 ## Exercise 9.45
 
@@ -479,7 +479,7 @@ npos
 
 [ex9.51-codelink](exercise9.51.cpp)
 
-## Exercise 9.52 
+## Exercise 9.52
 
 > Use a `stack` to process parenthesized expressions. When you see an open parenthesis, note that it was seen. When you see a close parenthesis after an open parenthesis, `pop` elements down to and including the open parenthesis off the `stack`. `push` a value onto the `stack` to indicate that a parenthesized expression was replaced.
 

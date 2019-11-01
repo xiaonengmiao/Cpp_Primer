@@ -10,7 +10,6 @@ int main()
   {
     if (currItem.isbn() ==  nextItem.isbn()) 
       ++cnt;
-
     else
     {
       std::cout << currItem.isbn() << " occurs " 

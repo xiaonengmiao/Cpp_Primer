@@ -70,11 +70,11 @@ while (bool status = find(word)) {
 
 > Using an `if-else` statement, write your own version of the program to generate the letter grade from a numeric grade.
 
-[ex5.05-codelink](exercise5.05.cpp)
+[ex5.05-codelink](exercise5.5.cpp)
 
 ## Exercise 5.06
 
-[ex5.06-codelink](exercise5.06.cpp)
+[ex5.06-codelink](exercise5.6.cpp)
 
 ## Exercise 5.07
 >Correct the errors in each of the following code fragments:
@@ -116,7 +116,7 @@ Colloquial term used to refer to the problem of how to process nested if stateme
 
 > Write a program using a series of if statements to count the number of vowels in text read from `cin`.
 
-[ex5.09-codelink](exercise5.09.cpp)
+[ex5.09-codelink](exercise5.9.cpp)
 
 ## Exercise 5.10
 

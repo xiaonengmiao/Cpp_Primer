@@ -204,7 +204,7 @@ Member functions and friends of classes derived from D may use the derived-to-ba
 
 > (c) C++ language types (such as class, function, member function)
 
-[Here is a example of 2D shape](ex15.21.22/main.cpp)
+[Here is a example of 2D shape](exercise15.21.cpp)
 
 ## Exercise 15.22:
 
